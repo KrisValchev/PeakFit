@@ -1,0 +1,15 @@
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.AssemblyInfo.cs
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.sourcelink.json
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.deps.json
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.runtimeconfig.json
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.pdb
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\refint\PeakFit.Infrastructure.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.pdb
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.genruntimeconfig.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\ref\PeakFit.Infrastructure.dll

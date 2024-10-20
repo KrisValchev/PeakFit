@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PeakFit.Infrastructure.Data;
 using PeakFit.Web.Data;
 
 namespace PeakFit.Web
@@ -38,6 +39,7 @@ namespace PeakFit.Web
 			app.UseStaticFiles();
 
 			app.UseRouting();
+
 
 			app.UseAuthorization();
 

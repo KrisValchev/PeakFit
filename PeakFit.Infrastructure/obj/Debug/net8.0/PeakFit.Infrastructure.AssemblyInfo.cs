@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fa618a16-010a-45a6-894c-ab50720dd97f")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32c6b8c78dbf4b31bde90b0e34729eb6ce8a51a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a0eee6f72c181242020906c77ab0475a9626cb9")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

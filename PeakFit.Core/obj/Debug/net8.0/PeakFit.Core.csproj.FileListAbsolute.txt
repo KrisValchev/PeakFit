@@ -1,0 +1,12 @@
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.deps.json
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.pdb
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.AssemblyInfoInputs.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.AssemblyInfo.cs
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.csproj.CoreCompileInputs.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.sourcelink.json
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\refint\PeakFit.Core.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.pdb
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\ref\PeakFit.Core.dll
