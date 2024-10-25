@@ -18,9 +18,14 @@ namespace PeakFit.Infrastructure.Data.Models
         public int CategoryId { get; set; }
         [ForeignKey(nameof(CategoryId))]
         public Category Category { get; set; } = null!;
-        
-        //Trainer Property
 
-        //Think about the logic associated with the trainer and client tables (should it be only one or two separated)
+        [Required]
+        [Comment("Trainer identifier")]
+        public string TrainerId { get; set; } = null!;
+        [ForeignKey(nameof(TrainerId))]
+        public Trainer Trainer { get; set; } = null!;
+        [Required]
+        [Comment("Tells if program is deleted")]
+        public bool IsDeleted { get; set; }
     }
 }
