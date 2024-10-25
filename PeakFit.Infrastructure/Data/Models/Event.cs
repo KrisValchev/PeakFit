@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace PeakFit.Infrastructure.Data.Models
 {
@@ -16,6 +17,9 @@ namespace PeakFit.Infrastructure.Data.Models
         [Required]
         [Comment("Event's title")]
         public string Title { get; set; } = null!;
+        [Comment("Event's banner")]
+        [DefaultValue("https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png")]
+        public string? ImageUrl { get; set; } = null!;
         [Required]
         [Comment("Event's description")]
         public string Description { get; set; } = null!;
