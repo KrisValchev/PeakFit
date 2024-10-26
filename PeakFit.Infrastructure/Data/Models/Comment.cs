@@ -1,12 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Caching.Memory;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static PeakFit.Infrastructure.Constraints.CommentDataConstraints;
 
 namespace PeakFit.Infrastructure.Data.Models
 {
@@ -16,9 +11,11 @@ namespace PeakFit.Infrastructure.Data.Models
         public int Id { get; set; }
         [Required]
         [Comment("Comment's title")]
+        [MaxLength(TitleMaxLength)]
         public string Title { get; set; } = null!;
         [Required]
         [Comment("Comment's description")]
+        [MaxLength (DescriptionMaxLength)]
         public string Description { get; set; } = null!;
         [Required]
         [Comment("Comment's date of posting")]
