@@ -1,11 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static PeakFit.Infrastructure.Constraints.ExerciseDataConstraints;
 
 namespace PeakFit.Infrastructure.Data.Models
 {
@@ -18,9 +14,11 @@ namespace PeakFit.Infrastructure.Data.Models
         public string ExerciseName { get; set; } = null!;
         [Required]
         [Comment("Repetition count of exercise")]
+        [Range(RepsMin, RepsMax)]
         public int Reps { get; set; }
         [Required]
         [Comment("Sets count of exercise")]
+        [Range(SetsMin, SetsMax)]
         public int Sets { get; set; }
         [Required]
         [Comment("Program identifier")]
