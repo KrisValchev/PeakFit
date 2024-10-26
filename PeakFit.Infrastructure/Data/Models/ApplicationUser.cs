@@ -1,12 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static PeakFit.Infrastructure.Constrains.ApplicationUserDataConstraints;
+
 
 namespace PeakFit.Infrastructure.Data.Models
 {
@@ -14,10 +11,12 @@ namespace PeakFit.Infrastructure.Data.Models
     {
         [Required]
         [Comment("First name of a user")]
+        [MaxLength(FirstNameMaxLength)]
         [PersonalData]
         public string FirstName { get; set; } = string.Empty;
         [Required]
         [Comment("Last name of a user")]
+        [MaxLength(LastNameMaxLength)]
         [PersonalData]
         public string LastName { get; set; } = string.Empty;
         [Comment("User profile picture")]
@@ -28,6 +27,7 @@ namespace PeakFit.Infrastructure.Data.Models
         [PersonalData]
         public string Gender { get; set; } = string.Empty;
         [Comment("Inspirational description about the user")]
+        [MaxLength(AboutDescriptionMaxLength)]
         public string AboutDescription { get; set; } = string.Empty;
     }
 }
