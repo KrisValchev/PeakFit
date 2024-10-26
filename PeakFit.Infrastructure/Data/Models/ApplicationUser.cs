@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using static PeakFit.Infrastructure.Constrains.ApplicationUserDataConstraints;
+using static PeakFit.Infrastructure.Constraints.ApplicationUserDataConstraints;
 
 
 namespace PeakFit.Infrastructure.Data.Models

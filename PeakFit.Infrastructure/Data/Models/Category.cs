@@ -1,10 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static PeakFit.Infrastructure.Constraints.CategoryDataConstraints;
+
 
 namespace PeakFit.Infrastructure.Data.Models
 {
@@ -14,6 +12,7 @@ namespace PeakFit.Infrastructure.Data.Models
         public int Id { get; set; }
         [Required]
         [Comment("Name of category")]
+        [MaxLength(CategoryNameMaxLength)]
         public string CategoryName { get; set; } = null!;
 
         public ICollection<Exercise> Exercises { get; set;}=new List<Exercise>();
