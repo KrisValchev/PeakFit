@@ -11,7 +11,7 @@ namespace PeakFit.Infrastructure.Data.Models
 {
     public class Trainer:ApplicationUser
     {
-        public ICollection<double> Ratings { get; set; }=new List<double>();  
+        public IList<double> Ratings { get; set; }=new List<double>();  
 
     }
 }

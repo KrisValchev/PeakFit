@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using static PeakFit.Infrastructure.Constraints.Errors;
+using static PeakFit.Infrastructure.Constraints.ApplicationUserDataConstraints;
 
 namespace PeakFit.Web.Areas.Identity.Pages.Account
 {
@@ -97,6 +100,24 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+
+            [Required]
+            [Display(Name = "First name")]
+            [StringLength(FirstNameMaxLength, MinimumLength = FirstNameMinLength, ErrorMessage = LengthErrorMessage)]
+            public string FirstName { get; set; }
+
+            [Required]
+            [Display(Name = "Last name")]
+            [StringLength(LastNameMaxLength, MinimumLength = LastNameMinLength, ErrorMessage = LengthErrorMessage)]
+            public string LastName { get; set; }
+            [Required]
+            [Display(Name = "Gender")]
+            public string Gender { get; set; }
+
+            [Display(Name = "Profile picture")]
+            [DefaultValue("https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg")]
+            public string ProfilePicture { get; set; }
         }
 
 
