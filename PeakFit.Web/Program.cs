@@ -19,7 +19,7 @@ namespace PeakFit.Web
 				options.UseSqlServer(connectionString));
 			builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-			builder.Services.AddIdentityServices();
+			builder.Services.AddIdentityServices(builder.Configuration);
 			builder.Services.AddControllersWithViews();
 
 			builder.Services.AddApplicationServices();
@@ -50,7 +50,8 @@ namespace PeakFit.Web
 				pattern: "{controller=Home}/{action=Index}/{id?}");
 			app.MapRazorPages();
 			//Adding roles
-			app.AddRolesAsync().Wait();
+			app.AddTrainerRoleAsync().Wait();
+			app.AddUserRoleAsync().Wait();
 			app.Run();
 		}
 	}

@@ -13,7 +13,7 @@ namespace PeakFit.Web.Extensions
             return services;
         }
 
-        public static IServiceCollection AddIdentityServices(this IServiceCollection services)
+        public static IServiceCollection AddIdentityServices(this IServiceCollection services,IConfiguration config)
         {
             services.AddDefaultIdentity<ApplicationUser>(options =>
             {
@@ -26,6 +26,7 @@ namespace PeakFit.Web.Extensions
                 options.User.RequireUniqueEmail = true;
 
             })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             return services;
         }

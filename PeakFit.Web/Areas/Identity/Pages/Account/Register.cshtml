@@ -49,8 +49,8 @@
 				<label asp-for="Input.ProfilePicture">Profile Picture</label>
 			</div>
 			<div>
-			<label>Select Role:</label><br />
-			<input type="radio" name="UserRole" value="Trainer" asp-for="Input.Role" />
+				<label>Select Role <span style="color:red">*</span>:</label><br />
+			<input type="radio" name="UserRole" value="Trainer" asp-for="Input.Role"/>
 			<label for="trainer">Trainer</label><br />
 			<input type="radio"  name="UserRole" value="User" asp-for="Input.Role">
 			<label for="user">User</label><br/>

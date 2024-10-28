@@ -2226,7 +2226,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10",
-          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1"
+          "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1",
+          "PeakFit.Core": "1.0.0"
         },
         "runtime": {
           "PeakFit.Infrastructure.dll": {}

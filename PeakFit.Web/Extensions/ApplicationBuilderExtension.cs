@@ -5,29 +5,49 @@ namespace PeakFit.Web.Extensions
 {
 	public static class ApplicationBuilderExtension
 	{
-		public static async Task AddRolesAsync(this IApplicationBuilder app)
+		public static async Task AddAdminRoleAsync(this IApplicationBuilder app)
 		{
 			using var scope = app.ApplicationServices.CreateScope();
 			var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 			var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-
-			if (userManager != null && roleManager != null && await roleManager.RoleExistsAsync(AdminRole) == false && await roleManager.RoleExistsAsync(TrainerRole)==false && await roleManager.RoleExistsAsync(UserRole) == false)
+			if (userManager != null && roleManager != null && await roleManager.RoleExistsAsync(AdminRole) == false)
 			{
 				var adminRole = new IdentityRole(AdminRole);
-				var trainerRole = new IdentityRole(TrainerRole);
-				var userRole = new IdentityRole(TrainerRole);
 				await roleManager.CreateAsync(adminRole);
-				await roleManager.CreateAsync(trainerRole);
-				await roleManager.CreateAsync(userRole);
 
-				//var admin = await userManager.FindByEmailAsync("admin@gmail.com");
-
-				//if (admin != null)
-				//{
-				//	await userManager.AddToRoleAsync(admin, adminRole.Name);
-				//}
 			}
 
 		}
+		public static async Task AddTrainerRoleAsync(this IApplicationBuilder app)
+		{
+			using var scope = app.ApplicationServices.CreateScope();
+			var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+			var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+			if (userManager != null && roleManager != null && await roleManager.RoleExistsAsync(TrainerRole) == false)
+			{
+			
+				var trainerRole = new IdentityRole(TrainerRole);
+				await roleManager.CreateAsync(trainerRole);
+			}
+
+		}
+		public static async Task AddUserRoleAsync(this IApplicationBuilder app)
+		{
+			using var scope = app.ApplicationServices.CreateScope();
+			var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+			var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+			if (userManager != null && roleManager != null && await roleManager.RoleExistsAsync(UserRole) == false)
+			{
+				var userRole = new IdentityRole(UserRole);
+				await roleManager.CreateAsync(userRole);
+			}
+
+		}
+		//private void CreateScoupUserAndRoleManager(this IApplicationBuilder app)
+		//{
+		//	using var scope = app.ApplicationServices.CreateScope();
+		//	var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
+		//	var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+		//}
 	}
 }
