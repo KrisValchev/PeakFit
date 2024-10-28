@@ -10,6 +10,7 @@ namespace PeakFit.Core.Constants
 	{
 		public const string AdminRole = "Administrator";
 		public const string TrainerRole = "Trainer";
+		public const string UserRole = "User";
 
 	}
 }
