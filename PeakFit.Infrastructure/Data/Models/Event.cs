@@ -29,9 +29,9 @@ namespace PeakFit.Infrastructure.Data.Models
         public DateTime StartHour { get; set; }
         [Required]
         [Comment("Trainer identifier who created the event")]
-        public string TrainerId { get; set; } = null!;
-        [ForeignKey(nameof(TrainerId))]
-        public Trainer Trainer { get; set; } = null!;
+        public string UserId { get; set; } = null!;
+        [ForeignKey(nameof(UserId))]
+        public ApplicationUser User { get; set; } = null!;
         public ICollection<Comment> Comments { get; set; }=new List<Comment>();
         [Required]
         [Comment("Tells if event is deleted")]

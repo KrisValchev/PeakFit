@@ -24,11 +24,13 @@ namespace PeakFit.Infrastructure.Data.Models
         public string? ImageUrl { get; set; } = null!;
         [Required]
         [Comment("Trainer identifier")]
-        public string TrainerId { get; set; } = null!;
-        [ForeignKey(nameof(TrainerId))]
-        public Trainer Trainer { get; set; } = null!;
+        public string UserId { get; set; } = null!;
+        [ForeignKey(nameof(UserId))]
+        public ApplicationUser User { get; set; } = null!;
         [Required]
         [Comment("Tells if program is deleted")]
-        public bool IsDeleted { get; set; }
+
+		public IList<double> Ratings { get; set; } = new List<double>();
+		public bool IsDeleted { get; set; }
     }
 }
