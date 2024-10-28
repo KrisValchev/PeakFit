@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PeakFit.Core\PeakFit.Core.csproj" />
     <ProjectReference Include="..\PeakFit.Infrastructure\PeakFit.Infrastructure.csproj" />
   </ItemGroup>
 

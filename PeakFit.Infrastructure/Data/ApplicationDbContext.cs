@@ -25,7 +25,6 @@ namespace PeakFit.Web.Data
         public DbSet<Category> Categories { get; set; } = null!;
         public DbSet<Comment> Comments { get; set; } = null!;
         public DbSet<Exercise> Exercises { get; set; } = null!;
-        public DbSet<Trainer> Trainers { get; set; } = null!;
         public DbSet<TrainingProgram> TrainingPrograms { get; set; } = null!;
         public DbSet<UserEvent> UsersEvents { get; set; } = null!;
         public DbSet<UserProgram> UsersPrograms { get; set; } = null!;

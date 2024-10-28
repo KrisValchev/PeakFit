@@ -32,6 +32,8 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        //Adding RoleManager
+
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -118,7 +120,10 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
             [Display(Name = "Profile picture")]
             [DefaultValue("https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg")]
             public string ProfilePicture { get; set; }
-        }
+			[Required]
+			[Display(Name = "Trainer or User")]
+			public bool IsTrainer { get; set; }
+		}
 
 
         public async Task OnGetAsync(string returnUrl = null)

@@ -3206,6 +3206,16 @@
           }
         }
       },
+      "PeakFit.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PeakFit.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PeakFit.Core.dll": {}
+        }
+      },
       "PeakFit.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -8722,6 +8732,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "PeakFit.Core/1.0.0": {
+      "type": "project",
+      "path": "../PeakFit.Core/PeakFit.Core.csproj",
+      "msbuildProject": "../PeakFit.Core/PeakFit.Core.csproj"
+    },
     "PeakFit.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../PeakFit.Infrastructure/PeakFit.Infrastructure.csproj",
@@ -8737,6 +8752,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.6",
+      "PeakFit.Core >= 1.0.0",
       "PeakFit.Infrastructure >= 1.0.0"
     ]
   },
@@ -8767,6 +8783,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj": {
+              "projectPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj"
+            },
             "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj"
             }
