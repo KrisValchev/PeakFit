@@ -50,12 +50,11 @@
 			</div>
 			<div>
 			<label>Select Role:</label><br />
-
-			<input type="radio" name="UserRole" value="Trainer" asp-for="Input.IsTrainer" />
+			<input type="radio" name="UserRole" value="Trainer" asp-for="Input.Role" />
 			<label for="trainer">Trainer</label><br />
-
-			<input type="radio"  name="UserRole" value="User" asp-for="Input.IsTrainer" />
-			<label for="user">User</label><br />
+			<input type="radio"  name="UserRole" value="User" asp-for="Input.Role">
+			<label for="user">User</label><br/>
+				<span asp-validation-for="Input.Role" class="text-danger"></span>
 			</div>
 			<button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
 		</form>
