@@ -27,7 +27,7 @@ namespace PeakFit.Infrastructure.Data.Models
         public string Gender { get; set; } = string.Empty;
         [Comment("Inspirational description about the user")]
         [MaxLength(AboutDescriptionMaxLength)]
-        public string AboutDescription { get; set; } = null!;
+        public string? AboutDescription { get; set; } 
 		[Required]
 		[Comment("User's role")]
 		public string Role { get; set; } = string.Empty;
