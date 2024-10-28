@@ -15,6 +15,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.10",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.10",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.6",
+          "PeakFit.Core": "1.0.0",
           "PeakFit.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -2216,6 +2217,11 @@
           }
         }
       },
+      "PeakFit.Core/1.0.0": {
+        "runtime": {
+          "PeakFit.Core.dll": {}
+        }
+      },
       "PeakFit.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.10",
@@ -3500,6 +3506,11 @@
       "sha512": "sha512-bR4qdCmssMMbo9Fatci49An5B1UaVJZHKNq70PRgzoLYIlitb8Tj7ns/Xt5Pz1CkERiTjcVBDU2y1AVrPBYkaw==",
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
+    },
+    "PeakFit.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "PeakFit.Infrastructure/1.0.0": {
       "type": "project",

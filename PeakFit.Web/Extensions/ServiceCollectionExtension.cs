@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using PeakFit.Infrastructure.Common;
+using PeakFit.Infrastructure.Data.Models;
 using PeakFit.Web.Data;
 
 namespace PeakFit.Web.Extensions
@@ -14,7 +15,7 @@ namespace PeakFit.Web.Extensions
 
         public static IServiceCollection AddIdentityServices(this IServiceCollection services)
         {
-            services.AddDefaultIdentity<IdentityUser>(options =>
+            services.AddDefaultIdentity<ApplicationUser>(options =>
             {
                 options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = true;

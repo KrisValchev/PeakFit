@@ -24,7 +24,7 @@ namespace PeakFit.Web.Extensions
 
 				//if (admin != null)
 				//{
-				//	await userManager.AddToRoleAsync(admin, role.Name);
+				//	await userManager.AddToRoleAsync(admin, adminRole.Name);
 				//}
 			}
 
