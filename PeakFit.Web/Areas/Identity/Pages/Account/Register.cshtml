@@ -48,12 +48,12 @@
 				<input asp-for="Input.ProfilePicture" class="form-control" aria-required="false" placeholder="profilePicture" />
 				<label asp-for="Input.ProfilePicture">Profile Picture</label>
 			</div>
-			<div>
-				<label>Select Role <span style="color:red">*</span>:</label><br />
-			<input type="radio" name="UserRole" value="Trainer" asp-for="Input.Role"/>
-			<label for="trainer">Trainer</label><br />
-			<input type="radio"  name="UserRole" value="User" asp-for="Input.Role">
-			<label for="user">User</label><br/>
+			<div style="margin-bottom:1em">
+				<select asp-for="Input.Role" class="form-control" aria-required="true" placeholder="role">
+					<option value="">Select Role <span style="color:red">*</span></option>
+					<option value="Trainer">Trainer</option>
+					<option value="User">User</option>
+				</select>
 				<span asp-validation-for="Input.Role" class="text-danger"></span>
 			</div>
 			<button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
