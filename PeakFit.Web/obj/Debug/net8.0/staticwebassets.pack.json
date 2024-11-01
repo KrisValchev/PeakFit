@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\rooftop-yoga.jpg",
+      "PackagePath": "staticwebassets\\images\\rooftop-yoga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
+      "PackagePath": "staticwebassets\\images\\weight-loss-exercise-plan.jpg"
+    },
+    {
       "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

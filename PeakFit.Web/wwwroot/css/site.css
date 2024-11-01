@@ -20,3 +20,65 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Home Page */
+/* Container for both images */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the two photos */
+    padding: 20px;
+}
+
+/* Each photo container */
+.photo-container {
+    position: relative;
+    width: 45%; /* Adjust width as needed */
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    /* On hover, make the photo-container slightly larger */
+    .photo-container:hover {
+        transform: scale(1.05);
+    }
+
+/* Style for the photo itself */
+.photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: brightness(70%); /* Darken image */
+    transition: filter 0.3s ease;
+}
+/* Lighten the photo when the container is hovered */
+.photo-container:hover .photo {
+    filter: brightness(100%);
+}
+
+/* Button overlay centered on the photo */
+.button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+}
+
+/* Styling for the button */
+.photo-button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .photo-button:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: black;
+    }

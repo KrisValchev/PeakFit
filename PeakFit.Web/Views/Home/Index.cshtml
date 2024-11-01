@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="photo-container" id="photo1">
+        <img src="~/images/rooftop-yoga.jpg" alt="EventPhoto" class="photo">
+        <div class="button-overlay">
+            <button class="photo-button" onclick="expandPhoto('photo1')">Events</button>
+        </div>
+    </div>
+    <div class="photo-container" id="photo2">
+        <img src="~/images/weight-loss-exercise-plan.jpg" alt="ProgramPhoto" class="photo">
+        <div class="button-overlay">
+            <button class="photo-button" onclick="expandPhoto('photo2')">Training Programs</button>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <script>
+        function expandPhoto(photoId) {
+            // Reset all photos
+            document.querySelectorAll('.photo-container').forEach(photo => {
+                photo.classList.remove('expanded');
+                photo.classList.remove('contracted');
+            });
+
+            // Expand the selected photo, contract the other
+            document.getElementById(photoId).classList.add('expanded');
+            document.querySelectorAll(`.photo-container:not(#${photoId})`).forEach(photo => {
+                photo.classList.add('contracted');
+            });
+        }
+    </script>
+    }
+
