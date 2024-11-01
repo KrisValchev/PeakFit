@@ -133,10 +133,16 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 		}
 
 
-		public async Task OnGetAsync(string returnUrl = null)
+		public async Task<IActionResult> OnGetAsync(string returnUrl = null)
 		{
-			ReturnUrl = returnUrl;
+			if (this.User?.Identity?.IsAuthenticated ?? false)
+			{
+				return this.RedirectToAction("Index", "Home");
+			}
+
+			this.ReturnUrl = returnUrl;
 			ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+			return this.Page();
 		}
 
 		public async Task<IActionResult> OnPostAsync(string returnUrl = null)
