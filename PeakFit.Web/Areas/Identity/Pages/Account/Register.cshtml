@@ -3,11 +3,11 @@
 @{
 	ViewData["Title"] = "Register";
 }
-
+<section style="display:flex;flex-direction:column;align-items:center;">
 <h1>@ViewData["Title"]</h1>
 
 <div class="row">
-	<div class="col-md-4">
+		<div class="col-md-4" style="width:100%">
 		<form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
 			<h2>Create a new account.</h2>
 			<hr />
@@ -36,7 +36,7 @@
 				<label asp-for="Input.LastName">Last Name <span style="color:red">*</span></label>
 				<span asp-validation-for="Input.LastName" class="text-danger"></span>
 			</div>
-			<div class="form-floating mb-3">
+				<div style="margin-bottom:1em">
 				<select asp-for="Input.Gender" class="form-control" aria-required="true"  placeholder="gender">
 					<option value="">Select Gender <span style="color:red">*</span></option>
 					<option value="Male">Male</option>
@@ -60,6 +60,7 @@
 		</form>
 	</div>
 </div>
+</section>
 
 @section Scripts {
 	<partial name="_ValidationScriptsPartial" />
