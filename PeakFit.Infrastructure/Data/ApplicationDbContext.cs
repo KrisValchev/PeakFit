@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using PeakFit.Infrastructure.Data.Models;
+using PeakFit.Infrastructure.Data.SeedDb;
 
 namespace PeakFit.Web.Data
 {
@@ -15,8 +16,16 @@ namespace PeakFit.Web.Data
 		}
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //data seed 
+            builder.ApplyConfiguration(new UserConfiguration());
+            builder.ApplyConfiguration(new CategoryConfiguration());
+            builder.ApplyConfiguration(new TrainingProgramConfiguration());
+            builder.ApplyConfiguration(new ExerciseConfiguration());
+            builder.ApplyConfiguration(new EventConfiguration());
+            builder.ApplyConfiguration(new CommentConfiguration());
+
+            //many to many relations 
             builder.Entity<UserProgram>().HasKey(pc => new { pc.UserId, pc.ProgramId });
-            base.OnModelCreating(builder);
             builder.Entity<UserEvent>().HasKey(pc => new { pc.UserId, pc.EventId });
             base.OnModelCreating(builder);
 

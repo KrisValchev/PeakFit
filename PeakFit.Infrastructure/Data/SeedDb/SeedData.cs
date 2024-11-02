@@ -43,8 +43,8 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         {
             SeedUsers();
             SeedCategories();
-            SeedExercises();
             SeedPrograms();
+            SeedExercises();
             SeedEvents();
             SeedComments();
         }
@@ -140,6 +140,18 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 CategoryName = "Shoulders"
             };
         }
+        private void SeedPrograms()
+        {
+            Program1 = new TrainingProgram
+            {
+                Id = 1,
+                UserId = Trainer.Id,
+                CategoryId = Legs.Id,
+                IsDeleted = false,
+                ImageUrl = "https://athleanx.com/wp-content/uploads/2022/09/LEG-WORKOUTS.png",
+                Ratings = new List<double> { 3, 3.5, 5 }
+            };
+        }
 
         private void SeedExercises()
         {
@@ -183,18 +195,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
         }
 
-        private void SeedPrograms()
-        {
-            Program1 = new TrainingProgram
-            {
-                Id = 1,
-                UserId = Trainer.Id,
-                CategoryId = Legs.Id,
-                IsDeleted = false,
-                ImageUrl = "https://athleanx.com/wp-content/uploads/2022/09/LEG-WORKOUTS.png",
-                Ratings = new List<double> { 3, 3.5, 5 }
-            };
-        }
 
         private void SeedEvents()
         {

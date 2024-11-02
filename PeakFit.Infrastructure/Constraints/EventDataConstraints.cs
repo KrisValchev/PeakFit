@@ -15,6 +15,6 @@ namespace PeakFit.Infrastructure.Constraints
         public const string StartHourTimeFormat = "HH:mm";
 
         public const int DescriptionMinLength = 10;
-        public const int DescriptionMaxLength = 200;
+        public const int DescriptionMaxLength = 1000;
     }
 }
