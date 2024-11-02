@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using PeakFit.Infrastructure.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,8 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
         //Events
         public Event Event1 { get; set; }
-
+        //Comments
+        public Comment Comment1 { get; set; }
         private void SeedUsers()
         {
             //Admin
@@ -177,7 +179,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             Program1 = new TrainingProgram
             {
                 Id = 1,
-                UserId = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
+                UserId = Trainer.Id,
                 CategoryId = Legs.Id,
                 IsDeleted = false,
                 ImageUrl = "https://athleanx.com/wp-content/uploads/2022/09/LEG-WORKOUTS.png",
@@ -189,14 +191,28 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         {
             Event1 = new Event
             {
-                Id=1,
-                Title="Marathon",
-                Description= "The Marathon is an exhilarating long-distance running event, bringing together athletes, enthusiasts, and supporters for a memorable day of endurance and community spirit. Held in Plovdiv, this marathon offers participants a chance to challenge themselves across a scenic and well-marked route, catering to runners of all experience levels, from seasoned marathoners to those aiming to complete their first 42.195 kilometers.",
-                StartDate=DateTime.Parse("10-11-2024"),
-                StartHour=DateTime.Parse("10:00"),
-                UserId= "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
-                IsDeleted=false,
-                ImageUrl= "https://raceid.com/organizer/wp-content/uploads/2022/08/cost-marathon-featured-image-blog-10.png"
+                Id = 1,
+                Title = "Marathon",
+                Description = "The Marathon is an exhilarating long-distance running event, bringing together athletes, enthusiasts, and supporters for a memorable day of endurance and community spirit. Held in Plovdiv, this marathon offers participants a chance to challenge themselves across a scenic and well-marked route, catering to runners of all experience levels, from seasoned marathoners to those aiming to complete their first 42.195 kilometers.",
+                StartDate = DateTime.Parse("10-11-2024"),
+                StartHour = DateTime.Parse("10:00"),
+                UserId = Trainer.Id,
+                IsDeleted = false,
+                ImageUrl = "https://raceid.com/organizer/wp-content/uploads/2022/08/cost-marathon-featured-image-blog-10.png"
+            };
+        }
+
+        private void SeedComments()
+        {
+            Comment1 = new Comment
+            {
+                Id = 1,
+                Title = "Big excitement",
+                Description = "I can't wait untill the beginning of the event. It's going to be awesome!",
+                PostedOn = DateTime.Parse("01-11-2024"),
+                UserId = User.Id,
+                EventId = Event1.Id,
+                IsDeleted = false,
             };
         }
     }
