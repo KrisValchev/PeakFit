@@ -15,9 +15,12 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public ApplicationUser Trainer { get; set; }
         public ApplicationUser Admin { get; set; }
 
-
-
-
+        public Category Category1 { get; set; }
+        public Category Category2 { get; set; }
+        public Category Category3 { get; set; }
+        public Category Category4 { get; set; }
+        public Category Category5 { get; set; }
+        public Category Category6 { get; set; }
 
 		private void SeedUsers()
 		{
@@ -76,6 +79,40 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
             Trainer.PasswordHash =
             hasher.HashPassword(Trainer, "User1234");
+        }
+
+        private void SeedCategories()
+        {
+            Category1 = new Category
+            {
+                Id = 1,
+                CategoryName = "Core"
+            };
+            Category2 = new Category
+            {
+                Id = 2,
+                CategoryName = "Arms"
+            };
+            Category3 = new Category
+            {
+                Id = 3,
+                CategoryName = "Back"
+            };
+            Category4 = new Category
+            {
+                Id = 4,
+                CategoryName = "Chest"
+            };
+            Category5 = new Category
+            {
+                Id = 5,
+                CategoryName = "Legs"
+            };
+            Category6 = new Category
+            {
+                Id = 6,
+                CategoryName = "Shoulders"
+            };
         }
 	}
 }
