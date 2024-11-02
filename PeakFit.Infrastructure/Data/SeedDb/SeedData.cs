@@ -11,14 +11,22 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 {
 	internal class SeedData
 	{
-		public ApplicationUser Admin { get; set; }
-		private void SeedUser()
+        public ApplicationUser User { get; set; }
+        public ApplicationUser Trainer { get; set; }
+        public ApplicationUser Admin { get; set; }
+
+
+
+
+
+		private void SeedUsers()
 		{
+			//Admin
 			var hasher = new PasswordHasher<ApplicationUser>();
 
 			Admin = new ApplicationUser()
 			{
-				Id = "8acdd283-300d-4ef1-a83f-813efc164767",
+				Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
 				UserName = "admin@gmail.com",
 				NormalizedUserName = "admin@gmail.com",
 				Email = "admin@gmail.com",
@@ -32,6 +40,42 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
 			Admin.PasswordHash =
 			hasher.HashPassword(Admin, "Admin1234");
-		}
+
+			//User
+            User = new ApplicationUser()
+            {
+                Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
+                UserName = "user@gmail.com",
+                NormalizedUserName = "user@gmail.com",
+                Email = "user@gmail.com",
+                NormalizedEmail = "user@gmail.com",
+                FirstName = "User",
+                LastName = "User",
+                Gender = "Male",
+                Role = UserRole,
+                ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
+            };
+
+            User.PasswordHash =
+            hasher.HashPassword(User, "User1234");
+
+            //Trainer
+            Trainer = new ApplicationUser()
+            {
+                Id = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
+                UserName = "trainer@gmail.com",
+                NormalizedUserName = "trainer@gmail.com",
+                Email = "trainer@gmail.com",
+                NormalizedEmail = "trainer@gmail.com",
+                FirstName = "Trainer",
+                LastName = "Trainer",
+                Gender = "Female",
+                Role = TrainerRole,
+                ProfilePicture = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png"
+            };
+
+            Trainer.PasswordHash =
+            hasher.HashPassword(Trainer, "User1234");
+        }
 	}
 }
