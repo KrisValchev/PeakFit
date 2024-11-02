@@ -11,16 +11,28 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 {
 	internal class SeedData
 	{
+        //Users
         public ApplicationUser User { get; set; }
         public ApplicationUser Trainer { get; set; }
         public ApplicationUser Admin { get; set; }
 
-        public Category Category1 { get; set; }
-        public Category Category2 { get; set; }
-        public Category Category3 { get; set; }
-        public Category Category4 { get; set; }
-        public Category Category5 { get; set; }
-        public Category Category6 { get; set; }
+        //Categories
+        public Category Core { get; set; }
+        public Category Arms { get; set; }
+        public Category Back { get; set; }
+        public Category Chest { get; set; }
+        public Category Legs { get; set; }
+        public Category Shoulders { get; set; }
+        public Category FullBody { get; set; }
+
+        //Exercises
+        public Exercise HackSquat { get; set; }
+        public Exercise BulgarianSplitSquat { get; set; }
+        public Exercise Deadlift { get; set; }
+        public Exercise LegPress { get; set; }
+
+        //TrainingPrograms
+        public TrainingProgram Program1 { get; set; }
 
 		private void SeedUsers()
 		{
@@ -83,36 +95,78 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
         private void SeedCategories()
         {
-            Category1 = new Category
+            Core = new Category
             {
                 Id = 1,
                 CategoryName = "Core"
             };
-            Category2 = new Category
+            Arms = new Category
             {
                 Id = 2,
                 CategoryName = "Arms"
             };
-            Category3 = new Category
+            Back = new Category
             {
                 Id = 3,
                 CategoryName = "Back"
             };
-            Category4 = new Category
+            Chest = new Category
             {
                 Id = 4,
                 CategoryName = "Chest"
             };
-            Category5 = new Category
+            Legs = new Category
             {
                 Id = 5,
                 CategoryName = "Legs"
             };
-            Category6 = new Category
+            Shoulders = new Category
             {
                 Id = 6,
                 CategoryName = "Shoulders"
             };
+        }
+
+        private void SeedExercises()
+        {
+
+            Deadlift = new Exercise
+            {
+                Id = 1,
+                ExerciseName = "Deadlift",
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                CategoryId = Legs.Id
+            };
+            LegPress = new Exercise
+            {
+                Id = 2,
+                ExerciseName = "Leg Press",
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                CategoryId = Legs.Id
+            };
+            HackSquat = new Exercise
+            {
+                Id = 3,
+                ExerciseName = "Hack Squat",
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                CategoryId = Legs.Id
+            };
+            BulgarianSplitSquat = new Exercise
+            {
+                Id = 4,
+                ExerciseName = "Bulgarian Split Squat",
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                CategoryId = Legs.Id
+            };
+
         }
 	}
 }
