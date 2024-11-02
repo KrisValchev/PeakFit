@@ -24,7 +24,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public Category Chest { get; set; }
         public Category Legs { get; set; }
         public Category Shoulders { get; set; }
-        public Category FullBody { get; set; }
 
         //Exercises
         public Exercise HackSquat { get; set; }
@@ -39,6 +38,16 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public Event Event1 { get; set; }
         //Comments
         public Comment Comment1 { get; set; }
+
+        public SeedData()
+        {
+            SeedUsers();
+            SeedCategories();
+            SeedExercises();
+            SeedPrograms();
+            SeedEvents();
+            SeedComments();
+        }
         private void SeedUsers()
         {
             //Admin
@@ -215,5 +224,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 IsDeleted = false,
             };
         }
+
     }
 }
