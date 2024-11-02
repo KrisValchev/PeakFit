@@ -168,5 +168,19 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             };
 
         }
+
+        private void SeedPrograms()
+        {
+            Program1 = new TrainingProgram
+            {
+                Id = 1,
+                UserId = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
+                CategoryId = Legs.Id,
+                IsDeleted = false,
+                ImageUrl = "https://athleanx.com/wp-content/uploads/2022/09/LEG-WORKOUTS.png",
+                Ratings = new List<double> { 3, 3.5, 5 }
+            };
+        }
+
 	}
 }
