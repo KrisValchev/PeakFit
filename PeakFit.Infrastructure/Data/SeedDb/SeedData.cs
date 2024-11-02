@@ -9,8 +9,8 @@ using static PeakFit.Core.Constants.RoleConstants;
 
 namespace PeakFit.Infrastructure.Data.SeedDb
 {
-	internal class SeedData
-	{
+    internal class SeedData
+    {
         //Users
         public ApplicationUser User { get; set; }
         public ApplicationUser Trainer { get; set; }
@@ -34,29 +34,32 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         //TrainingPrograms
         public TrainingProgram Program1 { get; set; }
 
-		private void SeedUsers()
-		{
-			//Admin
-			var hasher = new PasswordHasher<ApplicationUser>();
+        //Events
+        public Event Event1 { get; set; }
 
-			Admin = new ApplicationUser()
-			{
-				Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
-				UserName = "admin@gmail.com",
-				NormalizedUserName = "admin@gmail.com",
-				Email = "admin@gmail.com",
-				NormalizedEmail = "admin@gmail.com",
-				FirstName = "Admin",
-				LastName = "Admin",
-				Gender = "Male",
-				Role=AdminRole,
-				ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
-			};
+        private void SeedUsers()
+        {
+            //Admin
+            var hasher = new PasswordHasher<ApplicationUser>();
 
-			Admin.PasswordHash =
-			hasher.HashPassword(Admin, "Admin1234");
+            Admin = new ApplicationUser()
+            {
+                Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
+                UserName = "admin@gmail.com",
+                NormalizedUserName = "admin@gmail.com",
+                Email = "admin@gmail.com",
+                NormalizedEmail = "admin@gmail.com",
+                FirstName = "Admin",
+                LastName = "Admin",
+                Gender = "Male",
+                Role = AdminRole,
+                ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
+            };
 
-			//User
+            Admin.PasswordHash =
+            hasher.HashPassword(Admin, "Admin1234");
+
+            //User
             User = new ApplicationUser()
             {
                 Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
@@ -182,5 +185,19 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             };
         }
 
-	}
+        private void SeedEvents()
+        {
+            Event1 = new Event
+            {
+                Id=1,
+                Title="Marathon",
+                Description= "The Marathon is an exhilarating long-distance running event, bringing together athletes, enthusiasts, and supporters for a memorable day of endurance and community spirit. Held in Plovdiv, this marathon offers participants a chance to challenge themselves across a scenic and well-marked route, catering to runners of all experience levels, from seasoned marathoners to those aiming to complete their first 42.195 kilometers.",
+                StartDate=DateTime.Parse("10-11-2024"),
+                StartHour=DateTime.Parse("10:00"),
+                UserId= "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
+                IsDeleted=false,
+                ImageUrl= "https://raceid.com/organizer/wp-content/uploads/2022/08/cost-marathon-featured-image-blog-10.png"
+            };
+        }
+    }
 }
