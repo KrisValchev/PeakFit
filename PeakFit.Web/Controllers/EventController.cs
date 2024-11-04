@@ -1,14 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using PeakFit.Core.Contracts;
+using PeakFit.Core.Models.EventModels;
 using PeakFit.Infrastructure.Common;
-
+using static PeakFit.Core.Models.EventModels.AllEventsInfoModel;
 namespace PeakFit.Web.Controllers
 {
-    public class EventController(IRepository repository) : Controller
+    [Authorize]
+    public class EventController(IEventService eventService) : Controller
     {
-        public Task<IActionResult> All()
+        [HttpGet]
+        [AllowAnonymous]
+        public async Task<IActionResult> All(IEnumerable<AllEventsInfoModel> model)
         {
-
-            return View();
+            model = await eventService.AllEventsAsync();
+            return View(model);
         }
     }
 }
