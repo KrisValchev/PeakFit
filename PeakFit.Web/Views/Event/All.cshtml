@@ -1,0 +1,25 @@
+﻿@using static PeakFit.Web.Extensions.ServiceCollectionExtension
+@model IEnumerable<PeakFit.Core.Models.EventModels.AllEventsInfoModel>
+@{
+    ViewData["Title"] = "All Events";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+<link rel="stylesheet" href="~/css/eventCard.css">
+<section class="event-section">
+    @foreach (var _event in Model)
+    {
+        <div class="event-item">
+            <img src="@_event.ImageUrl" alt="Event Image" class="event-image">
+            <div class="event-details">
+                <h3 class="event-title">@_event.Title</h3>
+                <p class="event-date">Start Date: @_event.StartDate</p>
+                <p class="event-time">Start Hour: @_event.StartHour</p>
+            </div>
+        </div>
+    }
+    
+
+    @* Add more event divs as needed *@
+</section>
+
