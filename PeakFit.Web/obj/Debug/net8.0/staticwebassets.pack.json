@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PeakFit.Web.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
+      "PackagePath": "staticwebassets\\css\\eventCard.css"
+    },
+    {
       "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
