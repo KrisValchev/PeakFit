@@ -10,3 +10,7 @@ C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\Pe
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\refint\PeakFit.Core.dll
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.pdb
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\ref\PeakFit.Core.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.csproj.AssemblyReference.cache
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Infrastructure.dll
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Infrastructure.pdb
+C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit..22AA1925.Up2Date
