@@ -16,7 +16,7 @@ namespace PeakFit.Infrastructure.Data.Models
         public string Title { get; set; } = null!;
         [Comment("Event's banner")]
         [DefaultValue("https://www.hussle.com/blog/wp-content/uploads/2020/12/Gym-structure-1080x675.png")]
-        public string? ImageUrl { get; set; } = null!;
+        public string ImageUrl { get; set; } = null!;
         [Required]
         [Comment("Event's description")]
         [MaxLength(DescriptionMaxLength)]

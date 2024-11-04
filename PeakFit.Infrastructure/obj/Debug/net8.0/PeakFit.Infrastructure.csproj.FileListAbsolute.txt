@@ -13,6 +13,3 @@ C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.pdb
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.genruntimeconfig.cache
 C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\ref\PeakFit.Infrastructure.dll
-C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Core.dll
-C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Core.pdb
-C:\Users\kvalc\OneDrive\Desktop\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit..22C2217F.Up2Date

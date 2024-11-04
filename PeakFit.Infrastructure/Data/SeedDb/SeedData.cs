@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static PeakFit.Core.Constants.RoleConstants;
 
 namespace PeakFit.Infrastructure.Data.SeedDb
 {
@@ -63,7 +62,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 FirstName = "Admin",
                 LastName = "Admin",
                 Gender = "Male",
-                Role = AdminRole,
+                Role = "Administrator",
                 ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
             };
 
@@ -81,7 +80,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 FirstName = "User",
                 LastName = "User",
                 Gender = "Male",
-                Role = UserRole,
+                Role = "User",
                 ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
             };
 
@@ -99,7 +98,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 FirstName = "Trainer",
                 LastName = "Trainer",
                 Gender = "Female",
-                Role = TrainerRole,
+                Role = "Trainer",
                 ProfilePicture = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png"
             };
 

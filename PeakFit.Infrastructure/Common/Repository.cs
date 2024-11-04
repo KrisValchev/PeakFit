@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using PeakFit.Web.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,8 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Infrastructure.Common
 {
-    public class Repository(DbContext context) : IRepository
-    {
+    public class Repository(ApplicationDbContext context) : IRepository
+    {  
         public DbSet<T> DbSet<T>() where T : class
         {
             return context.Set<T>();
