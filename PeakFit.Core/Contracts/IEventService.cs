@@ -9,6 +9,8 @@ namespace PeakFit.Core.Contracts
 {
     public interface IEventService
     {
-        public Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync();
+         Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync();
+         Task<EventDetailsModel> DetailsAsync(int id);
+        Task<bool> ExistAsync(int id);
     }
 }
