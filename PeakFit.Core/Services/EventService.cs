@@ -16,7 +16,7 @@ namespace PeakFit.Core.Services
 {
     public class EventService(IRepository repository) : IEventService
     {
-       // AllEvents Async method for displaying all events
+        // AllEvents Async method for displaying all events
         public async Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync()
         {
             var events = repository.AllReadOnly<Event>().Where(e => e.IsDeleted == false);
@@ -32,6 +32,35 @@ namespace PeakFit.Core.Services
 
             }).ToListAsync();
             return allEvents;
+        }
+        //DetailsAsync method is used to to get details about a event and it takes eventId as parameter and returns EventDetailsModel
+        public async Task<EventDetailsModel> DetailsAsync(int id)
+        {
+            var events = repository.AllReadOnly<Event>().Where(e => e.IsDeleted == false && e.Id == id);
+            var @event = await events.Select(e => new EventDetailsModel()
+            {
+                Id = e.Id,
+                TrainerId = e.UserId,
+                Title = e.Title,
+                StartDate = e.StartDate.ToString(StartDateTimeFormat),
+                StartHour = e.StartHour.ToString(StartHourTimeFormat),
+                ImageUrl = e.ImageUrl,
+                Description = e.Description,
+                TrainerName=$"{e.User.FirstName} {e.User.LastName}"
+            }).FirstOrDefaultAsync();
+            return @event;
+        }
+
+        public async Task<bool> ExistAsync(int id)
+        {
+            if(await repository.GetByIdAsync<Event>(id) != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
