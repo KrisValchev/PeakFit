@@ -19,7 +19,10 @@ html {
 
 body {
   margin-bottom: 60px;
+  display:flex;
+  flex-direction:column;
 }
+
 
 /* Home Page */
 /* Container for both images */
@@ -28,7 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px; /* Space between the two photos */
-    padding: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 /* Each photo container */

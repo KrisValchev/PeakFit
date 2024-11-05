@@ -1,7 +1,4 @@
-﻿body {
-
-}
-.event-section {
+﻿.event-section {
     display: flex;
     flex-direction: column;
     gap: 20px;
