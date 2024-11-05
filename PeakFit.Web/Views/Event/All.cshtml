@@ -16,10 +16,11 @@
                 <p class="event-date">Start Date: @_event.StartDate</p>
                 <p class="event-time">Start Hour: @_event.StartHour</p>
             </div>
+            <div>
+                <a asp-controller="Event" asp-action="Details" asp-route-id="@_event.Id"  name="details" class="btn btn-info" style="color:white">More info</a>
+            </div>
         </div>
     }
     
-
-    @* Add more event divs as needed *@
 </section>
 
