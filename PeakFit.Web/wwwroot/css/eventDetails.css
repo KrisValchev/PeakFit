@@ -1,0 +1,61 @@
+﻿/* Event Details Page */
+.event-details {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Image Styling */
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Title and Date/Time */
+.event-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.event-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Start Date and Hour */
+.event-date-time {
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.event-start-date,
+.event-start-hour {
+    margin: 0;
+}
+
+/* Trainer and Description */
+.event-trainer {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
