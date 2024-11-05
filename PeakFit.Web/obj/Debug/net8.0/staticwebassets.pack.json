@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\eventCard.css"
     },
     {
+      "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventDetails.css",
+      "PackagePath": "staticwebassets\\css\\eventDetails.css"
+    },
+    {
       "Id": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
