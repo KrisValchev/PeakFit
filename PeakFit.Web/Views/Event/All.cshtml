@@ -1,4 +1,5 @@
-﻿@using static PeakFit.Web.Extensions.ServiceCollectionExtension
+﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
+@using static PeakFit.Core.Constants.RoleConstants
 @model IEnumerable<PeakFit.Core.Models.EventModels.AllEventsInfoModel>
 @{
     ViewData["Title"] = "All Events";
@@ -16,8 +17,14 @@
                 <p class="event-date">Start Date: @_event.StartDate</p>
                 <p class="event-time">Start Hour: @_event.StartHour</p>
             </div>
-            <div>
-                <a asp-controller="Event" asp-action="Details" asp-route-id="@_event.Id"  name="details" class="btn btn-info" style="color:white">More info</a>
+            <div class="buttons" >
+                @{
+                    if (User?.Identity?.IsAuthenticated == true && User.IsTrainer())
+                    {
+                        <a asp-controller="Event" asp-action="Edit" asp-route-id="@_event.Id" name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
+                    }
+                }
+                <a asp-controller="Event" asp-action="Details" asp-route-id="@_event.Id"  name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
             </div>
         </div>
     }
