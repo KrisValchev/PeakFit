@@ -12,6 +12,7 @@ namespace PeakFit.Core.Contracts
          Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync();
          Task<EventDetailsModel> DetailsAsync(int id);
         Task<bool> ExistAsync(int id);
-        Task<EditEventModel> EditAsync(int id);
+        Task EditAsync(int id,EditEventModel model);
+        Task<EditEventModel> GetEventFromEditEventViewModelByIdAsync(int id);
     }
 }

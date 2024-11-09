@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Infrastructure.Common
 {
-    public class Repository(ApplicationDbContext context) : IRepository
-    {  
+    public class Repository : IRepository
+    {
+        protected DbContext context;
+        public Repository(ApplicationDbContext _context)
+        {
+            context = _context;   
+        }
         public DbSet<T> DbSet<T>() where T : class
         {
             return context.Set<T>();

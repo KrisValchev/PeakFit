@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using PeakFit.Infrastructure.Data.Models;
 using System;
@@ -47,11 +48,12 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             SeedEvents();
             SeedComments();
         }
+        
         private void SeedUsers()
         {
             //Admin
             var hasher = new PasswordHasher<ApplicationUser>();
-
+            
             Admin = new ApplicationUser()
             {
                 Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
@@ -68,7 +70,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
             Admin.PasswordHash =
             hasher.HashPassword(Admin, "Admin1234");
-
             //User
             User = new ApplicationUser()
             {

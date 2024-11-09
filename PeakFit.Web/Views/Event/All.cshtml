@@ -17,11 +17,11 @@
                 <p class="event-date">Start Date: @_event.StartDate</p>
                 <p class="event-time">Start Hour: @_event.StartHour</p>
             </div>
-            <div class="buttons" >
+            <div class="buttons" style="display: flex;flex-direction: row; gap:5px;">
                 @{
-                    if (User?.Identity?.IsAuthenticated == true && User.IsTrainer())
+                    if (User?.Identity?.IsAuthenticated == true && (User.IsTrainer()|| User.IsAdmin()))
                     {
-                        <a asp-controller="Event" asp-action="Edit" asp-route-id="@_event.Id" name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
+                        <a asp-controller="Event" asp-action="Edit" asp-route-id="@_event.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
                     }
                 }
                 <a asp-controller="Event" asp-action="Details" asp-route-id="@_event.Id"  name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
