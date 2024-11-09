@@ -17,6 +17,24 @@ namespace PeakFit.Core.Services
 {
     public class EventService(IRepository repository) : IEventService
     {
+        //CreateAsync method is used to create new event and stores it in the database, it takes event model and trainer as parameters and returns the id of the newly created event 
+        public async Task<int> CreateAsync(AddEventModel model, ApplicationUser trainer)
+        {
+            var newEvent=new Event()
+            {
+                Title=model.Title,
+                Description=model.Description,
+                ImageUrl=model.ImageUrl,
+                StartDate=DateTime.Parse(model.StartDate),
+                StartHour=DateTime.Parse(model.StartHour),
+                UserId=trainer.Id,
+            };
+            await repository.AddAsync<Event>(newEvent);
+            await repository.SaveChangesAsync();
+            return newEvent.Id;
+
+        }
+        
         // AllEvents Async method for displaying all events
         public async Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync()
         {

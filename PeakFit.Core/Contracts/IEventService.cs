@@ -1,4 +1,5 @@
 ﻿using PeakFit.Core.Models.EventModels;
+using PeakFit.Infrastructure.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ namespace PeakFit.Core.Contracts
          Task<EventDetailsModel> DetailsAsync(int id);
         Task<bool> ExistAsync(int id);
         Task EditAsync(int id,EditEventModel model);
+        Task<int> CreateAsync(AddEventModel model,ApplicationUser trainer);
         Task<EditEventModel> GetEventFromEditEventViewModelByIdAsync(int id);
     }
 }
