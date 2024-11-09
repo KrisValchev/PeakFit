@@ -26,6 +26,7 @@ namespace PeakFit.Core.Services
             {
                 Id = e.Id,
                 TrainerId = e.UserId,
+                TrainerUserName=e.User.UserName ?? string.Empty,
                 Title = e.Title,
                 StartDate = e.StartDate.ToString(StartDateTimeFormat),
                 StartHour = e.StartHour.ToString(StartHourTimeFormat),
@@ -93,7 +94,6 @@ namespace PeakFit.Core.Services
                 ImageUrl = e.ImageUrl,
                 StartDate = e.StartDate.ToString(StartDateTimeFormat),
                 StartHour = e.StartHour.ToString(StartHourTimeFormat),
-                TrainerId = e.UserId
             }).FirstOrDefaultAsync();
             return _event;
         }

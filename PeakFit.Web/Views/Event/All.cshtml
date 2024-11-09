@@ -19,7 +19,7 @@
             </div>
             <div class="buttons" style="display: flex;flex-direction: row; gap:5px;">
                 @{
-                    if (User?.Identity?.IsAuthenticated == true && (User.IsTrainer()|| User.IsAdmin()))
+                    if(User?.Identity?.Name==_event.TrainerUserName || User.IsAdmin())
                     {
                         <a asp-controller="Event" asp-action="Edit" asp-route-id="@_event.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
                     }
