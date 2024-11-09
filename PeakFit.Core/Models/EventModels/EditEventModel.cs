@@ -26,6 +26,5 @@ namespace PeakFit.Core.Models.EventModels
         [Required(ErrorMessage = RequiredErrorMessage)]
         [Display(Name = "Event start hour")]
         public string StartHour { get; set; } = null!;
-        public string TrainerId { get; set; } = null!;
     }
 }
