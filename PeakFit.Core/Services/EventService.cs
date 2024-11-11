@@ -66,7 +66,8 @@ namespace PeakFit.Core.Services
                 StartHour = e.StartHour.ToString(StartHourTimeFormat),
                 ImageUrl = e.ImageUrl,
                 Description = e.Description,
-                TrainerName=$"{e.User.FirstName} {e.User.LastName}"
+                TrainerName=$"{e.User.FirstName} {e.User.LastName}",
+                PhoneNumber=e.User.PhoneNumber
             }).FirstOrDefaultAsync();
             return @event;
         }
