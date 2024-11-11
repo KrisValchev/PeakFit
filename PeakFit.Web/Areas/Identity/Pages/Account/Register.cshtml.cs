@@ -24,6 +24,7 @@ using static PeakFit.Infrastructure.Constraints.ApplicationUserDataConstraints;
 using PeakFit.Infrastructure.Data.Models;
 using static PeakFit.Core.Constants.RoleConstants;
 using Microsoft.AspNetCore.Connections.Features;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace PeakFit.Web.Areas.Identity.Pages.Account
 {
@@ -127,9 +128,8 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 			[Display(Name = "Profile picture")]
 			[DefaultValue("https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg")]
 			public string ProfilePicture { get; set; }
-			[Required]
-			[Display(Name = "Role")]
-			public string Role { get; set; }
+
+		
 		}
 
 
@@ -149,6 +149,7 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 		{
 			returnUrl ??= Url.Content("~/");
 			ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+			
 			if (ModelState.IsValid)
 			{
 				//---user properties
@@ -156,7 +157,6 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 				user.FirstName = Input.FirstName;
 				user.LastName = Input.LastName;
 				user.Gender = Input.Gender;
-				user.Role= Input.Role;
 				if (user.ProfilePicture == null)
 				{
 					user.ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg";
@@ -184,25 +184,14 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 					await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
 						$"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
 					//adding user to whatever role is checked(user or trainer)
-					if(user.Role==UserRole)
-					{
+
+						//temporary solution
 						//searching if role exists
 						var userRole = _roleManager.FindByNameAsync(UserRole).Result;
-
-						if (userRole != null)
-						{
-							//if role exists adding the user to this role
-							 await _userManager.AddToRoleAsync(user, userRole.Name);
-						}
-					}
-					if (user.Role == TrainerRole)
+					if (userRole != null)
 					{
-						var trainerRole = _roleManager.FindByNameAsync(TrainerRole).Result;
-
-						if (trainerRole != null)
-						{
-							await _userManager.AddToRoleAsync(user, trainerRole.Name);
-						}
+						//if role exists adding the user to this role
+						await _userManager.AddToRoleAsync(user, userRole.Name);
 					}
 
 					if (_userManager.Options.SignIn.RequireConfirmedAccount)
