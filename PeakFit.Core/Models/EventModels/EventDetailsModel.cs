@@ -27,6 +27,8 @@ namespace PeakFit.Core.Models.EventModels
         public string TrainerName { get; set; } = null!;
         [Display(Name ="Event description")]
         public string Description {  get; set; } = null!;
-        //to add comments
-    }
+		[Display(Name = "Event trainer phone number")]
+		public string PhoneNumber { get; set; } = null!;
+		//to add comments
+	}
 }
