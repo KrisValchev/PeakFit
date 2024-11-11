@@ -14,6 +14,9 @@ namespace PeakFit.Infrastructure.Constraints
 		public const int LastNameMinLength = 2;
 		public const int LastNameMaxLength = 30;
 
+		public const int PhoneNumberMinLength = 7;
+		public const int PhoneNumberMaxLength = 15;
+
 		public const int AboutDescriptionMinLength = 10;
 		public const int AboutDescriptionMaxLength = 200;
 	}
