@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeakFit.Web.Data;
 
@@ -11,9 +12,11 @@ using PeakFit.Web.Data;
 namespace PeakFit.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241110210750_TrainerSeedDataPhoneNumberAdded")]
+    partial class TrainerSeedDataPhoneNumberAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -401,7 +404,7 @@ namespace PeakFit.Web.Data.Migrations
                             ImageUrl = "https://raceid.com/organizer/wp-content/uploads/2022/08/cost-marathon-featured-image-blog-10.png",
                             IsDeleted = false,
                             StartDate = new DateTime(2024, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartHour = new DateTime(2024, 11, 11, 10, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartHour = new DateTime(2024, 11, 10, 10, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Marathon",
                             UserId = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926"
                         });
@@ -599,6 +602,11 @@ namespace PeakFit.Web.Data.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasComment("User profile picture");
 
+                    b.Property<string>("Role")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)")
+                        .HasComment("User's role");
+
                     b.HasDiscriminator().HasValue("ApplicationUser");
 
                     b.HasData(
@@ -606,62 +614,65 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "524519ca-50b8-4469-a912-6ac900021cec",
+                            ConcurrencyStamp = "f351086d-75c8-446f-8f3f-5f2939424905",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "user@gmail.com",
                             NormalizedUserName = "user@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAVC2n4WZYRKhn6v51Q09wRxQy9hZFuyPj5yOsdwHfM5xH+DDzmi3KTU/nTpQI4XjA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDk1C4JD+g6NOtDFmxYv+RQpyCqKjnuVBEoIIho6i08SwqjMtr/50TJH1Q6w0q4htw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "dd5f545f-ba7f-4bfe-bdd1-cda833b4f7f5",
+                            SecurityStamp = "1def924e-9673-4280-81b9-7463dda5574c",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com",
                             FirstName = "User",
                             Gender = "Male",
                             LastName = "User",
-                            ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
+                            ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg",
+                            Role = "User"
                         },
                         new
                         {
                             Id = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2dc88107-7529-4514-ae3b-40a8e90a7668",
+                            ConcurrencyStamp = "894419cb-ed7e-41f7-91b4-3f3c00f61374",
                             Email = "trainer@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "trainer@gmail.com",
                             NormalizedUserName = "trainer@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPk+gFVsHE0v10RyzKwAguTkdoYcq/NiaT0iDPODeWNG15ZstZWyjf58gS+8B76KRg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOsZ2B/Kjum+Iko3CNgMa+6sxiMPPF4GHCC2B5mM/dLgYCWM1He8o1D5iCN/W9j5jA==",
                             PhoneNumber = "0878080808",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "8719a74f-3b8a-4d91-8bd7-773acfe6a308",
+                            SecurityStamp = "07feab7e-14f8-4b85-8006-5d38d0369927",
                             TwoFactorEnabled = false,
                             UserName = "trainer@gmail.com",
                             FirstName = "Trainer",
                             Gender = "Female",
                             LastName = "Trainer",
-                            ProfilePicture = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png"
+                            ProfilePicture = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png",
+                            Role = "Trainer"
                         },
                         new
                         {
                             Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8c38d50e-d007-47dc-9f0e-4690c514b7af",
+                            ConcurrencyStamp = "56744b37-8042-436a-baf9-5727516a11f1",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFk+CfhSuhFvnSV0w4FzOj9oEF3q87a8Edj7Zafu9eo4UsaIcKTcfbo6908ZcvGaJw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELcer8kdtbF69RP9NhTe/2bRMK1sTljm9Qr5D3N23L7hrcd61VLHmCmhNUmt+Jylaw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "220bd0b3-0af7-4a98-b7c7-ed8ff56d6aba",
+                            SecurityStamp = "87535e52-645f-4ca9-8562-1077a6bf7773",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com",
                             FirstName = "Admin",
                             Gender = "Male",
                             LastName = "Admin",
-                            ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
+                            ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png",
+                            Role = "Administrator"
                         });
                 });
 

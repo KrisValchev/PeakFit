@@ -64,7 +64,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 FirstName = "Admin",
                 LastName = "Admin",
                 Gender = "Male",
-                Role = "Administrator",
                 ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
             };
 
@@ -81,7 +80,6 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 FirstName = "User",
                 LastName = "User",
                 Gender = "Male",
-                Role = "User",
                 ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
             };
 
@@ -98,8 +96,8 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 NormalizedEmail = "trainer@gmail.com",
                 FirstName = "Trainer",
                 LastName = "Trainer",
+                PhoneNumber= "0878080808",
                 Gender = "Female",
-                Role = "Trainer",
                 ProfilePicture = "https://www.pngitem.com/pimgs/m/146-1468479_my-profile-icon-blank-profile-picture-circle-hd.png"
             };
 
