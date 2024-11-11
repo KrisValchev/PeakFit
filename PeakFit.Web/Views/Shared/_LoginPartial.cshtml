@@ -1,14 +1,21 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using PeakFit.Infrastructure.Data.Models
+@using PeakFit.Web.Extensions;
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
-
+@inject PeakFit.Core.Contracts.ITrainerService trainerService
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+        if (await trainerService.IsInTrainerRoleAsync(User.Id())==false)
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Trainer" asp-action="Become">Become Trainer</a>
+            </li>
+        }
     <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
+        <p class="nav-link text-dark" >Hello @User.Identity?.Name!</p>
     </li>
     <li class="nav-item">
         <form  class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">

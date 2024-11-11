@@ -1,4 +1,5 @@
 ﻿@using PeakFit.Web.Extensions
+@inject PeakFit.Core.Contracts.ITrainerService trainerService
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +29,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="All">Events</a>
                             </li>
-                            @if (User.IsTrainer() || User.IsAdmin())
+                            @if (await trainerService.IsInTrainerRoleAsync(User.Id()) == true || User.IsAdmin())
                             {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Create">Add Event</a>
