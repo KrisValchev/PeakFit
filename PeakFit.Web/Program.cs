@@ -49,8 +49,8 @@ namespace PeakFit.Web
 				pattern: "{controller=Home}/{action=Index}/{id?}");
 			app.MapRazorPages();
 			//Adding roles
-			app.AddAdminRoleAsync().Wait();
 			app.AddTrainerRoleAsync().Wait();
+			app.AddAdminRoleAsync().Wait();
 			app.AddUserRoleAsync().Wait();
 			app.Run();
 		}

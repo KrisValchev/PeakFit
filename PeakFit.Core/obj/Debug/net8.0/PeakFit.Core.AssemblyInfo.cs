@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeakFit.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12bd7b3016be1e0806cd7187abfaf2445ac709ac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a74fe3760e6b50d64f2b9305b831794a68d2279")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeakFit.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeakFit.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

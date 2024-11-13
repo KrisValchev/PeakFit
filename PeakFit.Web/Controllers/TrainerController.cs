@@ -14,7 +14,7 @@ using PeakFit.Web.Attributes;
 namespace PeakFit.Web.Controllers
 {
 
-    public class Trainer(ITrainerService trainerService) : Controller
+    public class TrainerController(ITrainerService trainerService) : Controller
     {
         [HttpGet]
         [NotATrainer]

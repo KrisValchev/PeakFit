@@ -14,12 +14,15 @@ namespace PeakFit.Web.Extensions
 			if (userManager != null && roleManager != null && await roleManager.RoleExistsAsync(AdminRole) == false)
 			{
 				var adminRole = new IdentityRole(AdminRole);
+				var trainerRole = new IdentityRole(TrainerRole);
 				await roleManager.CreateAsync(adminRole);
                 var admin = await userManager.FindByEmailAsync("admin@gmail.com");
 
                 if (admin != null)
                 {
                     await userManager.AddToRoleAsync(admin, adminRole.Name);
+                    await userManager.AddToRoleAsync(admin, trainerRole.Name);
+                    
                 }
             }
 

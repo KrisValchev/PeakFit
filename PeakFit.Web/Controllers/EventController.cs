@@ -9,8 +9,10 @@ using PeakFit.Infrastructure.Data.Models;
 using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions;
 using static PeakFit.Core.Constants.RoleConstants;
 using static PeakFit.Infrastructure.Constraints.EventDataConstraints;
+using static PeakFit.Web.Attributes.MustBeTrainerAttribute;
 using System.Globalization;
 using System.Diagnostics.Tracing;
+using PeakFit.Web.Attributes;
 namespace PeakFit.Web.Controllers
 {
 
@@ -94,7 +96,7 @@ namespace PeakFit.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = $"{AdminRole},{TrainerRole}")]
+        [MustBeTrainer]
         public async Task<IActionResult> Create()
         {
             var model = new AddEventModel();
@@ -102,7 +104,7 @@ namespace PeakFit.Web.Controllers
             return View(model);
         }
         [HttpPost]
-        [Authorize(Roles = $"{AdminRole},{TrainerRole}")]
+        [MustBeTrainer]
         public async Task<IActionResult> Create(AddEventModel model)
         {
             if (ModelState.IsValid == false)

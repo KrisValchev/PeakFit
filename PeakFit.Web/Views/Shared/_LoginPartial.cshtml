@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @using PeakFit.Infrastructure.Data.Models
 @using PeakFit.Web.Extensions;
+@using static PeakFit.Core.Constants.RoleConstants;
 
 @inject SignInManager<ApplicationUser> SignInManager
 @inject UserManager<ApplicationUser> UserManager
@@ -8,7 +9,7 @@
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
-        if (await trainerService.IsInTrainerRoleAsync(User.Id())==false)
+        if (await trainerService.IsInTrainerRoleAsync(User.Id())==false && User.IsInRole(AdminRole)==false)
         {
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Trainer" asp-action="Become">Become Trainer</a>
