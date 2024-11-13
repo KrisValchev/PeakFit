@@ -12,6 +12,7 @@ namespace PeakFit.Infrastructure.Constraints
         public const string LengthErrorMessage = "The \"{0}\" field needs to be between {2} and {1} symbols!";
         // Required Error Message
         public const string RequiredErrorMessage = "The \"{0}\" field is required!";
-
+        //Event can't start with previous date Error Message
+        public const string EventCantStartWithPreviousDateErrorMessage = "The event can't start with previous date!";
     }
 }
