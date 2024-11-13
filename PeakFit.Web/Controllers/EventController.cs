@@ -128,5 +128,25 @@ namespace PeakFit.Web.Controllers
             int newEvent=await eventService.CreateAsync(model, trainerId);
             return RedirectToAction(nameof(Details), new {id=newEvent});   
         }
+        [HttpGet]
+        [Authorize(Roles = $"{AdminRole},{TrainerRole}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            //getting the current user
+            var currentUser = await userManager.GetUserAsync(User);
+
+            if (await eventService.ExistAsync(id) == false)
+            {
+                //should return BadRequest
+                return RedirectToAction(nameof(All));
+            }
+            var _event = await eventService.DetailsAsync(id);
+            if (_event.TrainerId != currentUser.Id && User.IsAdmin() == false)
+            {
+                return Unauthorized();
+            }
+            await eventService.DeleteAsync(id);
+            return RedirectToAction(nameof(All));
+        }
     }
 }

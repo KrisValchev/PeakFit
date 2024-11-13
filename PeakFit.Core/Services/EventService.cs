@@ -91,7 +91,8 @@ namespace PeakFit.Core.Services
         //ExistAsync method is used to to check if event is existing or not ,and it takes eventId as parameter and returns bool
         public async Task<bool> ExistAsync(int id)
         {
-            if(await repository.GetByIdAsync<Event>(id) != null)
+            var _event = await repository.GetByIdAsync<Event>(id);
+            if (_event.IsDeleted ==false)
             {
                 return true;
             }
@@ -115,6 +116,22 @@ namespace PeakFit.Core.Services
                 StartHour = e.StartHour.ToString(StartHourTimeFormat),
             }).FirstOrDefaultAsync();
             return _event;
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            var commentsToRemove = await repository.AllReadOnly<Comment>()
+               .Where(c => c.EventId == id)
+               .ToListAsync();
+
+            foreach (var comment in commentsToRemove)
+            {
+                comment.IsDeleted = true;
+            }
+
+            var _event = await repository.GetByIdAsync<Event>(id);
+            _event.IsDeleted = true;
+            await repository.SaveChangesAsync();
         }
     }
 }

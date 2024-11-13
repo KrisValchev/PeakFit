@@ -16,5 +16,6 @@ namespace PeakFit.Core.Contracts
         Task EditAsync(int id,EditEventModel model);
         Task<int> CreateAsync(AddEventModel model,ApplicationUser trainer);
         Task<EditEventModel> GetEventFromEditEventViewModelByIdAsync(int id);
+        Task DeleteAsync(int id);
     }
 }
