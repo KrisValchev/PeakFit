@@ -11,7 +11,9 @@ namespace PeakFit.Web.Extensions
     public static class ServiceCollectionExtension
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
-        { 
+        {
+            services.AddScoped<IDeleteEventWithExpiredDate, DeleteEventWithExpiredDate>();
+            services.AddHostedService<ExpiredEventCleanupService>();
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<ITrainerService, TrainerService>();
             return services;
