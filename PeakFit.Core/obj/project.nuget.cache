@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nV+HXsVmphs+WrRSC7ItLnp/HjeRW9UaH/fUiq61l3wWXBKQV2aB3ZImx+5eiA4kQoW6vrwJQIPpeuuYgPHLOQ==",
+  "dgSpecHash": "xprrDOQj+wqUmC5vVu5askVMENVjBImXHPHzTv+n7cri5PpjIzj8PJnQgJ6qBMdt/pRRteOhcfS6KnuQ3+vSVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
+  "projectFilePath": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kvalc\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kvalc\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

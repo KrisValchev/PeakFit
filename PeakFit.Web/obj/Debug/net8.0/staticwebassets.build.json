@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nDjz3ptlmsgrE372qZTUE0B4fTycbUl1O8YOvQ8o48A=",
+  "Hash": "cDLUrp7hQpQNY3TeHpFxmerYDgPtljI/wRww7vV6log=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "PeakFit.Web\\wwwroot",
       "Source": "PeakFit.Web",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "C:\\Users\\kvalc\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.10\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PeakFit.Web.styles.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PeakFit.Web.styles.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "PeakFit.Web.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PeakFit.Web.styles.css"
+      "OriginalItemSpec": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PeakFit.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "PeakFit.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css"
+      "OriginalItemSpec": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\editEventForm.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\editEventForm.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "css/editEventForm.css",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\editEventForm.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "css/eventCard.css",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\eventCard.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventDetails.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventDetails.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "css/eventDetails.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\css\\eventDetails.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\rooftop-yoga.jpg",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\rooftop-yoga.jpg",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "images/rooftop-yoga.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\rooftop-yoga.jpg"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "images/weight-loss-exercise-plan.jpg",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\weight-loss-exercise-plan.jpg"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
       "BasePath": "_content/PeakFit.Web",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",

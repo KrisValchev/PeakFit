@@ -1,70 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\",
+  "WorkspaceRootPath": "D:\\PeakFit\\PeakFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\controllers\\trainercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\attributes\\notatrainerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\attributes\\notatrainerattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\views\\trainer\\become.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainer\\become.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.core\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|solutionrelative:peakfit.core\\services\\trainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.core\\contracts\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|solutionrelative:peakfit.core\\contracts\\itrainerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.core\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|solutionrelative:peakfit.core\\services\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\extensions\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\extensions\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\event\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\event\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.infrastructure\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|solutionrelative:peakfit.infrastructure\\data\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|solutionrelative:peakfit.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.infrastructure\\data\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|solutionrelative:peakfit.infrastructure\\data\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|c:\\users\\kvalc\\onedrive\\desktop\\peakfit\\peakfit\\peakfit.web\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\event\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,215 +22,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Become.cshtml",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Trainer\\Become.cshtml",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Trainer\\Become.cshtml",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Trainer\\Become.cshtml",
-              "RelativeToolTip": "PeakFit.Web\\Views\\Trainer\\Become.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\Create.cshtml",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Event\\Create.cshtml",
+              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\Create.cshtml",
+              "RelativeToolTip": "PeakFit.Web\\Views\\Event\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T18:14:36.429Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T19:38:22.121Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "NotATrainerAttribute.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Attributes\\NotATrainerAttribute.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Attributes\\NotATrainerAttribute.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Attributes\\NotATrainerAttribute.cs",
-              "RelativeToolTip": "PeakFit.Web\\Attributes\\NotATrainerAttribute.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAByAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T21:31:55.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PeakFit.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAEAAAA9AAAA",
+              "Title": "All.cshtml",
+              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\All.cshtml",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Event\\All.cshtml",
+              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\All.cshtml",
+              "RelativeToolTip": "PeakFit.Web\\Views\\Event\\All.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T21:19:41.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "PeakFit.Infrastructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T20:41:46.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EventService.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\EventService.cs",
-              "RelativeDocumentMoniker": "PeakFit.Core\\Services\\EventService.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\EventService.cs",
-              "RelativeToolTip": "PeakFit.Core\\Services\\EventService.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAgwFgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T20:33:54.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Common\\Repository.cs",
-              "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\Common\\Repository.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Common\\Repository.cs",
-              "RelativeToolTip": "PeakFit.Infrastructure\\Data\\Common\\Repository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T20:33:06.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationBuilderExtension.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Extensions\\ApplicationBuilderExtension.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Extensions\\ApplicationBuilderExtension.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Extensions\\ApplicationBuilderExtension.cs",
-              "RelativeToolTip": "PeakFit.Web\\Extensions\\ApplicationBuilderExtension.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:09:10.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "PeakFit.Infrastructure\\Data\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwB0AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T19:01:35.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ServiceCollectionExtension.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Extensions\\ServiceCollectionExtension.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Extensions\\ServiceCollectionExtension.cs",
-              "RelativeToolTip": "PeakFit.Web\\Extensions\\ServiceCollectionExtension.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwA8AAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T18:53:38.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EventController.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\EventController.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\EventController.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\EventController.cs",
-              "RelativeToolTip": "PeakFit.Web\\Controllers\\EventController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCcAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T18:40:18.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T19:36:34.174Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TrainerController.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\TrainerController.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\TrainerController.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\TrainerController.cs",
-              "RelativeToolTip": "PeakFit.Web\\Controllers\\TrainerController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAASwBgAAAAfAAAA",
+              "Title": "EventController.cs",
+              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\EventController.cs",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\EventController.cs",
+              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\EventController.cs",
+              "RelativeToolTip": "PeakFit.Web\\Controllers\\EventController.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwGAAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T18:37:10.675Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainerService.cs",
-              "RelativeDocumentMoniker": "PeakFit.Core\\Services\\TrainerService.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainerService.cs",
-              "RelativeToolTip": "PeakFit.Core\\Services\\TrainerService.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwCMAAAB2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T17:58:34.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ITrainerService.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Contracts\\ITrainerService.cs",
-              "RelativeDocumentMoniker": "PeakFit.Core\\Contracts\\ITrainerService.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\Contracts\\ITrainerService.cs",
-              "RelativeToolTip": "PeakFit.Core\\Contracts\\ITrainerService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T17:56:44.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "PeakFit.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T21:18:26.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-10T19:59:12.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "PeakFit.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAKkAAAAAAAAAAAAqwJgAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T19:53:09.258Z",
+              "WhenOpened": "2024-11-13T19:33:26.952Z",
               "EditorCaption": ""
             }
           ]

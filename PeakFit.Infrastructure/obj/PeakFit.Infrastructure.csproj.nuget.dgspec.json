@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {}
+    "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
+    "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj",
+        "projectUniqueName": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj",
         "projectName": "PeakFit.Infrastructure",
-        "projectPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj",
+        "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\kvalc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\obj\\",
+        "outputPath": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kvalc\\AppData\\Roaming\\NuGet\\NuGet.Config",

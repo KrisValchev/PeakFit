@@ -3270,11 +3270,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
+      "projectUniqueName": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
       "projectName": "PeakFit.Core",
-      "projectPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
+      "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj",
       "packagesPath": "C:\\Users\\kvalc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Core\\obj\\",
+      "outputPath": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kvalc\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3291,8 +3291,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\kvalc\\OneDrive\\Desktop\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj"
+            "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
+              "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj"
             }
           }
         }
