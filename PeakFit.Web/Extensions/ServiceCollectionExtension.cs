@@ -16,6 +16,7 @@ namespace PeakFit.Web.Extensions
             services.AddHostedService<ExpiredEventCleanupService>();
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<ITrainerService, TrainerService>();
+            services.AddScoped<ITrainingProgramService, TrainingProgramService>();
             return services;
         }
         public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
