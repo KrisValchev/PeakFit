@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Infrastructure.Data.SeedDb
 {
-    public class ExerciseConfiguration : IEntityTypeConfiguration<Exercise>
+    internal class ProgramExerciseConfiguration : IEntityTypeConfiguration<ProgramExercise>
     {
-        public void Configure(EntityTypeBuilder<Exercise> builder)
+        public void Configure(EntityTypeBuilder<ProgramExercise> builder)
         {
             var data = new SeedData();
-            builder.HasData(new Exercise[] { data.HackSquat, data.Deadlift, data.BulgarianSplitSquat, data.LegPress });
+            builder.HasData(new ProgramExercise[] { data.HackSquatProgram,data.DeadliftProgram,data.BulgarianSplitSquatProgram,data.LegPressProgram});
         }
     }
 }

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f84cabf2f1798b45bd28a131d6d761479d35b755")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fdb6943ff96bfece7d766f46b54fcecb8643cb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeakFit.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

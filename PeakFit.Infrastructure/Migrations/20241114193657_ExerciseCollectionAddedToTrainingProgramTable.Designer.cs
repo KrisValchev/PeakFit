@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeakFit.Web.Data;
 
@@ -11,9 +12,11 @@ using PeakFit.Web.Data;
 namespace PeakFit.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241114193657_ExerciseCollectionAddedToTrainingProgramTable")]
+    partial class ExerciseCollectionAddedToTrainingProgramTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -401,7 +404,7 @@ namespace PeakFit.Web.Data.Migrations
                             ImageUrl = "https://raceid.com/organizer/wp-content/uploads/2022/08/cost-marathon-featured-image-blog-10.png",
                             IsDeleted = false,
                             StartDate = new DateTime(2024, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            StartHour = new DateTime(2024, 11, 15, 10, 0, 0, 0, DateTimeKind.Unspecified),
+                            StartHour = new DateTime(2024, 11, 14, 10, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Marathon",
                             UserId = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926"
                         });
@@ -425,52 +428,6 @@ namespace PeakFit.Web.Data.Migrations
                         .HasColumnType("nvarchar(max)")
                         .HasComment("Name of exercise");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.ToTable("Exercises");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 3,
-                            CategoryId = 5,
-                            ExerciseName = "HackSquat"
-                        },
-                        new
-                        {
-                            Id = 1,
-                            CategoryId = 5,
-                            ExerciseName = "Deadlift"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CategoryId = 5,
-                            ExerciseName = "BulgarianSplitSquat"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryId = 5,
-                            ExerciseName = "LegPress"
-                        });
-                });
-
-            modelBuilder.Entity("PeakFit.Infrastructure.Data.Models.ProgramExercise", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasComment("ProgramExercise identifier");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ExerciseId")
-                        .HasColumnType("int")
-                        .HasComment("Exercise identifier");
-
                     b.Property<int>("ProgramId")
                         .HasColumnType("int")
                         .HasComment("Program identifier");
@@ -485,17 +442,18 @@ namespace PeakFit.Web.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ExerciseId");
+                    b.HasIndex("CategoryId");
 
                     b.HasIndex("ProgramId");
 
-                    b.ToTable("ProgramExercises");
+                    b.ToTable("Exercises");
 
                     b.HasData(
                         new
                         {
                             Id = 3,
-                            ExerciseId = 3,
+                            CategoryId = 5,
+                            ExerciseName = "Hack Squat",
                             ProgramId = 1,
                             Reps = 10,
                             Sets = 3
@@ -503,7 +461,8 @@ namespace PeakFit.Web.Data.Migrations
                         new
                         {
                             Id = 1,
-                            ExerciseId = 1,
+                            CategoryId = 5,
+                            ExerciseName = "Deadlift",
                             ProgramId = 1,
                             Reps = 10,
                             Sets = 3
@@ -511,7 +470,8 @@ namespace PeakFit.Web.Data.Migrations
                         new
                         {
                             Id = 4,
-                            ExerciseId = 4,
+                            CategoryId = 5,
+                            ExerciseName = "Bulgarian Split Squat",
                             ProgramId = 1,
                             Reps = 10,
                             Sets = 3
@@ -519,7 +479,8 @@ namespace PeakFit.Web.Data.Migrations
                         new
                         {
                             Id = 2,
-                            ExerciseId = 2,
+                            CategoryId = 5,
+                            ExerciseName = "Leg Press",
                             ProgramId = 1,
                             Reps = 10,
                             Sets = 3
@@ -631,15 +592,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6c649a89-dbfa-41e3-8382-a3408ace8538",
+                            ConcurrencyStamp = "4b4cdf74-ccc5-405b-95e9-98ce9acbccaf",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "user@gmail.com",
                             NormalizedUserName = "user@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJuL/aWPHYFHaI0/GYnzo7WGb4y2Y6HEMfi9d4vzI9JMlZpi0ZRqbsnV5W0t/5Ewag==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEASm0tTw9AO1m+5NNAAYUvHDGTp6OTdsA7T7kbUS+GFv/iRKg0UjBr4/8IY9xQ5UPA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "41a5b3bd-893d-400a-9934-fe576139760b",
+                            SecurityStamp = "9a74e0df-ea55-4b79-a248-a5a6a4a495d0",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com",
                             FirstName = "User",
@@ -651,16 +612,16 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ce8da9d4-0596-41db-a49d-1877c37c0f71",
+                            ConcurrencyStamp = "a4a6b663-892a-468e-bfa5-267392528a4e",
                             Email = "trainer@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "trainer@gmail.com",
                             NormalizedUserName = "trainer@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJry98oATnN7OsxbR8r8JwrfbpP/viVYPp4+epfwe+8LuFaGnP1k2mYB3CibTDbG4A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO72H1Y7kmD6oulhLH0dkP4ENuEyH3CbNGXhps3xVlD9LyP3dbHtp0LC5pLdCS/Dfg==",
                             PhoneNumber = "0878080808",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "696460cb-145d-4073-9000-dfd6120a0af5",
+                            SecurityStamp = "2c7378e9-b4a6-4c5c-8fbc-872a11177a3c",
                             TwoFactorEnabled = false,
                             UserName = "trainer@gmail.com",
                             FirstName = "Trainer",
@@ -672,15 +633,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "35b0fc33-da4d-4578-8366-f25ba2229398",
+                            ConcurrencyStamp = "748c801d-1609-4811-8ee2-31c6fdec2d72",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGfTsCNT0dBx8/X54ZI8kBrB9q92D0XvzzcsMTf5PRt8z90SycrKGzrqzyQbYlGcBQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIrXXNRzZ2/HH9qezCtByhG2EaYGRRiCbWUi0kP5FwLodikm0BHC7rSo901KqRoE/g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ee9cb157-a8b0-4d77-b088-7177cf75ac41",
+                            SecurityStamp = "ec861c35-ad9e-400e-a633-43e728db15dd",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com",
                             FirstName = "Admin",
@@ -779,24 +740,13 @@ namespace PeakFit.Web.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("PeakFit.Infrastructure.Data.Models.ProgramExercise", b =>
-                {
-                    b.HasOne("PeakFit.Infrastructure.Data.Models.Exercise", "Exercise")
-                        .WithMany()
-                        .HasForeignKey("ExerciseId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("PeakFit.Infrastructure.Data.Models.TrainingProgram", "Program")
                         .WithMany("Exercises")
                         .HasForeignKey("ProgramId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Exercise");
+                    b.Navigation("Category");
 
                     b.Navigation("Program");
                 });

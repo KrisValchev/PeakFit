@@ -25,11 +25,16 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public Category Legs { get; set; }
         public Category Shoulders { get; set; }
 
+        //ProgramExercises
+        public ProgramExercise HackSquatProgram { get; set; }
+        public ProgramExercise BulgarianSplitSquatProgram { get; set; }
+        public ProgramExercise DeadliftProgram { get; set; }
+        public ProgramExercise LegPressProgram { get; set; }
         //Exercises
-        public Exercise HackSquat { get; set; }
+        public Exercise HackSquat{ get; set; }
         public Exercise BulgarianSplitSquat { get; set; }
         public Exercise Deadlift { get; set; }
-        public Exercise LegPress { get; set; }
+        public Exercise LegPress{ get; set; }
 
         //TrainingPrograms
         public TrainingProgram Program1 { get; set; }
@@ -45,6 +50,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             SeedCategories();
             SeedPrograms();
             SeedExercises();
+            SeedProgramExercises();
             SeedEvents();
             SeedComments();
         }
@@ -150,45 +156,67 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 Ratings = new List<double> { 3, 3.5, 5 }
             };
         }
-
         private void SeedExercises()
         {
-
             Deadlift = new Exercise
             {
                 Id = 1,
                 ExerciseName = "Deadlift",
-                Reps = 10,
-                Sets = 3,
-                ProgramId = Program1.Id,
                 CategoryId = Legs.Id
             };
             LegPress = new Exercise
             {
                 Id = 2,
-                ExerciseName = "Leg Press",
-                Reps = 10,
-                Sets = 3,
-                ProgramId = Program1.Id,
+                ExerciseName = "LegPress",
                 CategoryId = Legs.Id
             };
             HackSquat = new Exercise
             {
                 Id = 3,
-                ExerciseName = "Hack Squat",
-                Reps = 10,
-                Sets = 3,
-                ProgramId = Program1.Id,
+                ExerciseName = "HackSquat",
                 CategoryId = Legs.Id
             };
             BulgarianSplitSquat = new Exercise
             {
                 Id = 4,
-                ExerciseName = "Bulgarian Split Squat",
+                ExerciseName = "BulgarianSplitSquat",
+                CategoryId = Legs.Id
+            };
+        }
+        private void SeedProgramExercises()
+        {
+
+            DeadliftProgram = new ProgramExercise
+            {
+                Id = 1,
                 Reps = 10,
                 Sets = 3,
                 ProgramId = Program1.Id,
-                CategoryId = Legs.Id
+                ExerciseId = Deadlift.Id
+            };
+            LegPressProgram = new ProgramExercise
+            {
+                Id = 2,
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                ExerciseId= LegPress.Id
+            };
+            HackSquatProgram = new ProgramExercise
+            {
+                Id = 3,
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                ExerciseId = HackSquat.Id
+            };
+            BulgarianSplitSquatProgram = new ProgramExercise
+            {
+                Id = 4,
+                Reps = 10,
+                Sets = 3,
+                ProgramId = Program1.Id,
+                ExerciseId = BulgarianSplitSquat.Id
             };
 
         }

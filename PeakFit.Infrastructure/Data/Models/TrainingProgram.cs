@@ -29,8 +29,9 @@ namespace PeakFit.Infrastructure.Data.Models
         public ApplicationUser User { get; set; } = null!;
         [Required]
         [Comment("Tells if program is deleted")]
+        public bool IsDeleted { get; set; }
 
 		public IList<double> Ratings { get; set; } = new List<double>();
-		public bool IsDeleted { get; set; }
+        public ICollection<ProgramExercise> Exercises { get; set; } = new List<ProgramExercise>();
     }
 }
