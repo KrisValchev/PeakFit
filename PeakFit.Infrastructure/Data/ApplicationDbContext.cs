@@ -26,7 +26,6 @@ namespace PeakFit.Web.Data
 
             //many to many relations 
             builder.Entity<UserProgram>().HasKey(pc => new { pc.UserId, pc.ProgramId });
-            builder.Entity<UserEvent>().HasKey(pc => new { pc.UserId, pc.EventId });
             base.OnModelCreating(builder);
 
         }
@@ -35,7 +34,6 @@ namespace PeakFit.Web.Data
         public DbSet<Comment> Comments { get; set; } = null!;
         public DbSet<Exercise> Exercises { get; set; } = null!;
         public DbSet<TrainingProgram> TrainingPrograms { get; set; } = null!;
-        public DbSet<UserEvent> UsersEvents { get; set; } = null!;
         public DbSet<UserProgram> UsersPrograms { get; set; } = null!;
 
 
