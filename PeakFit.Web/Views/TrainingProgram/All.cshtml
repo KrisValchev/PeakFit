@@ -1,0 +1,36 @@
+﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
+@using static PeakFit.Core.Constants.RoleConstants
+@model IEnumerable<PeakFit.Core.Models.TrainingProgramModels.AllTrainingProgramsInfoModel>
+@{
+    ViewData["Title"] = "All Training Programs";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+<link rel="stylesheet" href="~/css/trainingProgramCard.css"/>
+<section class="program-section">
+    @foreach (var Model in Model)
+    {
+        <div class="program-card">
+            <img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image" />
+            <h3 class="category-title">@Model.CategoryName</h3>
+                <span class="trainer-name">@Model.TrainerUserName</span>
+            <div class="trainer-rating">
+            <span class="rating">
+                @for (int i = 0; i < 5; i++)
+                {
+                    if (i < Model.Rating)
+                    {
+                        <span class="star filled">&#9733;</span>
+                    }
+                    else
+                    {
+                        <span class="star">&#9734;</span>
+                    }
+                }
+            </span>
+            </div>
+            <a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
+        </div>
+    }
+
+</section>

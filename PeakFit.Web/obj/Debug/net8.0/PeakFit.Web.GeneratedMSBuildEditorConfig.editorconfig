@@ -90,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5lclxCZWNvbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/PeakFit/PeakFit/PeakFit.Web/Views/TrainingProgram/All.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdQcm9ncmFtXEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PeakFit/PeakFit/PeakFit.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

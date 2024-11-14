@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
+      "PackagePath": "staticwebassets\\css\\trainingProgramCard.css"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

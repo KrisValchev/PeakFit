@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cDLUrp7hQpQNY3TeHpFxmerYDgPtljI/wRww7vV6log=",
+  "Hash": "Of0Mw60g7xo3B7c8YxEp0NI3zAKkKrFzc2K9Iu0qoQ0=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -1269,6 +1269,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "css/trainingProgramCard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\trainingProgramCard.css"
     },
     {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
