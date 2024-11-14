@@ -44,7 +44,7 @@ namespace PeakFit.Core.Services
             {
                 Id = e.Id,
                 TrainerId = e.UserId,
-                TrainerUserName=e.User.UserName ?? string.Empty,
+                TrainerUserName=$"{e.User.FirstName} {e.User.LastName}",
                 Title = e.Title,
                 StartDate = e.StartDate.ToString(StartDateTimeFormat),
                 StartHour = e.StartHour.ToString(StartHourTimeFormat),
