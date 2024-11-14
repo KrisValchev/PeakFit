@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Core.Services
 {
+    // This service runs in the background and deletes events with expired dates
     public class ExpiredEventCleanupService(IServiceProvider serviceProvider) : BackgroundService
     {
         
