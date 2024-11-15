@@ -26,6 +26,8 @@ namespace PeakFit.Core.Models.EventModels
         public string TrainerId { get; set; } = null!;
         [Display(Name = "Trainer username")]
         public string TrainerUserName { get; set; } = null!;
+        [Display(Name = "Trainer email")]
+        public string TrainerEmail { get; set; } = null!;
 
     }
 }
