@@ -1,5 +1,6 @@
 ﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
 @using static PeakFit.Core.Constants.RoleConstants
+@inject PeakFit.Core.Contracts.ITrainerService trainerService
 @model IEnumerable<PeakFit.Core.Models.TrainingProgramModels.AllTrainingProgramsInfoModel>
 @{
     ViewData["Title"] = "All Training Programs";
@@ -30,6 +31,7 @@
             </span>
             </div>
             <a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
+            
         </div>
     }
 

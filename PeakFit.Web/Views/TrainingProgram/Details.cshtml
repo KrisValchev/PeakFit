@@ -1,0 +1,48 @@
+﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
+@using static PeakFit.Core.Constants.RoleConstants
+@model PeakFit.Core.Models.TrainingProgramModels.TrainingProgramDetailsModel
+
+<link rel="stylesheet" href="~/css/programDetails.css" />
+<section class="program-details">
+    <img src="@Model.ImageUrl" alt="Training Program Image" class="program-image" />
+
+    <p class="category-name">@Model.CategoryName</p>
+
+    <div class="trainer-rating">
+        <span class="trainer-name">@Model.TrainerName</span>
+        <span class="rating">
+            @for (int i = 0; i < 5; i++)
+            {
+                if (i < Model.Rating)
+                {
+                    <span class="star filled">&#9733;</span>
+                }
+                else
+                {
+                    <span class="star">&#9734;</span>
+                }
+            }
+        </span>
+    </div>
+
+    <h3>Exercises</h3>
+    <table class="exercise-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var exercise in Model.Exercises)
+            {
+                <tr>
+                    <td>@exercise.ExerciseName</td>
+                    <td>@exercise.Sets</td>
+                    <td>@exercise.Reps</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>
