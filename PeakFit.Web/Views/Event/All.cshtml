@@ -1,5 +1,6 @@
 ﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
 @using static PeakFit.Core.Constants.RoleConstants
+
 @model IEnumerable<PeakFit.Core.Models.EventModels.AllEventsInfoModel>
 @{
     ViewData["Title"] = "All Upcoming Events";
@@ -22,7 +23,7 @@
                
                 <a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"  name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
                 @{
-                    if (User?.Identity?.Name == Model.TrainerUserName || User.IsAdmin())
+                    if (User?.Identity?.Name == Model.TrainerEmail)
                     {
                         <a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
                         <a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
