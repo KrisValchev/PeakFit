@@ -29,7 +29,7 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="All">Events</a>
                             </li>
-                            @if (await trainerService.IsInTrainerRoleAsync(User.Id()) == true || User.IsAdmin())
+                            @if (await trainerService.IsInTrainerRoleAsync(User.Id()) == true)
                             {
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-area="" asp-controller="Event" asp-action="Create">Add Event</a>
@@ -37,6 +37,12 @@
                             }
                             <li class="nav-item">
 								<a class="nav-link text-dark" asp-area="" asp-controller="TrainingProgram" asp-action="All">Programs</a>
+                                @if (await trainerService.IsInTrainerRoleAsync(User.Id()) == true )
+                                {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="TrainingProgram" asp-action="Add">Add Program</a>
+                                </li>
+                                }
                         </ul>
                     }
                     <partial name="_LoginPartial"/>
