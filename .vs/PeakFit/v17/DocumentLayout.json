@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\PeakFit\\PeakFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\wwwroot\\js\\addtrainingprogram.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\wwwroot\\js\\addtrainingprogram.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\trainingprogram\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainingprogram\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\event\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\event\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\trainingprogram\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainingprogram\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\wwwroot\\css\\trainingprogramcard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\wwwroot\\css\\trainingprogramcard.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\trainingprogram\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainingprogram\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|d:\\peakfit\\peakfit\\peakfit.core\\services\\trainingprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,45 +111,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "addTrainingProgram.js",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
-              "RelativeDocumentMoniker": "PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
-              "RelativeToolTip": "PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
-              "ViewState": "AQIAABsAAAAAAAAAAAAcwDQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-16T18:33:47.06Z",
+              "Title": "All.cshtml",
+              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\All.cshtml",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Event\\All.cshtml",
+              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\All.cshtml",
+              "RelativeToolTip": "PeakFit.Web\\Views\\Event\\All.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T19:03:40.494Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "trainingProgramCard.css",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
-              "RelativeDocumentMoniker": "PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
-              "RelativeToolTip": "PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-16T18:10:46.146Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "All.cshtml",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "RelativeToolTip": "PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-16T18:06:36.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Event.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Models\\Event.cs",
               "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\Models\\Event.cs",
@@ -166,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ProgramExerciseAddModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
@@ -179,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "AddTrainingProgramModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\TrainingProgramModels\\AddTrainingProgramModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\TrainingProgramModels\\AddTrainingProgramModel.cs",
@@ -192,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Program.cs",
               "RelativeDocumentMoniker": "PeakFit.Web\\Program.cs",
@@ -205,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "TrainingProgramService.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Services\\TrainingProgramService.cs",
@@ -218,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "ITrainingProgramService.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Contracts\\ITrainingProgramService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Contracts\\ITrainingProgramService.cs",
@@ -231,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "ExerciseController.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\ExerciseController.cs",
               "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\ExerciseController.cs",
@@ -244,7 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "ExerciseViewModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\ExerciseModels\\ExerciseViewModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\ExerciseModels\\ExerciseViewModel.cs",
@@ -257,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "AllEventsInfoModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\EventModels\\AllEventsInfoModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\EventModels\\AllEventsInfoModel.cs",
@@ -270,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "ProgramExercise.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Models\\ProgramExercise.cs",
               "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\Models\\ProgramExercise.cs",
@@ -283,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "TrainingProgram.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\Models\\TrainingProgram.cs",
               "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\Models\\TrainingProgram.cs",
@@ -296,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "TrainingProgramDetailsModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\TrainingProgramModels\\TrainingProgramDetailsModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\TrainingProgramModels\\TrainingProgramDetailsModel.cs",
@@ -309,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "ProgramExerciseDetailsViewModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseDetailsViewModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseDetailsViewModel.cs",
@@ -322,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "ExerciseService.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\ExerciseService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Services\\ExerciseService.cs",
@@ -335,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "IExerciseService.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Contracts\\IExerciseService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Contracts\\IExerciseService.cs",
@@ -348,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Add.cshtml",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Add.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\TrainingProgram\\Add.cshtml",
@@ -361,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "CategoryViewModel.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\CategoryModels\\CategoryViewModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\CategoryModels\\CategoryViewModel.cs",
@@ -374,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\Event\\Create.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\Event\\Create.cshtml",
@@ -387,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "EventController.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\EventController.cs",
@@ -400,7 +383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "TrainingProgramController.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Controllers\\TrainingProgramController.cs",
               "RelativeDocumentMoniker": "PeakFit.Web\\Controllers\\TrainingProgramController.cs",
@@ -413,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Details.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\TrainingProgram\\Details.cshtml",
@@ -426,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "EventService.cs",
               "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\EventService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Services\\EventService.cs",
