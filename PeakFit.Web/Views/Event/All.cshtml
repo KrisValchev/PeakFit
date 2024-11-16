@@ -23,7 +23,7 @@
                
                 <a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"  name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
                 @{
-                    if (User?.Identity?.Name == Model.TrainerEmail)
+                    if (User?.Identity?.Name == Model.TrainerEmail || User?.IsAdmin()==true)
                     {
                         <a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
                         <a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
