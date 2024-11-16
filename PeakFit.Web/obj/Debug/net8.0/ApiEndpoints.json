@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "PeakFit.Web.Controllers.ExerciseController",
+    "Method": "GetExercisesByCategory",
+    "RelativePath": "api/Exercise/GetByCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoryId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

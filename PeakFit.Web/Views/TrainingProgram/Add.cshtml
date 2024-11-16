@@ -1,0 +1,57 @@
+﻿@model  PeakFit.Core.Models.TrainingProgramModels.AddTrainingProgramModel
+@{
+    ViewData["Title"] = "Add Training Program";
+}
+
+<h2>Add Training Program</h2>
+<link rel="stylesheet" href="~/css/programAdd.css" />
+<form asp-action="Add" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Image">Image</label>
+        <input asp-for="ImageUrl"class="form-control-file" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Category">Category</label>
+        <select asp-for="CategoryId" class="form-control" id="categoryDropdown" required>
+            <option value="">Select a Category</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category.Id">@category.CategoryName</option>
+            }
+        </select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <h4>Exercises</h4>
+    <table class="table" id="exercises-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="exercise-row">
+                <td>
+                    <select class="form-control" id="exerciseDropdown" name="ProgramExercises[0].ExerciseId" required>
+                        <option value="">Select exercise</option>
+                     
+                    </select>
+                </td>
+                <td><input type="number" class="form-control" name="ProgramExercises[0].Sets" min="1" required /></td>
+                <td><input type="number" class="form-control" name="ProgramExercises[0].Reps" min="1" required /></td>
+                <td><button type="button" class="btn btn-danger remove-row">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-secondary" id="add-row">Add Another Exercise</button>
+
+    <button type="submit" class="btn btn-primary mt-3">Add</button>
+</form>
+
+<script src="~/js/addTrainingProgram.js"></script>
+

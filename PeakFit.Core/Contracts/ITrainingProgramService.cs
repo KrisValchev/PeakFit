@@ -1,5 +1,6 @@
 ﻿using PeakFit.Core.Models.CategoryModels;
 using PeakFit.Core.Models.EventModels;
+using PeakFit.Core.Models.ExerciseModels;
 using PeakFit.Core.Models.TrainingProgramModels;
 using PeakFit.Infrastructure.Data.Models;
 using System;
@@ -18,6 +19,7 @@ namespace PeakFit.Core.Contracts
         //Task EditAsync(int id, EditEventModel model);
         Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer);
         Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync();
+        public Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(int trainingProgramId,AddTrainingProgramModel model);
         //Task<EditEventModel> GetEventFromEditEventViewModelByIdAsync(int id);
         //Task DeleteAsync(int id);
     }

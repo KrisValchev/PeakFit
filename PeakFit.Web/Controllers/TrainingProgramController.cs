@@ -1,12 +1,15 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using PeakFit.Core.Contracts;
 using  PeakFit.Core.Models.TrainingProgramModels;
 using PeakFit.Core.Services;
+using PeakFit.Infrastructure.Data.Models;
 using PeakFit.Web.Attributes;
 namespace PeakFit.Web.Controllers
 {
-    public class TrainingProgramController(ITrainingProgramService programService) : Controller
+    public class TrainingProgramController(ITrainingProgramService programService, UserManager<ApplicationUser> userManager) : Controller
     {
         [HttpGet]
         [AllowAnonymous]
@@ -34,10 +37,26 @@ namespace PeakFit.Web.Controllers
         {
             var newProgram = new AddTrainingProgramModel()
             {
-                Categories = await programService.AllCategoriesAsync()
+                Categories = await programService.AllCategoriesAsync(),
             };
 
             return View(newProgram);
+        }
+
+        [HttpPost]
+        [MustBeTrainer]
+        public async Task<IActionResult> Add(AddTrainingProgramModel model)
+        {
+
+            var trainerId = await userManager.GetUserAsync(User);
+            if(ModelState.IsValid == false)
+            {
+                return View(model);
+            }
+
+            int programId = await programService.AddAsync(model, trainerId);
+
+            return RedirectToAction(nameof(Details), new { id = programId });
         }
     }
 }

@@ -9,27 +9,19 @@ using static PeakFit.Infrastructure.Constraints.ExerciseDataConstraints;
 
 namespace PeakFit.Core.Models.ExerciseModels
 {
-    public class ProgramExerciseViewModel
+    public class ProgramExerciseDetailsViewModel
     {
         [Comment("This Exercise Identifier")]
         public int Id { get; set; }
         [Required]
         [Comment("The Exercise name ")]
-        public string ExerciseName { get; set; }
+        public string ExerciseName { get; set; } = null!;
         [Required]
         [Comment("The Exercise number of sets")]
         public int Sets { get; set; } 
         [Required]
         [Comment("The Exercise number of reps")]
         public int Reps { get; set; }
-        [Required]
-        [Comment("The Exercise program identifier")]
-        public int ProgramId { get; set; }
-        [Required]
-        [Comment("The ProgramExercise exercise identifier")]
-        public int ExerciseId { get; set; }
-
-
 
 
     }

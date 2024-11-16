@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\css\\eventDetails.css"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programAdd.css",
+      "PackagePath": "staticwebassets\\css\\programAdd.css"
+    },
+    {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programDetails.css",
+      "PackagePath": "staticwebassets\\css\\programDetails.css"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -35,6 +43,10 @@
     {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
       "PackagePath": "staticwebassets\\images\\weight-loss-exercise-plan.jpg"
+    },
+    {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
+      "PackagePath": "staticwebassets\\js\\addTrainingProgram.js"
     },
     {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",

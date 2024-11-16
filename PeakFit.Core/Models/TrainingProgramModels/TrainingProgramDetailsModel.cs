@@ -30,7 +30,7 @@ namespace PeakFit.Core.Models.TrainingProgramModels
         [Display(Name = "Program rating")]
         public double Rating { get; set; }
         [Display(Name = "Program's exercises")]
-        public ICollection<ProgramExerciseViewModel> Exercises { get; set; } = new List<ProgramExerciseViewModel>();
+        public ICollection<ProgramExerciseDetailsViewModel> Exercises { get; set; } = new List<ProgramExerciseDetailsViewModel>();
 
 
     }

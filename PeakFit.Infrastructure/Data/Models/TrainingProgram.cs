@@ -20,8 +20,8 @@ namespace PeakFit.Infrastructure.Data.Models
         [ForeignKey(nameof(CategoryId))]
         public Category Category { get; set; } = null!;
         [Comment("Program's banner")]
-        [DefaultValue("https://w7.pngwing.com/pngs/83/516/png-transparent-workout-dumbbells-weightlifting-dumbell-gym-thumbnail.png")]
-        public string? ImageUrl { get; set; } = null!;
+       
+        public string? ImageUrl { get; set; }
         [Required]
         [Comment("Trainer identifier")]
         public string UserId { get; set; } = null!;

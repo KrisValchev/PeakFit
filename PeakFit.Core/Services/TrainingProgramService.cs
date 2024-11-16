@@ -21,19 +21,45 @@ namespace PeakFit.Core.Services
         {
             TrainingProgram newProgram = new TrainingProgram
             {
-                CategoryId = model.CategoryId,
-                ImageUrl= model.ImageUrl,
-                UserId= trainer.Id, 
-                Exercises=model.Exercises.ToList()
 
+                CategoryId = model.CategoryId,
+                ImageUrl = model.ImageUrl,
+                UserId = trainer.Id,
+                Ratings = new List<double>() { 0},
+                Exercises=new List<ProgramExercise>()
             };
 
-            await repository.AddAsync(newProgram);
+            await repository.AddAsync<TrainingProgram>(newProgram);
             await repository.SaveChangesAsync();
+            var programExercises = await CreateProgramExercisesFromAddTrainingProgramModelAsync(newProgram.Id,model);
 
             return newProgram.Id;
         }
+        public async Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(int trainingProgramId,AddTrainingProgramModel model)
+        {
+            List<ProgramExercise> programExercises = new List<ProgramExercise>();
+            var programExercisesModelList = model.ProgramExercises.Select(pe => new ProgramExercise
+            {
+                ExerciseId = pe.ExerciseId,
+                Sets = pe.Sets,
+                Reps = pe.Reps
+            }).ToList();
+            foreach (var programExercise in programExercisesModelList)
+            {
+                var newProgramExercise = new ProgramExercise
+                {
+                    Sets = programExercise.Sets,
+                    Reps = programExercise.Reps,
+                    ExerciseId = programExercise.ExerciseId,
+                    ProgramId = trainingProgramId
 
+                };
+                programExercises.Add(newProgramExercise);
+                await repository.AddAsync<ProgramExercise>(newProgramExercise);
+                await repository.SaveChangesAsync();
+            }
+            return programExercises;
+        }
         public async Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync()
         {
             return await repository.AllReadOnly<Category>()
@@ -57,7 +83,7 @@ namespace PeakFit.Core.Services
                 ImageUrl = p.ImageUrl,
                 CategoryId = p.CategoryId,
                 CategoryName = p.Category.CategoryName,
-                Rating =  p.Ratings.Average()
+                Rating = p.Ratings.Average()
 
             }).ToListAsync();
             return allPrograms;
@@ -65,9 +91,9 @@ namespace PeakFit.Core.Services
         //DetailsAsync method is used to to get details about a program and it takes programId as parameter and returns TrainingProgramDetailsModel
         public async Task<TrainingProgramDetailsModel> DetailsAsync(int id)
         {
-            var program= await repository.All<TrainingProgram>()
+            var program = await repository.AllReadOnly<TrainingProgram>()
                 .Where(p => p.Id == id)
-                .Include(p=>p.Exercises)
+                .Include(p => p.Exercises)
                 .Select(p => new TrainingProgramDetailsModel()
                 {
                     Id = p.Id,
@@ -77,15 +103,13 @@ namespace PeakFit.Core.Services
                     CategoryId = p.CategoryId,
                     CategoryName = p.Category.CategoryName,
                     Rating = p.Ratings.Average(),
-                   Exercises= p.Exercises.Select(pe=>new ProgramExerciseViewModel
-                   {
-                       Id=pe.Id,
-                       ExerciseName=pe.Exercise.ExerciseName,
-                       Sets=pe.Sets,
-                       Reps=pe.Reps,
-                       ExerciseId=pe.ExerciseId,
-                       ProgramId=pe.ProgramId
-                   }).ToList()
+                    Exercises = p.Exercises.Select(pe => new ProgramExerciseDetailsViewModel
+                    {
+                        Id = pe.Id,
+                        ExerciseName = pe.Exercise.ExerciseName,
+                        Sets = pe.Sets,
+                        Reps = pe.Reps
+                    }).ToList()
                 })
                 .FirstAsync();
 
@@ -104,5 +128,6 @@ namespace PeakFit.Core.Services
                 return false;
             }
         }
+
     }
 }
