@@ -31,10 +31,48 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public ProgramExercise DeadliftProgram { get; set; }
         public ProgramExercise LegPressProgram { get; set; }
         //Exercises
+        //Legs
         public Exercise HackSquat{ get; set; }
         public Exercise BulgarianSplitSquat { get; set; }
         public Exercise Deadlift { get; set; }
         public Exercise LegPress{ get; set; }
+        public Exercise Squat { get; set; }
+        public Exercise Lunge { get; set; }
+        public Exercise CalfRaise { get; set; }
+        //Arms
+        public Exercise BicepCurl { get; set; }
+        public Exercise TricepDip { get; set; }
+        public Exercise HammerCurl { get; set; }
+        public Exercise OverheadTricepExtension { get; set; }
+        public Exercise ConcentrationCurl { get; set; }
+        public Exercise CloseGripBenchPress { get; set; }
+        //Core
+        public Exercise Plank { get; set; }
+        public Exercise Crunch { get; set; }
+        public Exercise RussianTwist { get; set; }
+        public Exercise MountainClimbers { get; set; }
+        public Exercise LegRaises { get; set; }
+        public Exercise SidePlank { get; set; }
+        //Back
+        public Exercise PullUp { get; set; }
+        public Exercise LatPulldown { get; set; }
+        public Exercise BarbellRow { get; set; }
+        public Exercise TBarRow { get; set; }
+        public Exercise SeatedCableRow { get; set; }
+        //Chest
+        public Exercise BenchPress { get; set; }
+        public Exercise InclineBenchPress { get; set; }
+        public Exercise ChestFly { get; set; }
+        public Exercise PushUp { get; set; }
+        public Exercise DumbbellPullover { get; set; }
+        public Exercise CableCrossover { get; set; }
+        //Shoulders
+        public Exercise OverheadPress { get; set; }
+        public Exercise ArnoldPress { get; set; }
+        public Exercise LateralRaise { get; set; }
+        public Exercise FrontRaise { get; set; }
+        public Exercise FacePull { get; set; }
+        public Exercise UprightRow { get; set; }
 
         //TrainingPrograms
         public TrainingProgram Program1 { get; set; }
@@ -158,6 +196,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         }
         private void SeedExercises()
         {
+            //Legs
             Deadlift = new Exercise
             {
                 Id = 1,
@@ -179,9 +218,208 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             BulgarianSplitSquat = new Exercise
             {
                 Id = 4,
-                ExerciseName = "BulgarianSplitSquat",
+                ExerciseName = "Bulgarian Split Squat",
                 CategoryId = Legs.Id
             };
+            Squat = new Exercise
+            {
+                Id = 5,
+                ExerciseName = "Squat",
+                CategoryId = Legs.Id
+            };
+            Lunge = new Exercise
+            {
+                Id = 6,
+                ExerciseName = "Lunge",
+                CategoryId = Legs.Id
+            };
+            CalfRaise = new Exercise
+            {
+                Id = 7,
+                ExerciseName = "Calf Raise",
+                CategoryId = Legs.Id
+            };
+            //Arms
+            BicepCurl=new Exercise
+            {
+                Id = 8,
+                ExerciseName = "Bicep Curl",
+                CategoryId = Arms.Id
+            };
+            TricepDip= new Exercise
+            {
+                Id = 9,
+                ExerciseName = "Tricep Dip",
+                CategoryId = Arms.Id
+            };
+            HammerCurl = new Exercise
+            {
+                Id = 10,
+                ExerciseName = "Hammer Curl",
+                CategoryId = Arms.Id
+            };
+            OverheadTricepExtension = new Exercise
+            {
+                Id = 11,
+                ExerciseName = "Overhead Tricep Extension",
+                CategoryId = Arms.Id
+            };
+            ConcentrationCurl = new Exercise
+            {
+                Id = 12,
+                ExerciseName = "Concentration Curl",
+                CategoryId = Arms.Id
+            };
+            CloseGripBenchPress = new Exercise
+            {
+                Id = 13,
+                ExerciseName = "Close Grip Bench Press",
+                CategoryId = Arms.Id
+            };
+            //Core
+            Plank = new Exercise
+            {
+                Id = 14,
+                ExerciseName = "Plank",
+                CategoryId = Core.Id
+            };
+            Crunch = new Exercise
+            {
+                Id = 15,
+                ExerciseName = "Crunch",
+                CategoryId = Core.Id
+            };
+            RussianTwist = new Exercise
+            {
+                Id = 16,
+                ExerciseName = "Russian Twist",
+                CategoryId = Core.Id
+            };
+            MountainClimbers = new Exercise
+            {
+                Id = 17,
+                ExerciseName = "Mountain Climbers",
+                CategoryId = Core.Id
+            };
+            LegRaises = new Exercise
+            {
+                Id = 18,
+                ExerciseName = "Leg Raises",
+                CategoryId = Core.Id
+            };
+            SidePlank = new Exercise
+            {
+                Id = 19,
+                ExerciseName = "Side Plank",
+                CategoryId = Core.Id
+            };
+            //Back
+            PullUp = new Exercise
+            {
+                Id = 20,
+                ExerciseName = "Pull Up",
+                CategoryId = Back.Id
+            };
+            LatPulldown = new Exercise
+            {
+                Id = 21,
+                ExerciseName = "Lat Pulldown",
+                CategoryId = Back.Id
+            };
+            BarbellRow = new Exercise
+            {
+                Id = 22,
+                ExerciseName = "Barbell Row",
+                CategoryId = Back.Id
+            };
+            TBarRow = new Exercise
+            {
+                Id = 23,
+                ExerciseName = "T-Bar Row",
+                CategoryId = Back.Id
+            };
+            SeatedCableRow = new Exercise
+            {
+                Id = 24,
+                ExerciseName = "Seated Cable Row",
+                CategoryId = Back.Id
+            };
+            //Chest
+            BenchPress = new Exercise
+            {
+                Id = 25,
+                ExerciseName = "Bench Press",
+                CategoryId = Chest.Id
+            };
+            InclineBenchPress = new Exercise
+            {
+                Id = 26,
+                ExerciseName = "Incline Bench Press",
+                CategoryId = Chest.Id
+            };
+            ChestFly = new Exercise
+            {
+                Id = 27,
+                ExerciseName = "Chest Fly",
+                CategoryId = Chest.Id
+            };
+            PushUp = new Exercise
+            {
+                Id = 28,
+                ExerciseName = "Push Up",
+                CategoryId = Chest.Id
+            };
+            DumbbellPullover = new Exercise
+            {
+                Id = 29,
+                ExerciseName = "Dumbbell Pullover",
+                CategoryId = Chest.Id
+            };
+            CableCrossover = new Exercise
+            {
+                Id = 30,
+                ExerciseName = "Cable Crossover",
+                CategoryId = Chest.Id
+            };
+            //Shoulders
+            OverheadPress = new Exercise
+            {
+                Id = 31,
+                ExerciseName = "Overhead Press",
+                CategoryId = Shoulders.Id
+            };
+            ArnoldPress = new Exercise
+            {
+                Id = 32,
+                ExerciseName = "Arnold Press",
+                CategoryId = Shoulders.Id
+            };
+            LateralRaise = new Exercise
+            {
+                Id = 33,
+                ExerciseName = "Lateral Raise",
+                CategoryId = Shoulders.Id
+            };
+            FrontRaise = new Exercise
+            {
+                Id = 34,
+                ExerciseName = "Front Raise",
+                CategoryId = Shoulders.Id
+            };
+            FacePull = new Exercise
+            {
+                Id = 35,
+                ExerciseName = "Face Pull",
+                CategoryId = Shoulders.Id
+            };
+            UprightRow = new Exercise
+            {
+                Id = 36,
+                ExerciseName = "Upright Row",
+                CategoryId = Shoulders.Id
+            };
+
+
         }
         private void SeedProgramExercises()
         {
