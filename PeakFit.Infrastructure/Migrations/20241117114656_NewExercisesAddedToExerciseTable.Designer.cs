@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeakFit.Web.Data;
 
@@ -11,9 +12,11 @@ using PeakFit.Web.Data;
 namespace PeakFit.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241117114656_NewExercisesAddedToExerciseTable")]
+    partial class NewExercisesAddedToExerciseTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -455,198 +458,6 @@ namespace PeakFit.Web.Data.Migrations
                             Id = 2,
                             CategoryId = 5,
                             ExerciseName = "LegPress"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            CategoryId = 5,
-                            ExerciseName = "Calf Raise"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CategoryId = 5,
-                            ExerciseName = "Squat"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            CategoryId = 5,
-                            ExerciseName = "Lunge"
-                        },
-                        new
-                        {
-                            Id = 32,
-                            CategoryId = 6,
-                            ExerciseName = "Arnold Press"
-                        },
-                        new
-                        {
-                            Id = 22,
-                            CategoryId = 3,
-                            ExerciseName = "Barbell Row"
-                        },
-                        new
-                        {
-                            Id = 25,
-                            CategoryId = 4,
-                            ExerciseName = "Bench Press"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            CategoryId = 2,
-                            ExerciseName = "Bicep Curl"
-                        },
-                        new
-                        {
-                            Id = 30,
-                            CategoryId = 4,
-                            ExerciseName = "Cable Crossover"
-                        },
-                        new
-                        {
-                            Id = 27,
-                            CategoryId = 4,
-                            ExerciseName = "Chest Fly"
-                        },
-                        new
-                        {
-                            Id = 13,
-                            CategoryId = 2,
-                            ExerciseName = "Close Grip Bench Press"
-                        },
-                        new
-                        {
-                            Id = 12,
-                            CategoryId = 2,
-                            ExerciseName = "Concentration Curl"
-                        },
-                        new
-                        {
-                            Id = 15,
-                            CategoryId = 1,
-                            ExerciseName = "Crunch"
-                        },
-                        new
-                        {
-                            Id = 29,
-                            CategoryId = 4,
-                            ExerciseName = "Dumbbell Pullover"
-                        },
-                        new
-                        {
-                            Id = 35,
-                            CategoryId = 6,
-                            ExerciseName = "Face Pull"
-                        },
-                        new
-                        {
-                            Id = 34,
-                            CategoryId = 6,
-                            ExerciseName = "Front Raise"
-                        },
-                        new
-                        {
-                            Id = 10,
-                            CategoryId = 2,
-                            ExerciseName = "Hammer Curl"
-                        },
-                        new
-                        {
-                            Id = 26,
-                            CategoryId = 4,
-                            ExerciseName = "Incline Bench Press"
-                        },
-                        new
-                        {
-                            Id = 33,
-                            CategoryId = 6,
-                            ExerciseName = "Lateral Raise"
-                        },
-                        new
-                        {
-                            Id = 21,
-                            CategoryId = 3,
-                            ExerciseName = "Lat Pulldown"
-                        },
-                        new
-                        {
-                            Id = 18,
-                            CategoryId = 1,
-                            ExerciseName = "Leg Raises"
-                        },
-                        new
-                        {
-                            Id = 17,
-                            CategoryId = 1,
-                            ExerciseName = "Mountain Climbers"
-                        },
-                        new
-                        {
-                            Id = 31,
-                            CategoryId = 6,
-                            ExerciseName = "Overhead Press"
-                        },
-                        new
-                        {
-                            Id = 11,
-                            CategoryId = 2,
-                            ExerciseName = "Overhead Tricep Extension"
-                        },
-                        new
-                        {
-                            Id = 14,
-                            CategoryId = 1,
-                            ExerciseName = "Plank"
-                        },
-                        new
-                        {
-                            Id = 20,
-                            CategoryId = 3,
-                            ExerciseName = "Pull Up"
-                        },
-                        new
-                        {
-                            Id = 28,
-                            CategoryId = 4,
-                            ExerciseName = "Push Up"
-                        },
-                        new
-                        {
-                            Id = 16,
-                            CategoryId = 1,
-                            ExerciseName = "Russian Twist"
-                        },
-                        new
-                        {
-                            Id = 24,
-                            CategoryId = 3,
-                            ExerciseName = "Seated Cable Row"
-                        },
-                        new
-                        {
-                            Id = 19,
-                            CategoryId = 1,
-                            ExerciseName = "Side Plank"
-                        },
-                        new
-                        {
-                            Id = 23,
-                            CategoryId = 3,
-                            ExerciseName = "T-Bar Row"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            CategoryId = 2,
-                            ExerciseName = "Tricep Dip"
-                        },
-                        new
-                        {
-                            Id = 36,
-                            CategoryId = 6,
-                            ExerciseName = "Upright Row"
                         });
                 });
 
@@ -825,15 +636,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "64fa5aa2-eb28-4f66-bd96-3edb3d3808c7",
+                            ConcurrencyStamp = "83cb1867-a77b-474e-8335-5516f7fa8076",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "user@gmail.com",
                             NormalizedUserName = "user@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPXATHzPkHJHT0yR/8CHKJ0bCq4FL6An8WQlHwdFyjfUdZtzV+VpRfX88KwOGxLGuQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEG/Uc9B2FlwdpgciTWoyPV+06Fj6Ql2jZSyS/SYtaVYcN/q3t8me32fUJ2gwjd7S+w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "33a3c59c-4fc5-4fb1-8d83-5bf970ddda94",
+                            SecurityStamp = "48500885-d951-47b3-966a-6cf2795fb1d0",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com",
                             FirstName = "User",
@@ -845,16 +656,16 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a1482116-4fd0-4b9b-a965-21855486942d",
+                            ConcurrencyStamp = "48f1c402-8450-40e0-9db5-d5f3d07fc76a",
                             Email = "trainer@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "trainer@gmail.com",
                             NormalizedUserName = "trainer@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEP2VKGC1ZLtHfVjAw5JFWB4Z8ekRXp4yC+H80m9wMlkPDmizCdR9t5BhzyVbgQGXlw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELBxjdlx77DV1Kz6HccXMn6kfCiKCD1UiPKBvAnxAHXIy9PA4qi/pbUC0YFsaJw8dg==",
                             PhoneNumber = "0878080808",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f9382552-c6df-45f1-b3ab-df7103751f58",
+                            SecurityStamp = "1fdaa728-e3d1-4293-aef7-93d8af9ec537",
                             TwoFactorEnabled = false,
                             UserName = "trainer@gmail.com",
                             FirstName = "Trainer",
@@ -866,15 +677,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "54502832-b7e3-46e3-bf76-53057895ea81",
+                            ConcurrencyStamp = "e998b251-c2de-4f16-bef4-a2bebe491ad4",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMWniYQMDJwI9W55y6Fb2hFHpG9kD06PRtpVEnWJBekJ4hSCA+/2lvS+ot+lYSgbOg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELDJOFC/6uTT+iDVvTQI/HPUAUCecw808NFeqkRzNVB9kTRCLgfbAVLsTcdObb4alA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ad894282-6940-4bed-b7d5-fa85fb078811",
+                            SecurityStamp = "126da8f6-ec2a-409e-9c58-fdfcaa0b6503",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com",
                             FirstName = "Admin",
