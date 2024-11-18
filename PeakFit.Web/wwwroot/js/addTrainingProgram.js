@@ -21,8 +21,11 @@ function populateExercises(categoryId, dropdown) {
 // Populate exercises dropdown based on selected category
 document.getElementById('categoryDropdown').addEventListener('change', function () {
     const categoryId = this.value;
-    const exerciseDropdown = document.getElementById('exerciseDropdown');
-    populateExercises(categoryId, exerciseDropdown);
+    //const exerciseDropdown = document.getElementById('exerciseDropdown');
+    //populateExercises(categoryId, exerciseDropdown);
+    const exerciseDropdowns = document.querySelectorAll('.exercise-dropdown');
+    // Update all dropdowns in the table
+    exerciseDropdowns.forEach(dropdown => populateExercises(categoryId, dropdown));
     // Clear existing exercises
 
 });
