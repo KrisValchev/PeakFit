@@ -17,6 +17,7 @@ namespace PeakFit.Core.Services
 {
     public class TrainingProgramService(IRepository repository) : ITrainingProgramService
     {
+        //AddAsync method is used to add a new training program and it takes AddTrainingProgramModel and ApplicationUser as parameters and returns the id of the new program
         public async Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer)
         {
             TrainingProgram newProgram = new TrainingProgram
@@ -25,7 +26,7 @@ namespace PeakFit.Core.Services
                 CategoryId = model.CategoryId,
                 ImageUrl = model.ImageUrl,
                 UserId = trainer.Id,
-                Ratings = new List<double>() { 0},
+                Ratings = new List<double>() {0},
                 Exercises=new List<ProgramExercise>()
             };
 
@@ -35,6 +36,7 @@ namespace PeakFit.Core.Services
 
             return newProgram.Id;
         }
+        //CreateProgramExercisesFromAddTrainingProgramModelAsync method is used to create program exercises from AddTrainingProgramModel and it takes trainingProgramId and AddTrainingProgramModel as parameters and returns IEnumerable<ProgramExercise>
         public async Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(int trainingProgramId,AddTrainingProgramModel model)
         {
             List<ProgramExercise> programExercises = new List<ProgramExercise>();
@@ -60,6 +62,7 @@ namespace PeakFit.Core.Services
             }
             return programExercises;
         }
+        //AllCategoriesAsync method is used to display all categories
         public async Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync()
         {
             return await repository.AllReadOnly<Category>()
@@ -70,7 +73,7 @@ namespace PeakFit.Core.Services
                })
                .ToListAsync();
         }
-
+        //AllTrainingProgramsAsync method is used to display all training programs
         public async Task<IEnumerable<AllTrainingProgramsInfoModel>> AllTrainingProgramsAsync()
         {
             var programs = repository.AllReadOnly<TrainingProgram>().Where(p => p.IsDeleted == false);
