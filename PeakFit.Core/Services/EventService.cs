@@ -93,9 +93,13 @@ namespace PeakFit.Core.Services
         public async Task<bool> ExistAsync(int id)
         {
             var _event = await repository.GetByIdAsync<Event>(id);
-            if (_event.IsDeleted ==false)
+            if(_event!=null)
             {
-                return true;
+                if (_event.IsDeleted == false)
+                {
+                    return true;
+                }
+                return false;
             }
             else
             {
