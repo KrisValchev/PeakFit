@@ -146,7 +146,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             };
 
             Trainer.PasswordHash =
-            hasher.HashPassword(Trainer, "User1234");
+            hasher.HashPassword(Trainer, "Trainer1234");
         }
 
         private void SeedCategories()
@@ -467,7 +467,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 Id = 1,
                 Title = "Marathon",
                 Description = "The Marathon is an exhilarating long-distance running event, bringing together athletes, enthusiasts, and supporters for a memorable day of endurance and community spirit. Held in Plovdiv, this marathon offers participants a chance to challenge themselves across a scenic and well-marked route, catering to runners of all experience levels, from seasoned marathoners to those aiming to complete their first 42.195 kilometers.",
-                StartDate = DateTime.Parse("10-11-2024"),
+                StartDate = DateTime.Parse("25-12-2024"),
                 StartHour = DateTime.Parse("10:00"),
                 UserId = Trainer.Id,
                 IsDeleted = false,

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yy8nmRrSu69btg/8Z/FGq5NT/MQb532waRsNfI9hwqE=",
+  "Hash": "M6iWbcJMaKHufT71R+HOlpWkRSWHPJRoM1/EVHAC7rk=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -1402,6 +1402,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\addTrainingProgram.js"
+    },
+    {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\editTrainingProgram.js",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "js/editTrainingProgram.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\editTrainingProgram.js"
     },
     {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",

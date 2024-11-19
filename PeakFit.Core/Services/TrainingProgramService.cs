@@ -12,11 +12,13 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using PeakFit.Core.Models.ExerciseModels;
+using PeakFit.Core.Models.ProgramExerciseModels;
 
 namespace PeakFit.Core.Services
 {
     public class TrainingProgramService(IRepository repository) : ITrainingProgramService
     {
+
         //AddAsync method is used to add a new training program and it takes AddTrainingProgramModel and ApplicationUser as parameters and returns the id of the new program
         public async Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer)
         {
@@ -26,40 +28,27 @@ namespace PeakFit.Core.Services
                 CategoryId = model.CategoryId,
                 ImageUrl = model.ImageUrl,
                 UserId = trainer.Id,
-                Ratings = new List<double>() {0},
-                Exercises=new List<ProgramExercise>()
+                Ratings = new List<double>() { 0 },
+                Exercises = new List<ProgramExercise>()
             };
 
             await repository.AddAsync<TrainingProgram>(newProgram);
             await repository.SaveChangesAsync();
-            var programExercises = await CreateProgramExercisesFromAddTrainingProgramModelAsync(newProgram.Id,model);
+            var programExercises = await CreateProgramExercisesFromAddTrainingProgramModelAsync(newProgram, model);
 
             return newProgram.Id;
         }
-        //CreateProgramExercisesFromAddTrainingProgramModelAsync method is used to create program exercises from AddTrainingProgramModel and it takes trainingProgramId and AddTrainingProgramModel as parameters and returns IEnumerable<ProgramExercise>
-        public async Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(int trainingProgramId,AddTrainingProgramModel model)
+        //CreateProgramExercisesFromAddTrainingProgramModelAsync method is used to create program exercises from AddTrainingProgramModel and it takes TrainingProgram and AddTrainingProgramModel as parameters and returns IEnumerable of ProgramExercise
+        public async Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(TrainingProgram trainingProgram, AddTrainingProgramModel model)
         {
             List<ProgramExercise> programExercises = new List<ProgramExercise>();
-            var programExercisesModelList = model.ProgramExercises.Select(pe => new ProgramExercise
+            var programExercisesModelList = model.ProgramExercises.Select(pe => new ProgramExerciseAddModel
             {
                 ExerciseId = pe.ExerciseId,
                 Sets = pe.Sets,
                 Reps = pe.Reps
             }).ToList();
-            foreach (var programExercise in programExercisesModelList)
-            {
-                var newProgramExercise = new ProgramExercise
-                {
-                    Sets = programExercise.Sets,
-                    Reps = programExercise.Reps,
-                    ExerciseId = programExercise.ExerciseId,
-                    ProgramId = trainingProgramId
-
-                };
-                programExercises.Add(newProgramExercise);
-                await repository.AddAsync<ProgramExercise>(newProgramExercise);
-                await repository.SaveChangesAsync();
-            }
+            await CreatingProgramExercisesAndAddingThemToTrainingProgramById(programExercisesModelList, trainingProgram);
             return programExercises;
         }
         //AllCategoriesAsync method is used to display all categories
@@ -122,9 +111,13 @@ namespace PeakFit.Core.Services
         public async Task<bool> ExistAsync(int id)
         {
             var program = await repository.GetByIdAsync<TrainingProgram>(id);
-            if (program.IsDeleted == false)
+            if (program != null)
             {
-                return true;
+                if (program.IsDeleted == false)
+                {
+                    return true;
+                }
+                return false;
             }
             else
             {
@@ -132,5 +125,74 @@ namespace PeakFit.Core.Services
             }
         }
 
+        public async Task EditAsync(int id, EditTrainingProgramViewModel model)
+        {
+            var program = await repository.AllReadOnly<TrainingProgram>()
+                .Where(tp => tp.Id == id && tp.IsDeleted == false)
+                .Include(tp=>tp.Exercises)
+                .FirstOrDefaultAsync();
+            if (program != null)
+            {
+                await DeleteCurrentExercisesFromTrainingProgram(program);
+                program.Id = model.Id;
+                program.ImageUrl = model.ImageUrl;
+                await CreatingProgramExercisesAndAddingThemToTrainingProgramById(model.ProgramExercises, program);
+            }
+            await repository.SaveChangesAsync();
+        }
+        //CreatingProgramExercisesAndAddingThemToTrainingProgramById method is used to create program exercises and add them to a training program by its id. It takes IEnumerable of ProgramExerciseAddModel and TrainingProgram as parameters
+        private async Task CreatingProgramExercisesAndAddingThemToTrainingProgramById(IEnumerable<ProgramExerciseAddModel> programExercises, TrainingProgram program)
+        {
+
+            foreach (var programExercise in programExercises)
+            {
+
+                var newProgramExercise = new ProgramExercise
+                {
+                    Sets = programExercise.Sets,
+                    Reps = programExercise.Reps,
+                    ExerciseId = programExercise.ExerciseId,
+                    ProgramId = program.Id
+
+                };
+
+                program.Exercises.Add(newProgramExercise);
+                await repository.AddAsync<ProgramExercise>(newProgramExercise);
+            }
+            await repository.SaveChangesAsync();
+        }
+        //GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync method is used to get a EditTrainingProgramViewModel by its id. It takes a programId as a parameter and returns a EditTrainingProgramViewModel
+        public async Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id)
+        {
+            var program = await repository.AllReadOnly<TrainingProgram>()
+               .Where(e => e.IsDeleted == false && e.Id == id)
+               .Select(e => new EditTrainingProgramViewModel
+               {
+                   Id = e.Id,
+                   ImageUrl = e.ImageUrl,
+                   CategoryId = e.CategoryId,
+                   ProgramExercises = e.Exercises.Select(pe => new ProgramExerciseAddModel
+                   {
+                       Id = pe.Id,
+                       ExerciseId = pe.ExerciseId,
+                       Sets = pe.Sets,
+                       Reps = pe.Reps
+                   }).ToList()
+               }).FirstOrDefaultAsync();
+            return program;
+        }
+
+        public async Task DeleteCurrentExercisesFromTrainingProgram(TrainingProgram program)
+        {
+
+            foreach (var exercise in program.Exercises)
+            {
+
+                await repository.DeleteAsync<ProgramExercise>(exercise.Id);
+
+            }
+            program.Exercises.Clear();
+            await repository.SaveChangesAsync();
+        }
     }
 }

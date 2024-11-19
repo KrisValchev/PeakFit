@@ -86,7 +86,6 @@ function updateRemoveButtons() {
     });
 }
 
-
 // Remove row and recalculate indices
 document.addEventListener('click', function (e) {
     if (e.target && e.target.classList.contains('remove-row')) {
@@ -94,34 +93,37 @@ document.addEventListener('click', function (e) {
         const rowToDelete = e.target.closest('tr');
         rowToDelete.remove();
 
-        // Recalculate the indices for remaining rows
-        const rows = document.querySelectorAll('#exercises-table tbody tr.exercise-row');
-        rows.forEach((row, index) => {
-            // Update the names for each input field
-            const dropdown = row.querySelector('.exercise-dropdown');
-            const setsInput = row.querySelector('input[name*=".Sets"]');
-            const repsInput = row.querySelector('input[name*=".Reps"]');
-
-            // Update names to match the new index
-            if (dropdown) {
-                dropdown.name = `ProgramExercises[${index}].ExerciseId`;
-            }
-            if (setsInput) {
-                setsInput.name = `ProgramExercises[${index}].Sets`;
-            }
-            if (repsInput) {
-                repsInput.name = `ProgramExercises[${index}].Reps`;
-            }
-        });
-
-        // Decrement rowCount to ensure new rows start with the correct index
-        rowCount = rows.length;
+        // Recalculate indices for remaining rows
+        recalculateRowIndices();
 
         updateRemoveButtons();
     }
 });
 
+// Recalculate indices for all rows
+function recalculateRowIndices() {
+    const rows = document.querySelectorAll('#exercises-table tbody tr.exercise-row');
 
+    rows.forEach((row, index) => {
+        // Update the dropdown name
+        const dropdown = row.querySelector('.exercise-dropdown');
+        if (dropdown) {
+            dropdown.name = `ProgramExercises[${index}].ExerciseId`;
+        }
 
-// Run this function on page load to handle the initial row
-updateRemoveButtons();
+        // Update the Sets input field name
+        const setsInput = row.querySelector('input[name*=".Sets"]');
+        if (setsInput) {
+            setsInput.name = `ProgramExercises[${index}].Sets`;
+        }
+
+        // Update the Reps input field name
+        const repsInput = row.querySelector('input[name*=".Reps"]');
+        if (repsInput) {
+            repsInput.name = `ProgramExercises[${index}].Reps`;
+        }
+    });
+
+    // Update the row count
+    rowCount = rows.length;
+}

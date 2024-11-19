@@ -7,6 +7,7 @@ using  PeakFit.Core.Models.TrainingProgramModels;
 using PeakFit.Core.Services;
 using PeakFit.Infrastructure.Data.Models;
 using PeakFit.Web.Attributes;
+using PeakFit.Web.Extensions;
 namespace PeakFit.Web.Controllers
 {
     public class TrainingProgramController(ITrainingProgramService programService, UserManager<ApplicationUser> userManager) : Controller
@@ -57,6 +58,50 @@ namespace PeakFit.Web.Controllers
             int programId = await programService.AddAsync(model, trainerId);
 
             return RedirectToAction(nameof(Details), new { id = programId });
+        }
+
+        [HttpGet]
+        [MustBeTrainer]
+        public async Task<IActionResult> Edit(int id)
+        {
+            //getting the current user
+            var currentUser = await userManager.GetUserAsync(User);
+
+            if (await programService.ExistAsync(id) == false)
+            {
+                //should return BadRequest
+                return RedirectToAction(nameof(All));
+            }
+            var program = await programService.DetailsAsync(id);
+            if (program.TrainerId != currentUser.Id && User.IsAdmin() == false)
+            {
+                return Unauthorized();
+            }
+            var model = await programService.GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(id);
+            return View(model);
+        }
+        [HttpPost]
+        [MustBeTrainer]
+        public async Task<IActionResult> Edit(int id,EditTrainingProgramViewModel model)
+        {
+            var currentUser = await userManager.GetUserAsync(User);
+
+            if (await programService.ExistAsync(id) == false)
+            {
+                return BadRequest();
+            }
+
+            var program = await programService.DetailsAsync(id);
+
+            if (program.TrainerId != currentUser.Id && User.IsAdmin() == false)
+            {
+                return Unauthorized();
+            }
+
+            await programService.EditAsync(id, model);
+
+            //admin panel redirect management
+            return RedirectToAction(nameof(Details), new { id });
         }
     }
 }

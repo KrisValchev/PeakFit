@@ -28,7 +28,7 @@
                         <span class="star">&#9734;</span>
                     }
                 }
-            </span>
+            </span><span>(@Model.Rating.ToString("F2"))</span>
             </div>
             <a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
             

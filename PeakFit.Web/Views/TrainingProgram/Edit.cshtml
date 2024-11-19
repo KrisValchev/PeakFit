@@ -1,0 +1,52 @@
+﻿@model PeakFit.Core.Models.TrainingProgramModels.EditTrainingProgramViewModel
+@{
+    ViewData["Title"] = "Edit Training Program";
+}
+
+<h2>Add Training Program</h2>
+<link rel="stylesheet" href="~/css/programAdd.css" />
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Image">Image</label>
+        <input asp-for="ImageUrl" class="form-control-file" />
+        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+    </div>
+    <!-- Hidden field for CategoryId -->
+    <input type="hidden" id="categoryId" value="@Model.CategoryId" />
+
+    <h4>Exercises</h4>
+    <table class="table" id="exercises-table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Sets</th>
+                <th>Reps</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.ProgramExercises.Count(); i++)
+            {
+                <tr class="exercise-row">
+                    <td>
+                        <select class="form-control exercise-dropdown" id="exerciseDropdown-@i" name="ProgramExercises[@i].ExerciseId" required>
+                            <option value="">Select Exercise</option>
+                            <!-- Populate options with API data dynamically -->
+                        </select>
+                        <input type="hidden" class="selected-exercise" value="@Model.ProgramExercises.ToList()[i].ExerciseId" />
+                    </td>
+                    <td><input type="number" class="form-control" name="ProgramExercises[@i].Sets" value="@Model.ProgramExercises.ToList()[i].Sets" min="1" required /></td>
+                    <td><input type="number" class="form-control" name="ProgramExercises[@i].Reps" value="@Model.ProgramExercises.ToList()[i].Reps" min="1" required /></td>
+                    <td><button type="button" class="btn btn-danger remove-row">Remove</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-secondary" id="add-row">Add Another Exercise</button>
+
+    <button type="submit" class="btn btn-primary mt-3">Edit</button>
+</form>
+
+<script src="~/js/editTrainingProgram.js"></script>
+
+
