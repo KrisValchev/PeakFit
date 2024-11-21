@@ -1,0 +1,40 @@
+﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
+@using static PeakFit.Core.Constants.RoleConstants
+@inject PeakFit.Core.Contracts.ITrainerService trainerService
+@model IEnumerable<PeakFit.Core.Models.TrainingProgramModels.AllTrainingProgramsInfoModel>
+@{
+    ViewData["Title"] = "My Programs";
+}
+
+<h2 class="text-center">@ViewData["Title"]</h2>
+<link rel="stylesheet" href="~/css/trainingProgramCard.css" />
+<section class="program-section" style="width:55vw; display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;">
+    @foreach (var Model in Model)
+    {
+        <div class="program-card">
+            <img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image" />
+            <h3 class="category-title">@Model.CategoryName</h3>
+            <span class="trainer-name">@Model.TrainerUserName</span>
+            <div class="trainer-rating">
+                <span class="rating">
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        if (i < Model.Rating)
+                        {
+                            <span class="star filled">&#9733;</span>
+                        }
+                        else
+                        {
+                            <span class="star">&#9734;</span>
+                        }
+                    }
+                </span><span>(@Model.Rating.ToString("F2"))</span>
+            </div>
+            <a asp-controller="TrainingProgram" asp-action="Edit" asp-route-id="@Model.Id" name="edit" class="btn btn-warning" style="color:white;width:150px;">Edit</a>
+            <a asp-controller="TrainingProgram" asp-action="Delete" asp-route-id="@Model.Id" name="delete" class="btn btn-danger" style="color:white;width:150px;">Delete</a>
+
+        </div>
+    }
+
+</section>
+

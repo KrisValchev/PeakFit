@@ -57,7 +57,7 @@ namespace PeakFit.Web.Controllers
 
             int programId = await programService.AddAsync(model, trainerId);
 
-            return RedirectToAction(nameof(Details), new { id = programId });
+            return RedirectToAction(nameof(Mine), new { id = programId });
         }
 
         [HttpGet]
@@ -103,5 +103,15 @@ namespace PeakFit.Web.Controllers
             //admin panel redirect management
             return RedirectToAction(nameof(Details), new { id });
         }
-    }
+        [HttpGet]
+        [MustBeTrainer]
+        public async Task<IActionResult> Mine(IEnumerable<AllTrainingProgramsInfoModel> model)
+        {
+            var currentUser = await userManager.GetUserAsync(User);
+
+            model = await programService.MineTrainingProgramsAsync(currentUser);
+
+            return View(model);
+        }
+	}
 }

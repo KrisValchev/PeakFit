@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const selectedExerciseId = row.querySelector('.selected-exercise').value;
         populateExercises(categoryId, dropdown, selectedExerciseId);
     });
+
+    // Update remove button visibility after populating rows
+    updateRemoveButtons();
 });
 
 // Add new rows dynamically
@@ -75,9 +78,9 @@ function updateRemoveButtons() {
     rows.forEach((row, index) => {
         const removeButton = row.querySelector('.remove-row');
         if (rows.length === 1) {
-            removeButton.style.display = 'none';
+            removeButton.style.display = 'none'; // Hide remove button if there's only one row
         } else {
-            removeButton.style.display = '';
+            removeButton.style.display = ''; // Show remove button otherwise
         }
     });
 }

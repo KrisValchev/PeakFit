@@ -127,3 +127,10 @@ function recalculateRowIndices() {
     // Update the row count
     rowCount = rows.length;
 }
+
+// Populate all existing rows on page load
+document.addEventListener('DOMContentLoaded', function () {
+
+    // Update remove button visibility after populating rows
+    updateRemoveButtons();
+});
