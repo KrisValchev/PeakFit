@@ -113,5 +113,25 @@ namespace PeakFit.Web.Controllers
 
             return View(model);
         }
+
+        [HttpGet]
+        [MustBeTrainer]
+        public async Task<IActionResult> Delete (int id)
+		{
+			var currentUser = await userManager.GetUserAsync(User);
+
+			if (await programService.ExistAsync(id) == false)
+			{
+				//should return BadRequest
+				return RedirectToAction(nameof(All));
+			}
+			var program = await programService.DetailsAsync(id);
+			if (program.TrainerId != currentUser.Id && User.IsAdmin() == false)
+			{
+				return Unauthorized();
+			}
+			await programService.DeleteAsync(id);
+			return RedirectToAction(nameof(Mine));
+		}
 	}
 }

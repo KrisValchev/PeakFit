@@ -25,6 +25,6 @@ namespace PeakFit.Core.Contracts
         Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync();
        Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(TrainingProgram trainingProgram, AddTrainingProgramModel model);
         Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id);
-		//Task DeleteAsync(int id);
+		Task DeleteAsync(int id);
 	}
 }

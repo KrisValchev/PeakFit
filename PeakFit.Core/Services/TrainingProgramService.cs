@@ -211,5 +211,16 @@ namespace PeakFit.Core.Services
 					Rating = tp.Ratings.Average()
 				}).ToListAsync();
 		}
+
+		public async Task DeleteAsync(int id)
+		{
+
+			var program = await repository.GetByIdAsync<TrainingProgram>(id);
+			if (program != null)
+			{
+				program.IsDeleted = true;
+				await repository.SaveChangesAsync();
+			}
+		}
 	}
 }
