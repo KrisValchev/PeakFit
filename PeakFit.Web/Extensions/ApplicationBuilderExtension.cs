@@ -57,10 +57,12 @@ namespace PeakFit.Web.Extensions
 				var userRole = new IdentityRole(UserRole);
 				await roleManager.CreateAsync(userRole);
                 var user = await userManager.FindByEmailAsync("user@gmail.com");
+                var user1 = await userManager.FindByEmailAsync("user1@gmail.com");
 
                 if (user != null)
                 {
                     await userManager.AddToRoleAsync(user, userRole.Name);
+                    await userManager.AddToRoleAsync(user1, userRole.Name);
                 }
             }
 
