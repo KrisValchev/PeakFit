@@ -4,45 +4,74 @@
 
 <link rel="stylesheet" href="~/css/programDetails.css" />
 <section class="program-details">
-    <img src="@Model.ImageUrl" alt="Training Program Image" class="program-image" />
+	<img src="@Model.ImageUrl" alt="Training Program Image" class="program-image" />
 
-    <p class="category-name">@Model.CategoryName</p>
+	<p class="category-name">@Model.CategoryName</p>
 
-    <div class="trainer-rating">
-        <span class="trainer-name">@Model.TrainerName</span>
-        <span class="rating">
-            @for (int i = 0; i < 5; i++)
-            {
-                if (i < Model.Rating)
-                {
-                    <span class="star filled">&#9733;</span>
-                }
-                else
-                {
-                    <span class="star">&#9734;</span>
-                }
-            }
-        </span>
-    </div>
+	<div class="trainer-rating">
+		<span class="trainer-name">@Model.TrainerName</span>
+		<span class="rating" id="average-rating-section">
+			@for (int i = 0; i < 5; i++)
+			{
 
-    <h3>Exercises</h3>
-    <table class="exercise-table">
-        <thead>
-            <tr>
-                <th>Exercise</th>
-                <th>Sets</th>
-                <th>Reps</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var exercise in Model.Exercises)
-            {
-                <tr>
-                    <td>@exercise.ExerciseName</td>
-                    <td>@exercise.Sets</td>
-                    <td>@exercise.Reps</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+				if (Model.Ratings.Count != 0)
+				{
+					if (i < Model.Ratings.Average(r => r.Value))
+					{
+						<span class="star filled">&#9733;</span>
+					}
+					else
+					{
+						<span class="star">&#9734;</span>
+					}
+				}
+				else
+				{
+					<span class="star">&#9734;</span>
+				}
+			}
+		</span>
+		@if (Model.Ratings.Count != 0)
+		{
+			<span id="average-rating-@Model.Id">(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
+			<span id="total-ratings-@Model.Id">(@Model.Ratings.Count Ratings)</span>
+		}
+		else
+		{
+			<span>(0.00)</span>
+			<span>(0)</span>
+		}
+	</div>
+	<div class="trainer-rating">
+		<input type="hidden" id="current-user-id" value="@User.Id()" />
+		<span class="trainer-name">Your rating </span>
+		<div class="ratingStars" data-item-id="@Model.Id">
+			<span data-value="5" class="starsToRate">★</span>
+			<span data-value="4" class="starsToRate">★</span>
+			<span data-value="3" class="starsToRate">★</span>
+			<span data-value="2" class="starsToRate">★</span>
+			<span data-value="1" class="starsToRate">★</span>
+		</div>
+	</div>
+	<h3>Exercises</h3>
+	<table class="exercise-table">
+		<thead>
+			<tr>
+				<th>Exercise</th>
+				<th>Sets</th>
+				<th>Reps</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var exercise in Model.Exercises)
+			{
+				<tr>
+					<td>@exercise.ExerciseName</td>
+					<td>@exercise.Sets</td>
+					<td>@exercise.Reps</td>
+				</tr>
+			}
+		</tbody>
+	</table>
 </section>
+<script src="~/js/ratingProgram.js"></script>

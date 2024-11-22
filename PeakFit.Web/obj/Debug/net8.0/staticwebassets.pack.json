@@ -53,6 +53,10 @@
       "PackagePath": "staticwebassets\\js\\editTrainingProgram.js"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\ratingProgram.js",
+      "PackagePath": "staticwebassets\\js\\ratingProgram.js"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

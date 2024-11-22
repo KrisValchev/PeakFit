@@ -1,4 +1,26 @@
-﻿.program-details {
+﻿
+/*Rating*/
+.ratingStars {
+    display: flex;
+    flex-direction: row-reverse;
+    cursor: pointer;
+}
+
+.starsToRate {
+    font-size: 1.5em;
+    color: gray;
+    transition: color 0.3s;
+}
+
+    .starsToRate:hover,
+    .starsToRate:hover ~ .starsToRate {
+        color: gold;
+    }
+
+    .starsToRate.selected {
+        color: gold;
+    }
+.program-details {
     max-width: 600px;
     margin: auto;
     padding: 1em;
@@ -69,3 +91,5 @@
     .exercise-table tr:last-child td {
         border-bottom: none;
     }
+
+

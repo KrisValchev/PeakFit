@@ -14,5 +14,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeakFit.Web.Controllers.RatingController",
+    "Method": "SubmitRating",
+    "RelativePath": "api/Rating",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rating",
+        "Type": "PeakFit.Core.Models.RatingModels.RatingViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeakFit.Web.Controllers.RatingController",
+    "Method": "GetRating",
+    "RelativePath": "api/Rating/{trainingProgramId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trainingProgramId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
