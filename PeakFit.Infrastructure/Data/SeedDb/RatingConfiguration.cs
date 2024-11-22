@@ -9,13 +9,12 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Infrastructure.Data.SeedDb
 {
-    internal class UserConfiguration : IEntityTypeConfiguration<ApplicationUser>
+    public class RatingConfiguration : IEntityTypeConfiguration<Rating>
     {
-        public void Configure(EntityTypeBuilder<ApplicationUser> builder)
+        public void Configure(EntityTypeBuilder<Rating> builder)
         {
             var data = new SeedData();
-
-            builder.HasData(new ApplicationUser[] { data.User, data.Trainer, data.Admin ,data.User1});
+            builder.HasData(new Rating[] {data.Rating1,data.Rating2});
         }
     }
 }

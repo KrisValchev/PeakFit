@@ -22,6 +22,7 @@ namespace PeakFit.Web.Data
             builder.ApplyConfiguration(new TrainingProgramConfiguration());
             builder.ApplyConfiguration(new ExerciseConfiguration());
             builder.ApplyConfiguration(new ProgramExerciseConfiguration());
+            builder.ApplyConfiguration(new RatingConfiguration());
             builder.ApplyConfiguration(new EventConfiguration());
             builder.ApplyConfiguration(new CommentConfiguration());
 
@@ -36,6 +37,7 @@ namespace PeakFit.Web.Data
         public DbSet<ProgramExercise> ProgramExercises { get; set; } = null!;
         public DbSet<Exercise> Exercises { get; set; } = null!;
         public DbSet<TrainingProgram> TrainingPrograms { get; set; } = null!;
+        public DbSet<Rating> Ratings { get; set; } = null!;
         public DbSet<UserProgram> UsersPrograms { get; set; } = null!;
 
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PeakFit.Web.Data;
 
@@ -11,9 +12,11 @@ using PeakFit.Web.Data;
 namespace PeakFit.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241122151840_NewUserAddedToApplicationUser")]
+    partial class NewUserAddedToApplicationUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -751,14 +754,14 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = 1,
                             TrainingProgramId = 1,
-                            UserId = "99b6038d-69be-4503-b7e6-baa93b476034",
+                            UserId = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
                             Value = 5
                         },
                         new
                         {
                             Id = 2,
                             TrainingProgramId = 1,
-                            UserId = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
+                            UserId = "99b6038d-69be-4503-b7e6-baa93b476034",
                             Value = 4
                         });
                 });
@@ -865,15 +868,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "3ca894f3-b3ef-493f-a694-8c3ef2b2c855",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "060dcbee-5f16-4311-9134-77ef0b7fd901",
+                            ConcurrencyStamp = "93a28d2d-aaa1-4444-ba1d-60212dfc2de4",
                             Email = "user@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "user@gmail.com",
                             NormalizedUserName = "user@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBqBaSni2U+kFpZ91FwCB3QNxi41wjMQ5HfAjw7esLiqzKeey3KB6z5HCcq7DRLYvQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEF8bZxwp7DVvLUbrhkrX4jQmlRva4Vd/b203o0eqKy/aQoey0ku/xJu9/AfrD5A5Ag==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1cd87dbe-2753-4536-a729-23adaa5cc785",
+                            SecurityStamp = "30f53640-7abd-45c6-815d-d136f9cf46d2",
                             TwoFactorEnabled = false,
                             UserName = "user@gmail.com",
                             FirstName = "User",
@@ -885,16 +888,16 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "59c4ebcd-35ca-4c88-aa6e-7a356eddc926",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "935ee059-d4cb-4ce3-8ada-04e2aae13f70",
+                            ConcurrencyStamp = "c57d98c6-572e-4645-84f7-829a32bb1c32",
                             Email = "trainer@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "trainer@gmail.com",
                             NormalizedUserName = "trainer@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJz02HCcqZiJ1XJCARpgglpo7zUgLfnLc8La5Ls9ICfGVUQ/4YtZ/UIiLFVZq5Zraw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJug9PTD0GGBXLoDqJ3JJx9xB03FuTFVsn23m8yaDzuoae0u4sRe/nPCaCukQnb9ZQ==",
                             PhoneNumber = "0878080808",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "78e24795-9b27-4826-ac5b-f2df15bc2bfe",
+                            SecurityStamp = "0028a496-2ada-46e1-b5ec-628a811232df",
                             TwoFactorEnabled = false,
                             UserName = "trainer@gmail.com",
                             FirstName = "Trainer",
@@ -906,15 +909,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "e4fe197a-ffd1-45ec-ac7b-a203a82aa523",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c8a0277e-2226-4d75-b69f-0c8cf8814a45",
+                            ConcurrencyStamp = "9201fd51-cc66-433c-bf00-ca7c3b1a52df",
                             Email = "admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEI4S746syyRDyz5LeKdZUmprSd4Ck5cv3JCFCvQ7AQxrcg2kAMyhWtw0Qj6ajtNUrQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEF9WpE898KHPDIlREeDPCVg4caRzyHemTfuvnk528UxkNGFfoY0miL97mfBskgPS9A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "75a35a55-6f9b-454a-9c7d-f85199066b60",
+                            SecurityStamp = "ea217580-795a-42b9-ba41-b4bde5bba86c",
                             TwoFactorEnabled = false,
                             UserName = "admin@gmail.com",
                             FirstName = "Admin",
@@ -926,15 +929,15 @@ namespace PeakFit.Web.Data.Migrations
                         {
                             Id = "99b6038d-69be-4503-b7e6-baa93b476034",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0b502e7e-7651-4a7a-9a09-390888e87868",
+                            ConcurrencyStamp = "5734578f-5cb5-4d9e-ba82-34adfa9ad80b",
                             Email = "user1@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "user1@gmail.com",
                             NormalizedUserName = "user1@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEOpUb7r/roOQqcLQU3gHte2aHGV3Cj0W8iFjtHwcbbYt0On6y9MpBU10TVvC6xl4jg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMM0vqc24AE6SHjICutktxFnhBv9Z41m/lC3Q7pmx2OKoKTmqc0NnrBy8q3bj0CMJA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "93b62b10-774e-4e88-8642-47208ba4575c",
+                            SecurityStamp = "4054ed30-05c3-45e6-ac98-7731a440c88c",
                             TwoFactorEnabled = false,
                             UserName = "user1@gmail.com",
                             FirstName = "Pesho",

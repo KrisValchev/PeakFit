@@ -28,5 +28,7 @@ namespace PeakFit.Infrastructure.Data.Models
         [Comment("Inspirational description about the user")]
         [MaxLength(AboutDescriptionMaxLength)]
         public string? AboutDescription { get; set; } 
+
+        public IList<Rating> Ratings { get; set; } =new List<Rating>();
 	}
 }

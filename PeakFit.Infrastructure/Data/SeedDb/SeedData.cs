@@ -14,6 +14,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
     {
         //Users
         public ApplicationUser User { get; set; }
+        public ApplicationUser User1 { get; set; }
         public ApplicationUser Trainer { get; set; }
         public ApplicationUser Admin { get; set; }
 
@@ -81,7 +82,9 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public Event Event1 { get; set; }
         //Comments
         public Comment Comment1 { get; set; }
-
+        //Ratings
+        public Rating Rating1 { get; set; }
+        public Rating Rating2 { get; set; }
         public SeedData()
         {
             SeedUsers();
@@ -89,6 +92,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
             SeedPrograms();
             SeedExercises();
             SeedProgramExercises();
+            SeedRatings();
             SeedEvents();
             SeedComments();
         }
@@ -129,6 +133,22 @@ namespace PeakFit.Infrastructure.Data.SeedDb
 
             User.PasswordHash =
             hasher.HashPassword(User, "User1234");
+
+            User1 = new ApplicationUser()
+            {
+                Id = "99b6038d-69be-4503-b7e6-baa93b476034",
+                UserName = "user1@gmail.com",
+                NormalizedUserName = "user1@gmail.com",
+                Email = "user1@gmail.com",
+                NormalizedEmail = "user1@gmail.com",
+                FirstName = "Pesho",
+                LastName = "Peshov",
+                Gender = "Male",
+                ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
+            };
+
+            User1.PasswordHash =
+            hasher.HashPassword(User1, "User1234");
 
             //Trainer
             Trainer = new ApplicationUser()
@@ -191,7 +211,24 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 CategoryId = Legs.Id,
                 IsDeleted = false,
                 ImageUrl = "https://athleanx.com/wp-content/uploads/2022/09/LEG-WORKOUTS.png",
-                Ratings = new List<double> { 3, 3.5, 5 }
+
+            };
+        }
+        private void SeedRatings()
+        {
+            Rating1 = new Rating
+            {
+                Id = 1,
+                Value = 5,
+                UserId = User1.Id,
+                TrainingProgramId = Program1.Id
+            };
+            Rating2 = new Rating
+            {
+                Id = 2,
+                Value = 4,
+                UserId = User.Id,
+                TrainingProgramId = Program1.Id
             };
         }
         private void SeedExercises()

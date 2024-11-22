@@ -31,7 +31,7 @@ namespace PeakFit.Infrastructure.Data.Models
         [Comment("Tells if program is deleted")]
         public bool IsDeleted { get; set; }
 
-		public IList<double> Ratings { get; set; } = new List<double>();
+		public IList<Rating> Ratings { get; set; } = new List<Rating>();
         public ICollection<ProgramExercise> Exercises { get; set; } = new List<ProgramExercise>();
     }
 }
