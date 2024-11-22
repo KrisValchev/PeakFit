@@ -28,7 +28,7 @@ namespace PeakFit.Core.Services
 				CategoryId = model.CategoryId,
 				ImageUrl = model.ImageUrl,
 				UserId = trainer.Id,
-				Ratings = new List<double>() { 0 },
+				Ratings = new List<Rating>(),
 				Exercises = new List<ProgramExercise>()
 			};
 
@@ -75,7 +75,7 @@ namespace PeakFit.Core.Services
 				ImageUrl = p.ImageUrl,
 				CategoryId = p.CategoryId,
 				CategoryName = p.Category.CategoryName,
-				Rating = p.Ratings.Average()
+				Ratings = p.Ratings
 
 			}).ToListAsync();
 			return allPrograms;
@@ -94,7 +94,7 @@ namespace PeakFit.Core.Services
 					ImageUrl = p.ImageUrl,
 					CategoryId = p.CategoryId,
 					CategoryName = p.Category.CategoryName,
-					Rating = p.Ratings.Average(),
+					Ratings = p.Ratings,
 					Exercises = p.Exercises.Select(pe => new ProgramExerciseDetailsViewModel
 					{
 						Id = pe.Id,
@@ -208,7 +208,7 @@ namespace PeakFit.Core.Services
 					ImageUrl = tp.ImageUrl,
 					CategoryId = tp.CategoryId,
 					CategoryName = tp.Category.CategoryName,
-					Rating = tp.Ratings.Average()
+					Ratings = tp.Ratings
 				}).ToListAsync();
 		}
 
