@@ -133,5 +133,7 @@ namespace PeakFit.Web.Controllers
 			await programService.DeleteAsync(id);
 			return RedirectToAction(nameof(Mine));
 		}
+
+		
 	}
 }

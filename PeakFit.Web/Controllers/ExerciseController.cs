@@ -31,27 +31,5 @@ namespace PeakFit.Web.Controllers
 
             return Ok(exercisesDto);
         }
-        //[HttpGet("GetAll")]
-        //public async Task<IActionResult> GetAllExercises()
-        //{
-
-
-
-        //    //var exercisesDto = exercises.Select(e => new
-        //    //{
-        //    //    e.ExerciseName,
-        //    //    e.Category.CategoryName,
-        //    //    e.CategoryId,
-        //    //    e.Id
-        //    //});
-        //    //if (exercises == null)
-        //    //{
-        //    //    return NotFound("No exercises found for the selected category.");
-        //    //}
-
-        //    //return Ok(exercisesDto);
-
-
-        //}
     }
 }
