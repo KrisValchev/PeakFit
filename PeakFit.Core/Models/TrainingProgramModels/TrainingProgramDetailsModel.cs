@@ -28,7 +28,7 @@ namespace PeakFit.Core.Models.TrainingProgramModels
         [Display(Name = "Trainer identifier")]
         public string TrainerName { get; set; } = null!;
         [Display(Name = "Program rating")]
-        public double Rating { get; set; }
+        public IList<Rating> Ratings { get; set; } = new List<Rating>();
         [Display(Name = "Program's exercises")]
         public ICollection<ProgramExerciseDetailsViewModel> Exercises { get; set; } = new List<ProgramExerciseDetailsViewModel>();
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PeakFit.Infrastructure.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,7 +23,7 @@ namespace PeakFit.Core.Models.TrainingProgramModels
         [Display(Name = "Trainer username")]
         public string TrainerUserName { get; set; } = null!;
         [Display(Name = "Program rating")]
-        public double Rating { get; set; }
+        public IList<Rating> Ratings { get; set; }=new List<Rating>();
 
     }
 }
