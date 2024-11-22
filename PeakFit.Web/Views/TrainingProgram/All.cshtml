@@ -3,36 +3,53 @@
 @inject PeakFit.Core.Contracts.ITrainerService trainerService
 @model IEnumerable<PeakFit.Core.Models.TrainingProgramModels.AllTrainingProgramsInfoModel>
 @{
-    ViewData["Title"] = "All Training Programs";
+	ViewData["Title"] = "All Training Programs";
 }
 
 <h2 class="text-center">@ViewData["Title"]</h2>
-<link rel="stylesheet" href="~/css/trainingProgramCard.css"/>
-<section class="program-section" style="width:55vw; display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;" >
-    @foreach (var Model in Model)
-    {
-        <div class="program-card">
-            <img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image" />
-            <h3 class="category-title">@Model.CategoryName</h3>
-                <span class="trainer-name">@Model.TrainerUserName</span>
-            <div class="trainer-rating">
-            <span class="rating">
-                @for (int i = 0; i < 5; i++)
-                {
-                    if (i < Model.Rating)
-                    {
-                        <span class="star filled">&#9733;</span>
-                    }
-                    else
-                    {
-                        <span class="star">&#9734;</span>
-                    }
-                }
-            </span><span>(@Model.Rating.ToString("F2"))</span>
-            </div>
-            <a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
-            
-        </div>
-    }
+<link rel="stylesheet" href="~/css/trainingProgramCard.css" />
+<section class="program-section" style="width:55vw; display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;">
+	@foreach (var Model in Model)
+	{
+		<div class="program-card">
+			<img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image" />
+			<h3 class="category-title">@Model.CategoryName</h3>
+			<span class="trainer-name">@Model.TrainerUserName</span>
+			<div class="trainer-rating">
+				<span class="rating">
+					@for (int i = 0; i < 5; i++)
+					{
+						if (Model.Ratings.Count != 0)
+						{
+							if (i < Model.Ratings.Average(r => r.Value))
+							{
+								<span class="star filled">&#9733;</span>
+							}
+							else
+							{
+								<span class="star">&#9734;</span>
+							}
+						}
+						else
+						{
+							<span class="star">&#9734;</span>
+						}
+					}
+				</span>
+				@if (Model.Ratings.Count != 0)
+				{
+					<span>(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
+					<span id="total-ratings-@Model.Id">(@Model.Ratings.Count Ratings)</span>
+				}
+				else
+				{
+					<span>(0.00)</span>
+					<span>(0 Ratings)</span>
+				}
+			</div>
+			<a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
+
+		</div>
+	}
 
 </section>
