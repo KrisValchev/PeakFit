@@ -10,8 +10,8 @@ namespace PeakFit.Core.Contracts
 {
 	public interface IRatingService
 	{
-		public Task SaveRatingAsync(RatingViewModel rating);
-		public Task<RatingViewModel> GetRatingAsync(string userId,int trainingProgramId);
+		 Task SaveRatingAsync(RatingViewModel rating);
+		 Task<RatingViewModel> GetRatingAsync(string userId,int trainingProgramId);
 		Task DeleteRatingAsync(RatingViewModel rating);
 
 		Task<(double averageRating, int totalRatings)> GetProgramRatingStatsAsync(int trainingProgramId);
