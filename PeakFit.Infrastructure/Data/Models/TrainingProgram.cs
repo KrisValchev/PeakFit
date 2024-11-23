@@ -33,5 +33,6 @@ namespace PeakFit.Infrastructure.Data.Models
 
 		public IList<Rating> Ratings { get; set; } = new List<Rating>();
         public ICollection<ProgramExercise> Exercises { get; set; } = new List<ProgramExercise>();
-    }
+		public ICollection<UserProgram> UsersPrograms { get; set; } = new List<UserProgram>();
+	}
 }
