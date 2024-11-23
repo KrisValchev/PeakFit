@@ -24,6 +24,8 @@ namespace PeakFit.Core.Models.TrainingProgramModels
         public string TrainerUserName { get; set; } = null!;
         [Display(Name = "Program rating")]
         public IList<Rating> Ratings { get; set; }=new List<Rating>();
+		[Display(Name = "Users that liked this program")]
+		public UserProgram UserProgram =new UserProgram();
 
-    }
+	}
 }
