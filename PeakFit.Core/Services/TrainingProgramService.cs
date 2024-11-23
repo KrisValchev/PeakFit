@@ -75,7 +75,8 @@ namespace PeakFit.Core.Services
 				ImageUrl = p.ImageUrl,
 				CategoryId = p.CategoryId,
 				CategoryName = p.Category.CategoryName,
-				Ratings = p.Ratings
+				Ratings = p.Ratings,
+				UserProgram = p.UsersPrograms.FirstOrDefault()
 
 			}).ToListAsync();
 			return allPrograms;
@@ -101,7 +102,8 @@ namespace PeakFit.Core.Services
 						ExerciseName = pe.Exercise.ExerciseName,
 						Sets = pe.Sets,
 						Reps = pe.Reps
-					}).ToList()
+					}).ToList(),
+					UserProgram = p.UsersPrograms.FirstOrDefault()
 				})
 				.FirstAsync();
 
@@ -211,7 +213,7 @@ namespace PeakFit.Core.Services
 					Ratings = tp.Ratings
 				}).ToListAsync();
 		}
-
+		//DeleteAsync method is used to delete a program from the database. It takes a programId as a parameter and sets the IsDeleted property of the program to true
 		public async Task DeleteAsync(int id)
 		{
 
@@ -221,6 +223,17 @@ namespace PeakFit.Core.Services
 				program.IsDeleted = true;
 				await repository.SaveChangesAsync();
 			}
+		}
+		//AddToUsersProgramsAsync method is used to add a program to a user's programs. It takes a programId and ApplicationUser as parameters
+		public async Task AddToUsersProgramsAsync(int programId, ApplicationUser userId)
+		{
+			UserProgram programUser = new UserProgram
+			{
+				ProgramId = programId,
+				UserId = userId.Id
+			};
+			await repository.AddAsync<UserProgram>(programUser);
+			await repository.SaveChangesAsync();
 		}
 	}
 }
