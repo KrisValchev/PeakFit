@@ -1,12 +1,14 @@
 ﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
 @using static PeakFit.Core.Constants.RoleConstants
 @model PeakFit.Core.Models.TrainingProgramModels.TrainingProgramDetailsModel
+@inject PeakFit.Core.Contracts.ITrainerService trainerService
 
 <link rel="stylesheet" href="~/css/programDetails.css" />
 <section class="program-details">
 	<img src="@Model.ImageUrl" alt="Training Program Image" class="program-image" />
 
 	<p class="category-name">@Model.CategoryName</p>
+
 
 	<div class="trainer-rating">
 		<span class="trainer-name">@Model.TrainerName</span>
@@ -42,17 +44,20 @@
 			<span>(0)</span>
 		}
 	</div>
-	<div class="trainer-rating">
-		<input type="hidden" id="current-user-id" value="@User.Id()" />
-		<span class="trainer-name">Your rating </span>
-		<div class="ratingStars" data-item-id="@Model.Id">
-			<span data-value="5" class="starsToRate">★</span>
-			<span data-value="4" class="starsToRate">★</span>
-			<span data-value="3" class="starsToRate">★</span>
-			<span data-value="2" class="starsToRate">★</span>
-			<span data-value="1" class="starsToRate">★</span>
+	@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
+	{
+		<div class="trainer-rating">
+			<input type="hidden" id="current-user-id" value="@User.Id()" />
+			<span class="trainer-name">Your rating </span>
+			<div class="ratingStars" data-item-id="@Model.Id">
+				<span data-value="5" class="starsToRate">★</span>
+				<span data-value="4" class="starsToRate">★</span>
+				<span data-value="3" class="starsToRate">★</span>
+				<span data-value="2" class="starsToRate">★</span>
+				<span data-value="1" class="starsToRate">★</span>
+			</div>
 		</div>
-	</div>
+	}
 	<h3>Exercises</h3>
 	<table class="exercise-table">
 		<thead>

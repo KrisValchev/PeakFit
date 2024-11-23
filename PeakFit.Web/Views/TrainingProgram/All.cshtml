@@ -47,8 +47,24 @@
 					<span>(0 Ratings)</span>
 				}
 			</div>
+			<div>
 			<a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
-
+			@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
+			{
+				if (Model.UserProgram != null && Model.UserProgram.ProgramId == Model.Id && Model.UserProgram.UserId == User.Id())
+				{
+						<form method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+						<button type="submit" class="btn btn-primary">Liked</button>
+					</form>
+				}
+				else
+				{
+						<form method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+						<button type="submit" class="btn btn-success">Like</button>
+					</form>
+				}
+			}
+				</div>
 		</div>
 	}
 
