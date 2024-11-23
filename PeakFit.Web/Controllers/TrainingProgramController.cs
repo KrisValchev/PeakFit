@@ -134,6 +134,30 @@ namespace PeakFit.Web.Controllers
 			return RedirectToAction(nameof(Mine));
 		}
 
-		
+		[HttpPost]
+		public async Task<IActionResult> AddToLikedPrograms(int id)
+		{
+			var currentUser = await userManager.GetUserAsync(User);
+
+			var program = await programService.DetailsAsync(id);
+
+			if (await programService.ExistAsync(id) == false)
+			{
+				//should return BadRequest
+				return BadRequest();
+			}
+
+			if (program.UserProgram != null && program.UserProgram.ProgramId == id && program.UserProgram.UserId == currentUser.Id)
+			{
+                //To redirect to LikedPrograms
+				return RedirectToAction(nameof(All));
+			}
+			else
+			{
+				await programService.AddToUsersProgramsAsync(id, currentUser);
+
+				return RedirectToAction(nameof(All));
+			}
+		}
 	}
 }
