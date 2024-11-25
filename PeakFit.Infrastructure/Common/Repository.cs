@@ -53,5 +53,10 @@ namespace PeakFit.Infrastructure.Common
         {
             return await context.SaveChangesAsync();
         }
-    }
+
+		public async Task RemoveAsync<T>(T entity) where T : class
+		{
+			DbSet<T>().Remove(entity);
+		}
+	}
 }
