@@ -37,6 +37,13 @@
 							}
 							<li class="nav-item">
 								<a class="nav-link text-dark" asp-area="" asp-controller="TrainingProgram" asp-action="All">Programs</a>
+								@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
+								{
+								<li class="nav-item">
+									<a class="nav-link text-dark" asp-area="" asp-controller="TrainingProgram" asp-action="LikedPrograms">Liked Programs</a>
+
+								</li>
+								}
 								@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == true)
 								{
 								<li class="nav-item">
