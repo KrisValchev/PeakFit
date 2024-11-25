@@ -1,26 +1,39 @@
 ﻿@model PeakFit.Core.Models.EventModels.EventDetailsModel
 @{
-    ViewData["Title"] = "Event Details";
+	ViewData["Title"] = "Event Details";
+	ViewData["Id"] = @Model.Id;
 }
 <link rel="stylesheet" href="~/css/eventDetails.css">
-<div class="event-details">
-    <!-- Event Image -->
-    <img src="@Model.ImageUrl" alt="Event Image" class="event-image">
+<section>
+	<div class="event-details">
+		<!-- Event Image -->
+		<img src="@Model.ImageUrl" alt="Event Image" class="event-image">
 
-    <!-- Event Title and Start Date/Hour -->
-    <div class="event-header">
-        <h2 class="event-title">@Model.Title</h2>
-        <div class="event-date-time">
-            <span class="event-start-date">@Model.StartDate</span>
-            <span class="event-start-hour">@Model.StartHour</span>
-        </div>
-    </div>
+		<!-- Event Title and Start Date/Hour -->
+		<div class="event-header">
+			<h2 class="event-title">@Model.Title</h2>
+			<div class="event-date-time">
+				<span class="event-start-date">@Model.StartDate</span>
+				<span class="event-start-hour">@Model.StartHour</span>
+			</div>
+		</div>
 
-    <!-- Trainer Name -->
-    <p class="event-trainer">Trainer: @Model.TrainerName</p>
-    <p class="event-trainer">Phone Number: @Model.PhoneNumber</p>
+		<!-- Trainer Name -->
+		<p class="event-trainer">Trainer: @Model.TrainerName</p>
+		<p class="event-trainer">Phone Number: @Model.PhoneNumber</p>
 
-    <!-- Event Description -->
-    <p class="event-description">@Model.Description</p>
-</div>
+		<!-- Event Description -->
+		<p class="event-description">@Model.Description</p>
+	</div>
+	<div>
+		@foreach (var comment in @Model.Comments)
+		{
+			<partial name="_CommentPartialView" model="@comment" />
+		}
+		<partial name="_CommentAddPartialView" model="@Model.AddComment" view-data="ViewData" />
+	</div>
+</section>
 
+@section Scripts {
+	<partial name="_ValidationScriptsPartial" />
+}
