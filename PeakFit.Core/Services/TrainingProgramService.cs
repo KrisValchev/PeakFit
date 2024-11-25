@@ -16,6 +16,7 @@ using PeakFit.Core.Models.ProgramExerciseModels;
 
 namespace PeakFit.Core.Services
 {
+
 	public class TrainingProgramService(IRepository repository) : ITrainingProgramService
 	{
 
@@ -233,6 +234,42 @@ namespace PeakFit.Core.Services
 				UserId = userId.Id
 			};
 			await repository.AddAsync<UserProgram>(programUser);
+			await repository.SaveChangesAsync();
+		}
+
+		public async Task<IEnumerable<AllTrainingProgramsInfoModel>> LikedProgramsAsync(ApplicationUser currentUser)
+		{
+			if (currentUser == null)
+			{
+				return Enumerable.Empty<AllTrainingProgramsInfoModel>();
+			}
+
+			return await repository.AllReadOnly<UserProgram>()
+			  .Where(r => r.UserId == currentUser.Id)
+			  .AsNoTracking()
+			  .Select(p => new AllTrainingProgramsInfoModel()
+			  {
+				  Id = p.ProgramId,
+				  TrainerId = p.UserId,
+				  TrainerUserName = $"{p.User.FirstName} {p.User.LastName}",
+				  ImageUrl = p.Program.ImageUrl,
+				  CategoryId = p.Program.CategoryId,
+				  CategoryName = p.Program.Category.CategoryName,
+				  Ratings = p.Program.Ratings,
+				  
+			  })
+			  .ToListAsync();
+		}
+
+		public async Task RemoveFromUsersProgramsAsync(int programId, ApplicationUser userId)
+		{
+			UserProgram userProgram = new UserProgram
+			{
+				ProgramId = programId,
+				UserId = userId.Id
+			};
+			await repository.RemoveAsync(userProgram);
+
 			await repository.SaveChangesAsync();
 		}
 	}

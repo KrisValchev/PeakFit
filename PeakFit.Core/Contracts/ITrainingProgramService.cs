@@ -14,18 +14,20 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Core.Contracts
 {
-    public interface ITrainingProgramService
-    {
-        Task<IEnumerable<AllTrainingProgramsInfoModel>> AllTrainingProgramsAsync();
+	public interface ITrainingProgramService
+	{
+		Task<IEnumerable<AllTrainingProgramsInfoModel>> AllTrainingProgramsAsync();
 		Task<IEnumerable<AllTrainingProgramsInfoModel>> MineTrainingProgramsAsync(ApplicationUser currentTrainer);
-        Task<TrainingProgramDetailsModel> DetailsAsync(int id);
-        Task<bool> ExistAsync(int id);
-        Task EditAsync(int id, EditTrainingProgramViewModel model);
-        Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer);
-        Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync();
-       Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(TrainingProgram trainingProgram, AddTrainingProgramModel model);
-        Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id);
+		Task<TrainingProgramDetailsModel> DetailsAsync(int id);
+		Task<bool> ExistAsync(int id);
+		Task EditAsync(int id, EditTrainingProgramViewModel model);
+		Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer);
+		Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync();
+		Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(TrainingProgram trainingProgram, AddTrainingProgramModel model);
+		Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id);
 		Task DeleteAsync(int id);
 		Task AddToUsersProgramsAsync(int programId, ApplicationUser userId);
+		Task<IEnumerable<AllTrainingProgramsInfoModel>> LikedProgramsAsync(ApplicationUser currentUser);
+		Task RemoveFromUsersProgramsAsync(int programId, ApplicationUser userId);
 	}
 }
