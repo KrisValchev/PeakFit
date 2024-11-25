@@ -157,7 +157,7 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 				user.FirstName = Input.FirstName;
 				user.LastName = Input.LastName;
 				user.Gender = Input.Gender;
-				if (user.ProfilePicture == null)
+				if (Input.ProfilePicture == null)
 				{
 					user.ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg";
 				}

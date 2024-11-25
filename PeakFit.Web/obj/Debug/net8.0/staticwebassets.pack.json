@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\PeakFit.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentAdd.css",
+      "PackagePath": "staticwebassets\\css\\commentAdd.css"
+    },
+    {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentPost.css",
+      "PackagePath": "staticwebassets\\css\\commentPost.css"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\editEventForm.css",
       "PackagePath": "staticwebassets\\css\\editEventForm.css"
     },
