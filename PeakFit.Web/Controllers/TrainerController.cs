@@ -38,7 +38,8 @@ namespace PeakFit.Web.Controllers
             {
                 return View(model);
             }
-           await trainerService.AddPhoneNumberAsync(User.Id(), model);
+            await trainerService.RemoveLikedPrograms(User.Id());
+            await trainerService.AddPhoneNumberAsync(User.Id(), model);
 
             return RedirectToAction(nameof(HomeController.Index), "Home");
         }
