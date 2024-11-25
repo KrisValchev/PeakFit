@@ -135,6 +135,7 @@ namespace PeakFit.Web.Controllers
 		}
 
 		[HttpPost]
+        [NotATrainer]
 		public async Task<IActionResult> AddToLikedPrograms(int id)
 		{
 			var currentUser = await userManager.GetUserAsync(User);
@@ -158,6 +159,32 @@ namespace PeakFit.Web.Controllers
 
 				return RedirectToAction(nameof(All));
 			}
+		}
+		[HttpGet]
+        [NotATrainer]
+		public async Task<IActionResult> LikedPrograms()
+		{
+			var currentUser = await userManager.GetUserAsync(User);
+			var likedPrograms = await programService.LikedProgramsAsync(currentUser);
+
+			return View(likedPrograms);
+		}
+
+		[HttpPost]
+        [NotATrainer]
+		public async Task<IActionResult> RemoveFromLikedPrograms(int id)
+		{
+			if (await programService.ExistAsync(id) == false)
+			{
+                //Should return custom BadRequest
+				return BadRequest();
+			}
+
+			var currentUser = await userManager.GetUserAsync(User);
+
+			await programService.RemoveFromUsersProgramsAsync(id, currentUser);
+
+			return RedirectToAction(nameof(LikedPrograms));
 		}
 	}
 }
