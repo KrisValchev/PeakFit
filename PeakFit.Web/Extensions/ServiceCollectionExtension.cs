@@ -19,6 +19,7 @@ namespace PeakFit.Web.Extensions
             services.AddScoped<ITrainingProgramService, TrainingProgramService>();
             services.AddScoped<IExerciseService, ExerciseService>();
             services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<ICommentService, CommentService>();
             return services;
         }
         public static IServiceCollection AddApplicationDbContext(this IServiceCollection services, IConfiguration config)
