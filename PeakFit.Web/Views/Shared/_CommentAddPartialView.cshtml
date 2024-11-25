@@ -1,0 +1,24 @@
+﻿@model PeakFit.Core.Models.CommentModels.CommentAddViewModel
+@using Microsoft.AspNetCore.Identity
+@using PeakFit.Infrastructure.Data.Models
+
+@inject UserManager<ApplicationUser> _userManager;
+@{
+	var currentUser = await _userManager.GetUserAsync(User);
+}
+<link rel="stylesheet" href="~/css/commentAdd.css" />
+
+<div class="comment-container">
+	<form asp-controller="Comment" asp-action="AddComment" method="post" asp-route-id="@ViewData["Id"]" >
+	<div class="comment-input">
+		<div class="user-details">
+			<img src="@currentUser.ProfilePicture" alt="User Profile Picture" class="profile-picture" />
+			<input asp-for="@Model.Title" type="text" placeholder="Title" class="comment-title" id="comment-title" aria-required="true" />
+			<span asp-validation-for="@Model.Title" class="text-danger"></span>
+			<textarea asp-for="@Model.Description" placeholder="Your message..." class="comment-message" id="comment-message" aria-required="true"></textarea>
+			<span asp-validation-for="@Model.Description" class="text-danger"></span>
+		</div>
+		<button type="submit" class="post-comment-btn" id="post-comment">Post Comment</button>
+	</div>
+	</form>
+</div>

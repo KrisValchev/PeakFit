@@ -1,0 +1,24 @@
+﻿@model PeakFit.Core.Models.CommentModels.CommentsInfoViewModel
+@using PeakFit.Web.Extensions
+
+<link rel="stylesheet" href="~/css/commentPost.css" />
+
+<div class="comment-container">
+	@if (User.Id() == Model.AuthorId)
+	{
+		<form method="post" asp-controller="Comment" asp-action="Delete" asp-route-id="@Model.Id">
+		<button class="delete-btn" title="Delete Comment">&#x2715;</button>
+		</form>
+	}
+	<img src="@Model.AuthorProfilePicture" alt="User Profile Picture" class="profile-picture" />
+
+	<div class="comment-content">
+		<div class="title-date">
+			<span class="comment-title">@Model.Title</span>
+			<span class="comment-date">@Model.PostedOn</span>
+		</div>
+		<div class="comment-message">
+			@Model.Description
+		</div>
+	</div>
+</div>
