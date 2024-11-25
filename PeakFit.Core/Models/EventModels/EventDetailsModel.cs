@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PeakFit.Core.Models.CommentModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -29,6 +30,8 @@ namespace PeakFit.Core.Models.EventModels
         public string Description {  get; set; } = null!;
 		[Display(Name = "Event trainer phone number")]
 		public string PhoneNumber { get; set; } = null!;
-		//to add comments
-	}
+        [Display(Name = "Recipe's comments")]
+        public ICollection<CommentsInfoViewModel> Comments { get; set; } = new List<CommentsInfoViewModel>();
+        public CommentAddViewModel AddComment { get; set; } = new CommentAddViewModel();
+    }
 }
