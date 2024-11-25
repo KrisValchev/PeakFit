@@ -13,6 +13,7 @@ namespace PeakFit.Core.Contracts
 		Task<bool> UserWithPhoneNumberExistsAsync(string phoneNumber);
 		Task AddPhoneNumberAsync(string id,BecomeTrainerModel model);
         Task<bool> IsInTrainerRoleAsync(string userId);
+		Task RemoveLikedPrograms(string userId);
 
     }
 }

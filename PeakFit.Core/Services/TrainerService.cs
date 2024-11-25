@@ -15,6 +15,7 @@ namespace PeakFit.Core.Services
 {
     public class TrainerService(IRepository repository, UserManager<ApplicationUser> _userManager, RoleManager<IdentityRole> _roleManager) : ITrainerService
     {
+      //Add phone number to user
         public async Task AddPhoneNumberAsync(string id, BecomeTrainerModel model)
         {
             var trainer = await repository.GetByIdAsync<ApplicationUser>(id);
@@ -30,15 +31,29 @@ namespace PeakFit.Core.Services
 
             repository.SaveChangesAsync();
         }
-
+       //Check if user is in trainer role
         public async Task<bool> IsInTrainerRoleAsync(string userId)
         {
             var trainer = await repository.AllReadOnly<ApplicationUser>().Where(t=>t.Id==userId).FirstOrDefaultAsync();
             return await _userManager.IsInRoleAsync(trainer,TrainerRole);
 
         }
+        //Remove liked programs
+		public async Task RemoveLikedPrograms(string userId)
+		{
+			var userPrograms = repository.All<UserProgram>().Where(t => t.UserId == userId).ToList();
+            if(userPrograms.Any())
+            {
+                foreach (var userProgram in userPrograms)
+                {
+                    await repository.RemoveAsync(userProgram);
+                    await repository.SaveChangesAsync();
+                }
+			}
 
-        public async Task<bool> UserWithPhoneNumberExistsAsync(string phoneNumber)
+		}
+        //Check if user with phone number exists
+		public async Task<bool> UserWithPhoneNumberExistsAsync(string phoneNumber)
         {
             return await repository.AllReadOnly<ApplicationUser>()
                .AnyAsync(t => t.PhoneNumber == phoneNumber);
