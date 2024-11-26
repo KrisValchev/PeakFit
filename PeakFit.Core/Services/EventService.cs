@@ -13,6 +13,8 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 using PeakFit.Core.Models.CommentModels;
+using PeakFit.Core.Enumerations;
+using System.Diagnostics.Tracing;
 
 
 namespace PeakFit.Core.Services
@@ -20,7 +22,7 @@ namespace PeakFit.Core.Services
 	public class EventService(IRepository repository) : IEventService
 	{
 		//CreateAsync method is used to create new event and stores it in the database, it takes event model and trainer as parameters and returns the id of the newly created event 
-		public async Task<int> CreateAsync(AddEventModel model, ApplicationUser trainer)
+		public async Task<int> CreateAsync(AddEventsModel model, ApplicationUser trainer)
 		{
 			var newEvent = new Event()
 			{
@@ -38,11 +40,37 @@ namespace PeakFit.Core.Services
 		}
 
 		// AllEvents Async method for displaying all events
-		public async Task<IEnumerable<AllEventsInfoModel>> AllEventsAsync()
+		public async Task<EventQueryServiceModel> AllEventsAsync(string? search = null,
+			 EventSorting sorting = EventSorting.DateAscending,
+			 int currentPage = 1,
+			 int eventsPerPage = 1)
 		{
 			var events = repository.AllReadOnly<Event>().Where(e => e.IsDeleted == false);
+			if (search != null)
+			{
+				string searchToLower = search.ToLower();
+				events = events
+					.Where(e => (e.Title.ToLower().Contains(searchToLower)));
+			}
 
-			var allEvents = await events.Select(e => new AllEventsInfoModel()
+			events = sorting switch
+			{
+				EventSorting.DateAscending => events
+					.OrderBy(e => e.StartDate)
+					.ThenBy(e => e.StartHour),
+				EventSorting.DateDescending => events
+					.OrderByDescending(e => e.StartDate)
+					.ThenByDescending(e=>e.StartHour),
+				EventSorting.ByNameAscending => events
+					.OrderBy(e => e.Title),
+				EventSorting.ByNameDescending => events
+					.OrderByDescending(e => e.Title)
+
+			};
+			var allEvents = await events
+				.Skip((currentPage - 1) * eventsPerPage)
+				.Take(eventsPerPage)
+				.Select(e => new EventServiceModel()
 			{
 				Id = e.Id,
 				TrainerId = e.UserId,
@@ -54,7 +82,12 @@ namespace PeakFit.Core.Services
 				ImageUrl = e.ImageUrl
 
 			}).ToListAsync();
-			return allEvents;
+			int eventsCount = await events.CountAsync();
+			return new EventQueryServiceModel()
+			{
+				Events = allEvents,
+				TotalEventsCount = eventsCount
+			};
 		}
 		//DetailsAsync method is used to to get details about a event and it takes eventId as parameter and returns EventDetailsModel
 		public async Task<EventDetailsModel> DetailsAsync(int id)
