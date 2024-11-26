@@ -51,3 +51,7 @@
   
    
 }
+
+.pagination .page-item {
+    margin: 0 2px;
+}

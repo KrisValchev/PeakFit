@@ -1,38 +1,124 @@
 ﻿@using static PeakFit.Web.Extensions.ClaimsPrincipalExtensions
 @using static PeakFit.Core.Constants.RoleConstants
 
-@model IEnumerable<PeakFit.Core.Models.EventModels.AllEventsInfoModel>
+@model PeakFit.Core.Models.EventModels.AllEventsQueryModel
 @{
-    ViewData["Title"] = "All Upcoming Events";
+	ViewData["Title"] = "All Upcoming Events";
 }
 
 <h2 class="text-center">@ViewData["Title"]</h2>
 <link rel="stylesheet" href="~/css/eventCard.css">
+<form method="get">
+	<div class="container">
+		<div class="search-filter-sort row align-items-center" style="width:30vw;text-align:center">
+			<div class="form-group col-md-3" style="width:200px">
+				<label asp-for="Search"></label>
+				<input asp-for="Search" class="form-control" placeholder="Type here....">
+			</div>
+			<div class="col-md-2" style="width:200px">
+				<label asp-for="Sorting"></label>
+				<select asp-for="Sorting" class="form-control">
+					<option value="0">Date (Ascending)</option>
+					<option value="1">Date (Descending)</option>
+					<option value="2">Name (Ascending)</option>
+					<option value="3">Name (Descending)</option>
+				</select>
+			</div>
+			<div class="col-md-3">
+				<div class="form-group mt-4 p-2">
+					<input type="submit" value="Search" class="btn btn-dark" />
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+@if (!Model.Events.Any())
+{
+	<h2 class="text-center">No events found!</h2>
+}
 <section class="event-section">
-    @foreach (var Model in Model)
-    {
-        <div class="event-item">
-            <img src="@Model.ImageUrl" alt="Event Image" class="event-image">
-            <div class="event-details">
-                <h3 class="event-title">@Model.Title</h3>
-                <p class="event-date">Trainer Name: @Model.TrainerUserName</p>
-                <p class="event-date">Start Date: @Model.StartDate</p>
-                <p class="event-time">Start Hour: @Model.StartHour</p>
-            </div>
-            <div class="buttons" style="display: flex;flex-direction: row; gap:5px;">
-               
-                <a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id"  name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
-                @{
-                    if (User?.Identity?.Name == Model.TrainerEmail || User?.IsAdmin()==true)
-                    {
-                        <a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
-                        <a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
-                           class="btn btn-danger">Delete</a>
-                    }
-                }
-            </div>
-        </div>
-    }
-    
+	@foreach (var Model in Model.Events)
+	{
+		<div class="event-item">
+			<img src="@Model.ImageUrl" alt="Event Image" class="event-image">
+			<div class="event-details">
+				<h3 class="event-title">@Model.Title</h3>
+				<p class="event-date">Trainer Name: @Model.TrainerUserName</p>
+				<p class="event-date">Start Date: @Model.StartDate</p>
+				<p class="event-time">Start Hour: @Model.StartHour</p>
+			</div>
+			<div class="buttons" style="display: flex;flex-direction: row; gap:5px;">
+
+				<a asp-controller="Event" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-info" style="color:white;width:150px;">More info</a>
+				@{
+					if (User?.Identity?.Name == Model.TrainerEmail || User?.IsAdmin() == true)
+					{
+						<a asp-controller="Event" asp-action="Edit" asp-route-id="@Model.Id" name="details" class="btn btn-warning" style="color:white;width:150px;">Edit Event</a>
+						<a asp-area="" asp-controller="Event" asp-action="Delete" asp-route-id="@Model.Id"
+						   class="btn btn-danger">Delete</a>
+					}
+				}
+			</div>
+		</div>
+	}
+
+	<nav aria-label="Page navigation" style="padding-top:2px;display:flex;justify-content:center;">
+		@if (Model.Events.Any())
+		{
+			<ul class="pagination">
+				@{
+					var previousPage = Model.CurrentPage - 1;
+					if (previousPage < 1)
+					{
+						previousPage = 1;
+					}
+
+					var maxPage = Math.Ceiling((double)Model.TotalEventsCount /
+					Model.EventsPerPage);
+				}
+				@if (Model.CurrentPage != 1)
+				{
+				<li class="page-item">
+					
+					
+					<a class="btn btn-primary"
+					   asp-controller="Event"
+					   asp-action="All"
+					   asp-route-currentPage="@previousPage"
+					   asp-route-searchTerm="@Model.Search"
+					   asp-route-sorting="@((int)Model.Sorting)">Previous</a>
+					
+				</li>
+				}
+				@for (int i = 0; i <= Model.TotalEventsCount / Model.EventsPerPage; i++)
+				{
+					<li class="page-item">
+
+						<a class="btn btn-@(Model.CurrentPage != (i+1)  ? "light" : "primary")"
+						   asp-controller="Event"
+						   asp-action="All"
+						   asp-route-currentPage="@(Model.TotalEventsCount / Model.EventsPerPage+i)"
+						   asp-route-searchTerm="@Model.Search"
+						   asp-route-sorting="@((int)Model.Sorting)">@(Model.TotalEventsCount / Model.EventsPerPage + i)</a>
+
+					</li>
+				}
+				@if (Model.CurrentPage < maxPage)
+				{
+					<li class="page-item">
+
+					<a class="btn btn-primary"
+					   asp-controller="Event"
+					   asp-action="All"
+					   asp-route-currentPage="@(Model.CurrentPage + 1)"
+					   asp-route-searchTerm="@Model.Search"
+					   asp-route-sorting="@((int)Model.Sorting)">Next</a>
+
+				</li>
+				}
+			</ul>
+		}
+
+	</nav>
 </section>
 
