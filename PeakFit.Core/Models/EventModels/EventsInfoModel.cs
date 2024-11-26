@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace PeakFit.Core.Models.EventModels
 {
-    public class AllEventsInfoModel
+    public class EventsInfoModel
     {
         [Display(Name ="Event identifier")]    
         public int Id { get; set; }

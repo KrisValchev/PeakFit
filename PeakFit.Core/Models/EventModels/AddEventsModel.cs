@@ -6,7 +6,7 @@ using static PeakFit.Infrastructure.Constraints.Errors;
 
 namespace PeakFit.Core.Models.EventModels
 {
-    public class AddEventModel
+    public class AddEventsModel
     {
         public int Id { get; set; }
         [Required(ErrorMessage = RequiredErrorMessage)]
