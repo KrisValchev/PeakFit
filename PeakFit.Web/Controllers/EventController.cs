@@ -21,9 +21,15 @@ namespace PeakFit.Web.Controllers
     {
         [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> All(IEnumerable<AllEventsInfoModel> model)
+        public async Task<IActionResult> All([FromQuery] AllEventsQueryModel model)
         {
-            model = await eventService.AllEventsAsync();
+            var _event = await eventService.AllEventsAsync(
+                model.Search,
+                model.Sorting,
+                model.CurrentPage,
+                model.EventsPerPage);
+            model.TotalEventsCount = _event.TotalEventsCount;
+            model.Events = _event.Events;
             return View(model);
         }
 
@@ -100,13 +106,13 @@ namespace PeakFit.Web.Controllers
         [MustBeTrainer]
         public async Task<IActionResult> Create()
         {
-            var model = new AddEventModel();
+            var model = new AddEventsModel();
             model.StartDate = DateTime.Now.AddDays(1).ToString(StartDateTimeFormat);
             return View(model);
         }
         [HttpPost]
         [MustBeTrainer]
-        public async Task<IActionResult> Create(AddEventModel model)
+        public async Task<IActionResult> Create(AddEventsModel model)
         {
             if (ModelState.IsValid == false)
             {
