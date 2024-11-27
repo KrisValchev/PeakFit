@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "400 page not found";
+}
+<link rel="stylesheet" href="~/css/error404.css">
+<style>
+	header {
+		display: none;
+	}
+
+	footer {
+		display: none;
+	}
+</style>
+
+<div class="error-container">
+	<h1 class="code"> 400 Bad Request </h1>
+	<p class="message">
+		The 400 (Bad Request) status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing).
+	</p>
+	<a asp-controller="Home" asp-action="Index" class="home">
+		Go Back to Home
+	</a>
+</div>
