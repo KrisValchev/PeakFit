@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static PeakFit.Core.Models.EventModels.EventsInfoModel;
 namespace PeakFit.Core.Contracts
 {
     public interface IEventService

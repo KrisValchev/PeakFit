@@ -1,4 +1,5 @@
-﻿using PeakFit.Core.Models.CategoryModels;
+﻿using PeakFit.Core.Enumerations;
+using PeakFit.Core.Models.CategoryModels;
 using PeakFit.Core.Models.EventModels;
 using PeakFit.Core.Models.ExerciseModels;
 using PeakFit.Core.Models.ProgramExerciseModels;
@@ -16,13 +17,22 @@ namespace PeakFit.Core.Contracts
 {
 	public interface ITrainingProgramService
 	{
-		Task<IEnumerable<AllTrainingProgramsInfoModel>> AllTrainingProgramsAsync();
-		Task<IEnumerable<AllTrainingProgramsInfoModel>> MineTrainingProgramsAsync(ApplicationUser currentTrainer);
+		Task<TrainingProgramQueryServiceModel> AllTrainingProgramsAsync(
+			string? search = null,
+			TrainingProgramSorting sorting = TrainingProgramSorting.Newest,
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1,
+			string? category = null);
+		Task<TrainingProgramQueryServiceModel> MineTrainingProgramsAsync(
+			ApplicationUser currentTrainer,
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1);
 		Task<TrainingProgramDetailsModel> DetailsAsync(int id);
 		Task<bool> ExistAsync(int id);
 		Task EditAsync(int id, EditTrainingProgramViewModel model);
 		Task<int> AddAsync(AddTrainingProgramModel model, ApplicationUser trainer);
 		Task<IEnumerable<CategoryViewModel>> AllCategoriesAsync();
+		Task<IEnumerable<string>> AllCategoriesNamesAsync();
 		Task<IEnumerable<ProgramExercise>> CreateProgramExercisesFromAddTrainingProgramModelAsync(TrainingProgram trainingProgram, AddTrainingProgramModel model);
 		Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id);
 		Task DeleteAsync(int id);

@@ -13,6 +13,8 @@ using System.Text;
 using System.Threading.Tasks;
 using PeakFit.Core.Models.ExerciseModels;
 using PeakFit.Core.Models.ProgramExerciseModels;
+using PeakFit.Core.Enumerations;
+using System.Text.Json.Serialization;
 
 namespace PeakFit.Core.Services
 {
@@ -64,11 +66,42 @@ namespace PeakFit.Core.Services
 			   .ToListAsync();
 		}
 		//AllTrainingProgramsAsync method is used to display all training programs
-		public async Task<IEnumerable<AllTrainingProgramsInfoModel>> AllTrainingProgramsAsync()
+		public async Task<TrainingProgramQueryServiceModel> AllTrainingProgramsAsync(
+			string? search = null,
+			TrainingProgramSorting sorting = TrainingProgramSorting.Newest,
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1,
+			string? category = null)
 		{
 			var programs = repository.AllReadOnly<TrainingProgram>().Where(p => p.IsDeleted == false);
 
-			var allPrograms = await programs.Select(p => new AllTrainingProgramsInfoModel()
+			if (category != null)
+			{
+				programs = programs
+				   .Where(p => p.Category.CategoryName == category);
+			}
+			if (search != null)
+			{
+				string searchToLower = search.ToLower();
+				programs = programs
+					.Where(p => (p.Category.CategoryName.ToLower().Contains(searchToLower)));
+			}
+
+			programs = sorting switch
+			{
+				TrainingProgramSorting.ByRatingAscending => programs
+					.OrderBy(p => p.Ratings.Average(r => r.Value)),
+				TrainingProgramSorting.ByRatingDescending => programs
+					.OrderByDescending(p => p.Ratings.Average(r => r.Value)),
+				TrainingProgramSorting.Newest => programs
+					.OrderBy(p => p.Id),
+				TrainingProgramSorting.Oldest => programs
+				   .OrderByDescending(p => p.Id)	
+			};
+			var allPrograms = await programs
+				.Skip((currentPage - 1) * trainingProgramsPerPage)
+				.Take(trainingProgramsPerPage)
+				.Select(p => new TrainingProgramServiceModel()
 			{
 				Id = p.Id,
 				TrainerId = p.UserId,
@@ -80,7 +113,13 @@ namespace PeakFit.Core.Services
 				UserProgram = p.UsersPrograms.FirstOrDefault()
 
 			}).ToListAsync();
-			return allPrograms;
+			int trainingProgramsCount = await programs.CountAsync();
+
+			return new TrainingProgramQueryServiceModel()
+			{
+				TrainingPrograms = allPrograms,
+				TotalTrainingProgramsCount = trainingProgramsCount
+			};
 		}
 		//DetailsAsync method is used to to get details about a program and it takes programId as parameter and returns TrainingProgramDetailsModel
 		public async Task<TrainingProgramDetailsModel> DetailsAsync(int id)
@@ -198,12 +237,19 @@ namespace PeakFit.Core.Services
 			program.Exercises.Clear();
 			await repository.SaveChangesAsync();
 		}
-		//MineTrainingProgramsAsync method is used to display all training programs of the current trainer
-		public async Task<IEnumerable<AllTrainingProgramsInfoModel>> MineTrainingProgramsAsync(ApplicationUser currentTrainer)
+		//MineTrainingProgramsAsync method is used to display all programs that the current user has created
+		public async Task<TrainingProgramQueryServiceModel> MineTrainingProgramsAsync(
+			ApplicationUser currentTrainer, 
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1)
 		{
-			return await repository.AllReadOnly<TrainingProgram>()
-				.Where(tp => tp.UserId == currentTrainer.Id && tp.IsDeleted == false)
-				.Select(tp => new AllTrainingProgramsInfoModel
+			var programs=  repository.AllReadOnly<TrainingProgram>()
+				.Where(tp => tp.UserId == currentTrainer.Id && tp.IsDeleted == false);
+
+			var allMinePrograms = await programs
+				.Skip((currentPage - 1) * trainingProgramsPerPage)
+				.Take(trainingProgramsPerPage)
+				.Select(tp => new TrainingProgramServiceModel()
 				{
 					Id = tp.Id,
 					TrainerId = tp.UserId,
@@ -213,6 +259,13 @@ namespace PeakFit.Core.Services
 					CategoryName = tp.Category.CategoryName,
 					Ratings = tp.Ratings
 				}).ToListAsync();
+			int trainingProgramsCount = await programs.CountAsync();
+
+			return new TrainingProgramQueryServiceModel()
+			{
+				TrainingPrograms = allMinePrograms,
+				TotalTrainingProgramsCount = trainingProgramsCount
+			};
 		}
 		//DeleteAsync method is used to delete a program from the database. It takes a programId as a parameter and sets the IsDeleted property of the program to true
 		public async Task DeleteAsync(int id)
@@ -236,7 +289,7 @@ namespace PeakFit.Core.Services
 			await repository.AddAsync<UserProgram>(programUser);
 			await repository.SaveChangesAsync();
 		}
-
+		//LikedProgramsAsync method is used to display all programs that the current user has liked
 		public async Task<IEnumerable<AllTrainingProgramsInfoModel>> LikedProgramsAsync(ApplicationUser currentUser)
 		{
 			if (currentUser == null)
@@ -256,11 +309,11 @@ namespace PeakFit.Core.Services
 				  CategoryId = p.Program.CategoryId,
 				  CategoryName = p.Program.Category.CategoryName,
 				  Ratings = p.Program.Ratings,
-				  
+
 			  })
 			  .ToListAsync();
 		}
-
+		//RemoveFromUsersProgramsAsync method is used to remove a program from a user's programs. It takes a programId and ApplicationUser as parameters
 		public async Task RemoveFromUsersProgramsAsync(int programId, ApplicationUser userId)
 		{
 			UserProgram userProgram = new UserProgram
@@ -271,6 +324,13 @@ namespace PeakFit.Core.Services
 			await repository.RemoveAsync(userProgram);
 
 			await repository.SaveChangesAsync();
+		}
+		//AllCategoriesNamesAsync method is used to display all categories names
+		public async Task<IEnumerable<string>> AllCategoriesNamesAsync()
+		{
+			return await repository.AllReadOnly<Category>()
+				.Select(ct => ct.CategoryName)
+				.ToListAsync();
 		}
 	}
 }
