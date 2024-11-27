@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\editEventForm.css"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\error404.css",
+      "PackagePath": "staticwebassets\\css\\error404.css"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
       "PackagePath": "staticwebassets\\css\\eventCard.css"
     },

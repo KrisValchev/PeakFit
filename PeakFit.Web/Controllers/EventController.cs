@@ -39,8 +39,8 @@ namespace PeakFit.Web.Controllers
         {
             if (await eventService.ExistAsync(id) == false)
             {
-                //should return BadRequest
-                return RedirectToAction(nameof(All));
+                return BadRequest();
+
             }
             var model = await eventService.DetailsAsync(id);
             return View(model);
@@ -54,9 +54,8 @@ namespace PeakFit.Web.Controllers
 
             if (await eventService.ExistAsync(id) == false)
             {
-                //should return BadRequest
-                return RedirectToAction(nameof(All));
-            }
+				return BadRequest();
+			}
             var _event = await eventService.DetailsAsync(id);
             if (_event.TrainerId != currentUser.Id && User.IsAdmin() == false)
             {
@@ -74,9 +73,8 @@ namespace PeakFit.Web.Controllers
 
             if (await eventService.ExistAsync(id) == false)
             {
-                //should return BadRequest
-                return RedirectToAction(nameof(All));
-            }
+				return BadRequest();
+			}
             if (ModelState.IsValid == false)
             {
                 return View(model);
@@ -151,9 +149,8 @@ namespace PeakFit.Web.Controllers
 
             if (await eventService.ExistAsync(id) == false)
             {
-                //should return BadRequest
-                return RedirectToAction(nameof(All));
-            }
+				return BadRequest();
+			}
             var _event = await eventService.DetailsAsync(id);
             if (_event.TrainerId != currentUser.Id && User.IsAdmin() == false)
             {

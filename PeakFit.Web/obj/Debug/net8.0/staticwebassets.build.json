@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wo6K2PMJ6X06a5garu64k/59F5FsPPPC4rAIRxau1uQ=",
+  "Hash": "ReiC4zZtAAfg94Ua+FUPWI6sg0Qef52oyxnSw2CeX1Q=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\editEventForm.css"
+    },
+    {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\error404.css",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "css/error404.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\error404.css"
     },
     {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
