@@ -1,4 +1,8 @@
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using PeakFit.Infrastructure.Data.Models;
 using PeakFit.Web.Models;
 using System.Diagnostics;
 
@@ -11,11 +15,21 @@ namespace PeakFit.Web.Controllers
 		{
 			return View();
 		}
-
-		[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-		public IActionResult Error()
+        [AllowAnonymous]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+		public IActionResult Error(int statusCode)
 		{
-			return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-		}
+            if (statusCode == 400)
+            {
+                return View("Error400");
+            }
+
+            if (statusCode == 404)
+            {
+                return View("Error404");
+            }
+
+            return View();
+        }
 	}
 }
