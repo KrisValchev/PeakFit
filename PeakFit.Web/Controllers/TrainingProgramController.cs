@@ -14,9 +14,18 @@ namespace PeakFit.Web.Controllers
     {
         [HttpGet]
         [AllowAnonymous]
-        public async Task<IActionResult> All(IEnumerable<AllTrainingProgramsInfoModel> model)
+        public async Task<IActionResult> All([FromQuery] AllTrainingProgramQueryModel model)
         {
-            model= await programService.AllTrainingProgramsAsync();
+			var program = await programService.AllTrainingProgramsAsync(
+				model.Search,
+				model.Sorting,
+				model.CurrentPage,
+				model.TrainingProgramPerPage,
+				model.Category);
+			model.TotalTrainingProgramsCount = program.TotalTrainingProgramsCount;
+			model.Categories = await programService.AllCategoriesNamesAsync();
+			model.TrainingPrograms=program.TrainingPrograms;
+
             return View(model);
         }
 
@@ -105,13 +114,18 @@ namespace PeakFit.Web.Controllers
         }
         [HttpGet]
         [MustBeTrainer]
-        public async Task<IActionResult> Mine(IEnumerable<AllTrainingProgramsInfoModel> model)
+        public async Task<IActionResult> Mine([FromQuery] AllTrainingProgramQueryModel model)
         {
             var currentUser = await userManager.GetUserAsync(User);
 
-            model = await programService.MineTrainingProgramsAsync(currentUser);
+            var program = await programService.MineTrainingProgramsAsync(
+                currentUser
+                ,model.CurrentPage
+                ,model.TrainingProgramPerPage);
+			model.TotalTrainingProgramsCount = program.TotalTrainingProgramsCount;
+			model.TrainingPrograms = program.TrainingPrograms;
 
-            return View(model);
+			return View(model);
         }
 
         [HttpGet]
