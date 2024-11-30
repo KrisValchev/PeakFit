@@ -23,8 +23,11 @@ namespace PeakFit.Web.Controllers
             {
                 return View("Error400");
             }
-
-            if (statusCode == 404)
+			if (statusCode == 401)
+			{
+				return View("Error401");
+			}
+			if (statusCode == 404)
             {
                 return View("Error404");
             }
