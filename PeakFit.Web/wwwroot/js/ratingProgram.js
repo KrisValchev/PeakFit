@@ -42,10 +42,17 @@
                         // Update the displayed total ratings
                         document.querySelector(`#total-ratings-${itemId}`).textContent = `(${data.totalRatings} Ratings)`;
                         ratingSection.innerHTML = starsHtml;
-                    }
-                }
 
-                alert(data.message);
+                        
+                    }
+
+                }
+                // Reload the page if this was the first rating
+                if (data.totalRatings === 1) {
+                    location.reload();
+                } else {
+                    alert(data.message);
+                }
             })
             .catch(error => console.error('Error submitting rating:', error));
 
