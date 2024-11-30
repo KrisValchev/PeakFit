@@ -35,13 +35,13 @@
 		</span>
 		@if (Model.Ratings.Count != 0)
 		{
-			<span id="average-rating-@Model.Id">(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
+			<span id="average-rating-@(Model.Id)">(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
 			<span id="total-ratings-@Model.Id">(@Model.Ratings.Count Ratings)</span>
 		}
 		else
 		{
-			<span>(0.00)</span>
-			<span>(0)</span>
+			<span id="average-rating-@(Model.Id)">(0.00)</span>
+			<span id="total-ratings-@Model.Id">(0)</span>
 		}
 	</div>
 	@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
