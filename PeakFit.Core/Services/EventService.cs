@@ -79,7 +79,8 @@ namespace PeakFit.Core.Services
 				Title = e.Title,
 				StartDate = e.StartDate.ToString(StartDateTimeFormat),
 				StartHour = e.StartHour.ToString(StartHourTimeFormat),
-				ImageUrl = e.ImageUrl
+				ImageUrl = e.ImageUrl,
+				CommentCount=e.Comments.Count()
 
 			}).ToListAsync();
 			int eventsCount = await events.CountAsync();

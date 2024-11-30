@@ -110,7 +110,8 @@ namespace PeakFit.Core.Services
 				CategoryId = p.CategoryId,
 				CategoryName = p.Category.CategoryName,
 				Ratings = p.Ratings,
-				UserProgram = p.UsersPrograms.FirstOrDefault()
+				UserProgram = p.UsersPrograms.FirstOrDefault(),
+				ExerciseCount=p.Exercises.Count(),
 
 			}).ToListAsync();
 			int trainingProgramsCount = await programs.CountAsync();
