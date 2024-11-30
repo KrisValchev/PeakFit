@@ -16,7 +16,6 @@ namespace PeakFit.Web.Controllers
 
             if (await eventService.ExistAsync(id) == false)
             {
-                //custom error page
                 return BadRequest();
             }
 
@@ -93,11 +92,10 @@ namespace PeakFit.Web.Controllers
 			var eventToRedirect = await eventService.DetailsAsync(comment.EventId);
 
 			await commentService.DeleteAsync(model.Id);
-			//admin panel redirect management
-			//if (User.IsAdmin())
-			//{
-			//	return RedirectToAction("ManageComments", "Management", new { area = "Administrator" });
-			//}
+			if (User.IsAdmin())
+			{
+				return RedirectToAction("ManageComments", "Management", new { area = "Administrator" });
+			}
 			return RedirectToAction("Details", "Event", new { eventToRedirect.Id });
 		}
 	}

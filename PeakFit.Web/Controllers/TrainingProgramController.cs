@@ -106,9 +106,11 @@ namespace PeakFit.Web.Controllers
             }
 
             await programService.EditAsync(id, model);
-
-            //admin panel redirect management
-            return RedirectToAction(nameof(Details), new { id });
+			if (User.IsAdmin())
+			{
+				return RedirectToAction("ManageTrainingPrograms", "Management", new { area = "Administrator" });
+			}
+			return RedirectToAction(nameof(Details), new { id });
         }
         [HttpGet]
         [MustBeTrainer]
@@ -142,6 +144,10 @@ namespace PeakFit.Web.Controllers
 				return Unauthorized();
 			}
 			await programService.DeleteAsync(id);
+			if (User.IsAdmin())
+			{
+				return RedirectToAction("ManageTrainingPrograms", "Management", new { area = "Administrator" });
+			}
 			return RedirectToAction(nameof(Mine));
 		}
 
@@ -160,8 +166,7 @@ namespace PeakFit.Web.Controllers
 
 			if (program.UserProgram != null && program.UserProgram.ProgramId == id && program.UserProgram.UserId == currentUser.Id)
 			{
-                //To redirect to LikedPrograms
-				return RedirectToAction(nameof(All));
+				return RedirectToAction(nameof(LikedPrograms));
 			}
 			else
 			{

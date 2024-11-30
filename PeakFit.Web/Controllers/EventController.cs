@@ -95,9 +95,12 @@ namespace PeakFit.Web.Controllers
             }
             await eventService.EditAsync(id, model);
 
-            //Admin return view implement!
+			if (User.IsAdmin())
+			{
+				return RedirectToAction("ManageEvents", "Management", new { area = "Administrator" });
+			}
 
-            return RedirectToAction(nameof(Details), new { id });
+			return RedirectToAction(nameof(Details), new { id });
         }
 
         [HttpGet]
@@ -157,7 +160,11 @@ namespace PeakFit.Web.Controllers
                 return Unauthorized();
             }
             await eventService.DeleteAsync(id);
-            return RedirectToAction(nameof(All));
+			if (User.IsAdmin())
+			{
+				return RedirectToAction("ManageEvents", "Management", new { area = "Administrator" });
+			}
+			return RedirectToAction(nameof(All));
         }
     }
 }
