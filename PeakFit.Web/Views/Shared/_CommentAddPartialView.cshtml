@@ -6,7 +6,7 @@
 @{
 	var currentUser = await _userManager.GetUserAsync(User);
 }
-<link rel="stylesheet" href="~/css/commentAdd.css" />
+<link rel="stylesheet" href="~/css/commentAdd.css"/>
 
 <div class="comment-container">
 	<form asp-controller="Comment" asp-action="AddComment" method="post" asp-route-id="@ViewData["Id"]" >

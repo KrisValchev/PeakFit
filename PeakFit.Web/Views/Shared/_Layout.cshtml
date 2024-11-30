@@ -56,6 +56,11 @@
 								}
 						</ul>
 					}
+						@if (User.IsAdmin() == true)
+						{
+							<a class="btn btn-dark" style="width:200px" asp-area="Administrator" asp-controller="Home" asp-action="AdminPanel">Admin Panel</a>
+
+						}
 					<partial name="_LoginPartial" />
 				</div>
 			</div>

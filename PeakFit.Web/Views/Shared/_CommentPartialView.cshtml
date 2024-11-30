@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="~/css/commentPost.css" />
 
 <div class="comment-container">
-	@if (User.Id() == Model.AuthorId)
+	@if (User.Id() == Model.AuthorId|| User.IsAdmin())
 	{
 		<form method="post" asp-controller="Comment" asp-action="Delete" asp-route-id="@Model.Id">
 		<button class="delete-btn" title="Delete Comment">&#x2715;</button>
