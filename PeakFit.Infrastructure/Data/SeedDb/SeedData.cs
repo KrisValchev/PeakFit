@@ -111,7 +111,8 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 NormalizedEmail = "admin@gmail.com",
                 FirstName = "Admin",
                 LastName = "Admin",
-                Gender = "Male",
+				PhoneNumber = "089999999",
+				Gender = "Male",
                 ProfilePicture = "https://www.pngmart.com/files/21/Admin-Profile-Vector-PNG-Clipart.png"
             };
 
@@ -127,7 +128,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
                 NormalizedEmail = "user@gmail.com",
                 FirstName = "User",
                 LastName = "User",
-                Gender = "Male",
+				Gender = "Male",
                 ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg"
             };
 
