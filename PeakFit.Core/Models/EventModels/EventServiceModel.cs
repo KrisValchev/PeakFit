@@ -34,5 +34,7 @@ namespace PeakFit.Core.Models.EventModels
 		public string TrainerUserName { get; set; } = null!;
 		[Display(Name = "Trainer email")]
 		public string TrainerEmail { get; set; } = null!;
+		[Display(Name = "Comments count")]
+		public int CommentCount { get; set; }
 	}
 }
