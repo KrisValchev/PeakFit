@@ -275,8 +275,19 @@ namespace PeakFit.Core.Services
 
 			return false;
 		}
+		public async Task<bool> IsUserAsync(string id)
+		{
+			var user = repository.All<ApplicationUser>().FirstOrDefault(u => u.Id == id);
 
-		public async Task PromoteUserAsync(string id,string phoneNumber)
+			if (user != null)
+			{
+				return await userManager.IsInRoleAsync(user, UserRole);
+			}
+
+			return false;
+		}
+
+		public async Task PromoteFromUserToAdminAsync(string id,string phoneNumber)
 		{
 			var user = repository.All<ApplicationUser>().FirstOrDefault(u => u.Id == id);
 
@@ -292,7 +303,16 @@ namespace PeakFit.Core.Services
 				await repository.SaveChangesAsync();
 			}
 		}
+		public async Task PromoteFromTrainerToAdminAsync(string id)
+		{
+			var user = repository.All<ApplicationUser>().FirstOrDefault(u => u.Id == id);
 
+			if (user != null)
+			{
+				await userManager.AddToRoleAsync(user, AdminRole);
+				
+			}
+		}
 		public async Task<UsersDetailsServiceModel> UserDetailsAsync(string id)
 		{
 			return await repository.AllReadOnly<ApplicationUser>()

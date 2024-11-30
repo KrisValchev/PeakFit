@@ -20,9 +20,11 @@ namespace PeakFit.Core.Contracts
 
         Task<UsersDetailsServiceModel> UserDetailsAsync(string id);
 
-        Task PromoteUserAsync(string id,string phoneNumber);
+        Task PromoteFromUserToAdminAsync(string id,string phoneNumber);
+        Task PromoteFromTrainerToAdminAsync(string id);
 
-        Task DemoteUserAsync(string id);
+
+		Task DemoteUserAsync(string id);
 
         Task DeleteAsync(string userId);
 
@@ -30,7 +32,9 @@ namespace PeakFit.Core.Contracts
 
         Task<bool> IsAdminAsync(string id);
         Task<bool> IsTrainerAsync(string id);
-        Task<bool> PhoneNumberExistsAsync(string phoneNumber);
+        Task<bool> IsUserAsync(string id);
+
+		Task<bool> PhoneNumberExistsAsync(string phoneNumber);
 
 	}
 }
