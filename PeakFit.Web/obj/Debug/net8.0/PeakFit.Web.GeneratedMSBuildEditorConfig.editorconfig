@@ -26,6 +26,38 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\PeakFit\PeakFit\PeakFit.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Home/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xIb21lXEFkbWluUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Management/ManageComments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xNYW5hZ2VtZW50XE1hbmFnZUNvbW1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Management/ManageEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xNYW5hZ2VtZW50XE1hbmFnZUV2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Management/ManageTrainingPrograms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xNYW5hZ2VtZW50XE1hbmFnZVRyYWluaW5nUHJvZ3JhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Management/ManageUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xNYW5hZ2VtZW50XE1hbmFnZVVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Areas/Administrator/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pc3RyYXRvclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/PeakFit/PeakFit/PeakFit.Web/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,6 +164,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/PeakFit/PeakFit/PeakFit.Web/Views/TrainingProgram/Mine.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhaW5pbmdQcm9ncmFtXE1pbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/PeakFit/PeakFit/PeakFit.Web/Views/User/PromoteToAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9tb3RlVG9BZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/PeakFit/PeakFit/PeakFit.Web/Views/_ViewImports.cshtml]

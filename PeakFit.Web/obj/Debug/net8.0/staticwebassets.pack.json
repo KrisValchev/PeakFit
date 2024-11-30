@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\PeakFit.Web.bundle.scp.css"
     },
     {
+      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\adminPanel.css",
+      "PackagePath": "staticwebassets\\css\\adminPanel.css"
+    },
+    {
       "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentAdd.css",
       "PackagePath": "staticwebassets\\css\\commentAdd.css"
     },

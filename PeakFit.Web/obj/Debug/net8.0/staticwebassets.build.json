@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ReiC4zZtAAfg94Ua+FUPWI6sg0Qef52oyxnSw2CeX1Q=",
+  "Hash": "/1+AWACW43QmCzLIkM6SqfHA2JTJRYWVmhiwkcDhCkA=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\adminPanel.css",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "css/adminPanel.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\adminPanel.css"
     },
     {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentAdd.css",
