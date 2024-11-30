@@ -57,7 +57,7 @@
 								<th>First Name</th>
 								<th>Last Name</th>
 								<th>Phone Number</th>
-								<th>Trainer</th>
+								<th>Role</th>
 							</tr>
 						</thead>
 						@if (Model.Users.Any())
@@ -72,13 +72,17 @@
 										<td>@item.LastName</td>
 										<td>@item.PhoneNumber</td>
 										<td>
-											@if (item.IsTrainer)
+											@if (await userService.IsTrainerAsync(item.Id) && !(await userService.IsAdminAsync(item.Id)))
 											{
-												<label>✔</label>
+												<label>Trainer</label>
 											}
-											else
+											@if (await userService.IsAdminAsync(item.Id))
 											{
-												<label class="text-center">❌</label>
+												<label>Admin</label>
+											}
+											@if(await userService.IsUserAsync(item.Id))
+											{
+												<label>User</label>
 											}
 										</td>
 										<td>
@@ -87,19 +91,28 @@
 											</form>
 										</td>
 										<td>
+											<div style="display:flex;flex-direction:row;gap:1em">
 											@if (await userService.IsAdminAsync(item.Id) || await userService.IsTrainerAsync(item.Id))
 											{
 												<form method="post" asp-area="" asp-controller="User" asp-action="Demote" asp-route-id="@item.Id" style="margin-bottom:auto;">
 													<button type="submit" class="btn btn-warning">Demote to user</button>
 												</form>
 											}
-											else
+											@if (await userService.IsUserAsync(item.Id) ==true)
 											{
-												<a asp-area="" asp-controller="User" asp-action="PromoteToAdmin" asp-route-id="@item.Id">
+												<a asp-area="" asp-controller="User" asp-action="PromoteFromUserToAdmin" asp-route-id="@item.Id">
 
 													<button type="submit" class="btn btn-primary submit-promote" >Promote to admin</button>
 												</a>
 											}
+												@if (await userService.IsTrainerAsync(item.Id) == true && !(await userService.IsAdminAsync(item.Id)))
+												{
+													<form method="post" asp-area="" asp-controller="User" asp-action="PromoteFromTrainerToAdmin" asp-route-id="@item.Id">
+
+														<button type="submit" class="btn btn-primary submit-promote">Promote to admin</button>
+													</form>
+												}
+											</div>
 										</td>
 									</tr>
 								}

@@ -75,7 +75,7 @@ namespace PeakFit.Web.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> PromoteToAdmin(string id)
+		public async Task<IActionResult> PromoteFromUserToAdmin(string id)
 		{
 			var currentUser = await userManager.GetUserAsync(User);
 			if (await applicationUserService.ExistsAsync(id) == false)
@@ -98,7 +98,7 @@ namespace PeakFit.Web.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> PromoteToAdmin(UsersPromoteServiceModel model)
+		public async Task<IActionResult> PromoteFromUserToAdmin(UsersPromoteServiceModel model)
 		{
 			var currentUser = await userManager.GetUserAsync(User);
 
@@ -120,10 +120,26 @@ namespace PeakFit.Web.Controllers
             {
                 return View(model);
             }
-            await applicationUserService.PromoteUserAsync(model.Id, model.PhoneNumber);
+            await applicationUserService.PromoteFromUserToAdminAsync(model.Id, model.PhoneNumber);
 			return RedirectToAction("ManageUsers", "Management", new { area = "Administrator" });
 		}
+		[HttpPost]
+		public async Task<IActionResult> PromoteFromTrainerToAdmin(UsersPromoteServiceModel model)
+		{
+			var currentUser = await userManager.GetUserAsync(User);
 
+			if (await applicationUserService.ExistsAsync(model.Id) == false)
+			{
+				return BadRequest();
+			}
+
+			if (User.IsAdmin() == false || model.Id == currentUser.Id)
+			{
+				return Unauthorized();
+			}
+			await applicationUserService.PromoteFromTrainerToAdminAsync(model.Id);
+			return RedirectToAction("ManageUsers", "Management", new { area = "Administrator" });
+		}
 		[HttpGet]
 		public async Task<IActionResult> Demote(string id)
 		{
