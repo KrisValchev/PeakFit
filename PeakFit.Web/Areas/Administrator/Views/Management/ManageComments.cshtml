@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewData["Title"] = "Manage Comments";
+}
+
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <div class="card">
+            <div class="card-header">
+                <span><i class="bi bi-table me-2"></i></span> Data Table
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table id="example"
+                           class="table table-striped data-table"
+                           style="width: 100%">
+                        <thead>
+                            <tr>
+                                <th>Author name</th>
+                                <th>Author Id</th>
+                                <th>Event Title</th>
+                                <th>Comment Title</th>
+                                <th>Posted on</th>
+                            </tr>
+                        </thead>
+                        @if (Model.Count > 0)
+                        {
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.AuthorFirstName @item.AuthorLastName</td>
+                                        <td>@item.AuthorId</td>
+                                        <td>@item.EventName</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.PostedOn</td>
+                                        <td>
+                                            <form method="post" asp-area="" asp-controller="Comment" asp-action="Delete" asp-route-id="@item.Id" style="margin-bottom:auto;">
+                                                <button type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="5">No data found</td>
+                            </tr>
+                        }
+
+                        <tfoot>
+                            <tr>
+                                <th>Author name</th>
+                                <th>Author Id</th>
+                                <th>Event Title</th>
+                                <th>Comment Title</th>
+                                <th>Posted on</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

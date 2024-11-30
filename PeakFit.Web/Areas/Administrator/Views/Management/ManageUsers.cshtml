@@ -1,0 +1,209 @@
+﻿@using PeakFit.Core.Models.ApplicationUserModels
+@using PeakFit.Web.Extensions
+@inject PeakFit.Core.Contracts.IApplicationUserService userService
+
+@model AllUsersQueryModel
+
+@{
+	ViewData["Title"] = "Manage Users";
+}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<form method="get">
+	<div class="container">
+		<div class="search-filter-sort row align-items-center">
+			<div class="form-group col-md-2">
+				<label asp-for="FirstName"></label>
+				<input asp-for="FirstName" class="form-control" placeholder="by first name...">
+			</div>
+			<div class="form-group col-md-2">
+				<label asp-for="LastName"></label>
+				<input asp-for="LastName" class="form-control" placeholder="by last name...">
+			</div>
+
+			<div class="col-md-3">
+				<label asp-for="Sorting"></label>
+				<select asp-for="Sorting" class="form-control">
+					<option value="0">Email (Ascending)</option>
+					<option value="1">Email (Descending)</option>
+					<option value="2">First name (Ascending)</option>
+					<option value="3">First name (Descending)</option>
+					<option value="4">Last name (Ascending)</option>
+					<option value="5">Last name (Descending)</option>
+				</select>
+			</div>
+			<div class="col-md-2">
+				<div class="form-group mt-4 p-2">
+					<input type="submit" value="Search" class="btn btn-success" />
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<div class="row">
+	<div class="col-md-12 mb-3">
+		<div class="card">
+			<div class="card-header">
+				<span><i class="bi bi-table me-2"></i></span> Data Table
+			</div>
+			<div class="card-body">
+				<div class="table-responsive">
+					<table id="example"
+						   class="table table-striped data-table"
+						   style="width: 100%">
+						<thead>
+							<tr>
+								<th>User Id</th>
+								<th>Email</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Phone Number</th>
+								<th>Trainer</th>
+							</tr>
+						</thead>
+						@if (Model.Users.Any())
+						{
+							<tbody>
+								@foreach (var item in Model.Users)
+								{
+									<tr>
+										<td>@item.Id</td>
+										<td>@item.Email</td>
+										<td>@item.FirstName</td>
+										<td>@item.LastName</td>
+										<td>@item.PhoneNumber</td>
+										<td>
+											@if (item.IsTrainer)
+											{
+												<label>✔</label>
+											}
+											else
+											{
+												<label class="text-center">❌</label>
+											}
+										</td>
+										<td>
+											<form method="post" asp-area="" asp-controller="User" asp-action="Delete" asp-route-id="@item.Id" style="margin-bottom:auto;">
+												<button type="submit" class="btn btn-danger">Delete</button>
+											</form>
+										</td>
+										<td>
+											@if (await userService.IsAdminAsync(item.Id) || await userService.IsTrainerAsync(item.Id))
+											{
+												<form method="post" asp-area="" asp-controller="User" asp-action="Demote" asp-route-id="@item.Id" style="margin-bottom:auto;">
+													<button type="submit" class="btn btn-warning">Demote to user</button>
+												</form>
+											}
+											else
+											{
+												<a asp-area="" asp-controller="User" asp-action="PromoteToAdmin" asp-route-id="@item.Id">
+
+													<button type="submit" class="btn btn-primary submit-promote" >Promote to admin</button>
+												</a>
+											}
+										</td>
+									</tr>
+								}
+							</tbody>
+						}
+						else
+						{
+							<tr>
+								<td colspan="5">No data found</td>
+							</tr>
+						}
+
+						<tfoot>
+							<tr>
+								<th>User Id</th>
+								<th>Email</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Phone Number</th>
+								<th>Trainer</th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		</div>
+
+@if (Model.TotalUsersCount > Model.UsersPerPage)
+{
+	<nav aria-label="Page navigation" style="padding-top:2px;display:flex;justify-content:center;">
+
+		<ul class="pagination">
+			@{
+				var previousPage = Model.CurrentPage - 1;
+				if (previousPage < 1)
+				{
+					previousPage = 1;
+				}
+
+				var maxPage = Math.Ceiling((double)Model.TotalUsersCount /
+				Model.UsersPerPage);
+			}
+			@if (Model.CurrentPage != 1)
+			{
+				<li class="page-item">
+
+
+					<a class="btn btn-dark"
+					   asp-controller="Management"
+					   asp-action="ManageUsers"
+					   asp-route-currentPage="@previousPage"
+					   asp-route-idTerm="@Model.Id"
+					   asp-route-firstnameTerm="@Model.FirstName"
+					   asp-route-lastnameTerm="@Model.LastName"
+					   asp-route-sorting="@((int)Model.Sorting)">Previous</a>
+
+				</li>
+			}
+			@for (int i = 0; i < Math.Ceiling((double)Model.TotalUsersCount / Model.UsersPerPage); i++)
+			{
+				<li class="page-item">
+
+					<a class="btn btn-@(Model.CurrentPage != (i+1)  ? "light" : "dark")"
+					   asp-controller="Management"
+					   asp-action="ManageUsers"
+					   asp-route-currentPage="@previousPage"
+					   asp-route-idTerm="@Model.Id"
+					   asp-route-firstnameTerm="@Model.FirstName"
+					   asp-route-lastnameTerm="@Model.LastName"
+					   asp-route-sorting="@((int)Model.Sorting)">@(i + 1)</a>
+
+				</li>
+			}
+			@if (Model.CurrentPage < maxPage)
+			{
+				<li class="page-item">
+
+					<a class="btn btn-dark"
+					   asp-controller="Management"
+					   asp-action="ManageUsers"
+					   asp-route-currentPage="@previousPage"
+					   asp-route-idTerm="@Model.Id"
+					   asp-route-firstnameTerm="@Model.FirstName"
+					   asp-route-lastnameTerm="@Model.LastName"
+					   asp-route-sorting="@((int)Model.Sorting)">Next</a>
+
+				</li>
+			}
+		</ul>
+
+	</nav>
+}
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		const promoteModal = document.getElementById('promoteModal');
+		const userIdInput = document.getElementById('userId');
+
+		promoteModal.addEventListener('show.bs.modal', function (event) {
+			const button = event.relatedTarget; // Button that triggered the modal
+			const userId = button.getAttribute('data-user-id'); // Extract user ID from data-* attribute
+			userIdInput.value = userId; // Set the hidden input value
+		});
+	});
+</script>
