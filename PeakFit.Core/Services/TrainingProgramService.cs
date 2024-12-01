@@ -96,24 +96,24 @@ namespace PeakFit.Core.Services
 				TrainingProgramSorting.Newest => programs
 					.OrderBy(p => p.Id),
 				TrainingProgramSorting.Oldest => programs
-				   .OrderByDescending(p => p.Id)	
+				   .OrderByDescending(p => p.Id)
 			};
 			var allPrograms = await programs
 				.Skip((currentPage - 1) * trainingProgramsPerPage)
 				.Take(trainingProgramsPerPage)
 				.Select(p => new TrainingProgramServiceModel()
-			{
-				Id = p.Id,
-				TrainerId = p.UserId,
-				TrainerUserName = $"{p.User.FirstName} {p.User.LastName}",
-				ImageUrl = p.ImageUrl,
-				CategoryId = p.CategoryId,
-				CategoryName = p.Category.CategoryName,
-				Ratings = p.Ratings,
-				UserProgram = p.UsersPrograms.FirstOrDefault(),
-				ExerciseCount=p.Exercises.Count(),
+				{
+					Id = p.Id,
+					TrainerId = p.UserId,
+					TrainerUserName = $"{p.User.FirstName} {p.User.LastName}",
+					ImageUrl = p.ImageUrl,
+					CategoryId = p.CategoryId,
+					CategoryName = p.Category.CategoryName,
+					Ratings = p.Ratings,
+					UserProgram = p.UsersPrograms.FirstOrDefault(),
+					ExerciseCount = p.Exercises.Count(),
 
-			}).ToListAsync();
+				}).ToListAsync();
 			int trainingProgramsCount = await programs.CountAsync();
 
 			return new TrainingProgramQueryServiceModel()
@@ -240,11 +240,11 @@ namespace PeakFit.Core.Services
 		}
 		//MineTrainingProgramsAsync method is used to display all programs that the current user has created
 		public async Task<TrainingProgramQueryServiceModel> MineTrainingProgramsAsync(
-			ApplicationUser currentTrainer, 
+			ApplicationUser currentTrainer,
 			int currentPage = 1,
 			int trainingProgramsPerPage = 1)
 		{
-			var programs=  repository.AllReadOnly<TrainingProgram>()
+			var programs = repository.AllReadOnly<TrainingProgram>()
 				.Where(tp => tp.UserId == currentTrainer.Id && tp.IsDeleted == false);
 
 			var allMinePrograms = await programs
@@ -291,17 +291,17 @@ namespace PeakFit.Core.Services
 			await repository.SaveChangesAsync();
 		}
 		//LikedProgramsAsync method is used to display all programs that the current user has liked
-		public async Task<IEnumerable<AllTrainingProgramsInfoModel>> LikedProgramsAsync(ApplicationUser currentUser)
+		public async Task<TrainingProgramQueryServiceModel> LikedProgramsAsync(ApplicationUser currentUser,
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1)
 		{
-			if (currentUser == null)
-			{
-				return Enumerable.Empty<AllTrainingProgramsInfoModel>();
-			}
+			var programs = repository.AllReadOnly<UserProgram>()
+			  .Where(r => r.UserId == currentUser.Id);
 
-			return await repository.AllReadOnly<UserProgram>()
-			  .Where(r => r.UserId == currentUser.Id)
-			  .AsNoTracking()
-			  .Select(p => new AllTrainingProgramsInfoModel()
+			var likedPrograms = await programs
+				.Skip((currentPage - 1) * trainingProgramsPerPage)
+				.Take(trainingProgramsPerPage)
+			  .Select(p => new TrainingProgramServiceModel()
 			  {
 				  Id = p.ProgramId,
 				  TrainerId = p.UserId,
@@ -311,8 +311,14 @@ namespace PeakFit.Core.Services
 				  CategoryName = p.Program.Category.CategoryName,
 				  Ratings = p.Program.Ratings,
 
-			  })
-			  .ToListAsync();
+			  }).ToListAsync();
+			int likedProgramsCount = await programs.CountAsync();
+
+			return new TrainingProgramQueryServiceModel()
+			{
+				TrainingPrograms = likedPrograms,
+				TotalTrainingProgramsCount = likedProgramsCount
+			};
 		}
 		//RemoveFromUsersProgramsAsync method is used to remove a program from a user's programs. It takes a programId and ApplicationUser as parameters
 		public async Task RemoveFromUsersProgramsAsync(int programId, ApplicationUser userId)

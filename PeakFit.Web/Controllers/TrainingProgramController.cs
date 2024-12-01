@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualStudio.Web.CodeGeneration.Design;
 using PeakFit.Core.Contracts;
 using  PeakFit.Core.Models.TrainingProgramModels;
 using PeakFit.Core.Services;
@@ -177,12 +178,15 @@ namespace PeakFit.Web.Controllers
 		}
 		[HttpGet]
         [NotATrainer]
-		public async Task<IActionResult> LikedPrograms()
+		public async Task<IActionResult> LikedPrograms([FromQuery] AllTrainingProgramQueryModel model)
 		{
 			var currentUser = await userManager.GetUserAsync(User);
-			var likedPrograms = await programService.LikedProgramsAsync(currentUser);
-
-			return View(likedPrograms);
+			var likedPrograms = await programService.LikedProgramsAsync(currentUser
+				, model.CurrentPage
+				, model.TrainingProgramPerPage);
+			model.TotalTrainingProgramsCount = likedPrograms.TotalTrainingProgramsCount;
+			model.TrainingPrograms = likedPrograms.TrainingPrograms;
+			return View(model);
 		}
 
 		[HttpPost]

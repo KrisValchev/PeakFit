@@ -19,6 +19,7 @@
     transition: transform 0.3s ease;
 }
 
+
     .program-card:hover {
         transform: scale(1.05);
     }

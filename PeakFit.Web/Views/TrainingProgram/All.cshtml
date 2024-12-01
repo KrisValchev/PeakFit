@@ -51,7 +51,8 @@
 <section class="program-section" style="width:55vw; display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;">
 	@foreach (var Model in Model.TrainingPrograms)
 	{
-		<div class="program-card">
+		<div class="program-card" style="   justify-content: space-between;">
+			<div style=" display: flex;flex-direction: column; align-items: center;">
 			<img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image"/>
 			<h3 class="category-title">@Model.CategoryName</h3>
 			<span class="trainer-name">@Model.TrainerUserName</span>
@@ -86,21 +87,22 @@
 					<span>(0.00)</span>
 					<span>(0 Ratings)</span>
 				}
+				</div>
 			</div>
-			<div>
-			<a asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
+			<div style="display:flex;flex-direction:column;align-items:center;width:150px;gap:0.5em;">
+				<a style="width:100%;"  asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
 			@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
 			{
 				if (Model.UserProgram != null && Model.UserProgram.ProgramId == Model.Id && Model.UserProgram.UserId == User.Id())
 				{
-						<form method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
-						<button type="submit" class="btn btn-primary">Liked</button>
+						<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+							<button type="submit" class="btn btn-primary" style="width:100%;">Liked</button>
 					</form>
 				}
 				else
 				{
-						<form method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
-						<button type="submit" class="btn btn-success">Like</button>
+						<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+							<button type="submit" class="btn btn-success" style="width:100%;">Like</button>
 					</form>
 				}
 			}

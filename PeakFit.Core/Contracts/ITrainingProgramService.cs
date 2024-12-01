@@ -28,7 +28,9 @@ namespace PeakFit.Core.Contracts
         Task<EditTrainingProgramViewModel> GetTrainingProgramFromEditTrainingProgramViewModelByIdAsync(int id);
         Task DeleteAsync(int id);
         Task AddToUsersProgramsAsync(int programId, ApplicationUser userId);
-        Task<IEnumerable<AllTrainingProgramsInfoModel>> LikedProgramsAsync(ApplicationUser currentUser);
+        Task<TrainingProgramQueryServiceModel> LikedProgramsAsync(ApplicationUser currentUser,
+			int currentPage = 1,
+			int trainingProgramsPerPage = 1);
         Task RemoveFromUsersProgramsAsync(int programId, ApplicationUser userId);
     }
 }
