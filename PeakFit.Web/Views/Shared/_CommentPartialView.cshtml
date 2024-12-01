@@ -10,13 +10,19 @@
 		<button class="delete-btn" title="Delete Comment">&#x2715;</button>
 		</form>
 	}
+	<div style="display:flex;flex-direction:column;align-self:center">
 	<img src="@Model.AuthorProfilePicture" alt="User Profile Picture" class="profile-picture" />
-
+		<span>@Model.AuthorFirstName @Model.AuthorLastName</span>
+	</div>
 	<div class="comment-content">
 		<div class="title-date">
+			<div style="display:flex;flex-direction:column;width:90%">
+			<label>Title</label>
 			<span class="comment-title">@Model.Title</span>
+			</div>
 			<span class="comment-date">@Model.PostedOn</span>
 		</div>
+			<label>Message</label>
 		<div class="comment-message">
 			@Model.Description
 		</div>

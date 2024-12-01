@@ -16,18 +16,21 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    align-self:center;
 }
 
 .comment-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex:1;
+    width:100%;
 }
 
 .title-date {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap:0.5em;
     align-items: center;
     font-weight: bold;
     margin-bottom: 5px;
@@ -40,11 +43,13 @@
     font-size: 16px;
     font-weight: 600;
     color: #222;
+       
 }
 
 .comment-date {
     font-size: 14px;
     color: #888;
+    padding-top:1em;
 }
 
 .comment-message {
@@ -52,6 +57,7 @@
     color: #555;
     margin-top: 5px;
     line-height: 1.5;
+    overflow-wrap: break-word;
 }
 
 .delete-btn {
