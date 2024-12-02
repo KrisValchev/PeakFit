@@ -15,7 +15,7 @@ namespace PeakFit.Infrastructure.Data.SeedDb
         public void Configure(EntityTypeBuilder<TrainingProgram> builder)
         {
             builder.Property(tp => tp.ImageUrl)
-                .HasDefaultValue("https://w7.pngwing.com/pngs/83/516/png-transparent-workout-dumbbells-weightlifting-dumbell-gym-thumbnail.png");
+                .HasDefaultValue("https://media.self.com/photos/6398b36c72eb56f726777d06/master/pass/weekly-workout-schedule.jpeg");
             var data = new SeedData();
             builder.HasData(new TrainingProgram[] { data.Program1 });
         }
