@@ -12,8 +12,9 @@ namespace PeakFit.Core.Services
 {
     public class AdminService(IRepository repository, UserManager<ApplicationUser> userManager) : IAdminService
     {
+	
 
-        public async Task<AdminPanelServiceModel> PanelInformationAsync()
+		public async Task<AdminPanelServiceModel> PanelInformationAsync()
         {
             int trainerCount= 0;
             int userCount= 0;
