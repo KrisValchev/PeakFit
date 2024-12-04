@@ -1,21 +1,25 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/homePage.css"/>
 
-<div class="container">
+<div class="container1">
     <div class="photo-container" id="photo1">
-        <img src="~/images/rooftop-yoga.jpg" alt="EventPhoto" class="photo">
+        <img src="~/images/yoga.jpg" alt="EventPhoto" onmouseover="expandPhoto('photo1')" class="photo">
         <div class="button-overlay">
-            <button class="photo-button"><a asp-controller="Event" asp-action="All">Events</a></button>
+            <form method="get" asp-controller="Event" asp-action="All"> <button class="photo-button" > Events</button> </form>
+           
         </div>
     </div>
     <div class="photo-container" id="photo2">
-        <img src="~/images/weight-loss-exercise-plan.jpg" alt="ProgramPhoto" class="photo">
+        <img src="~/images/weight-loss-exercise-plan.jpg" onmouseover="expandPhoto('photo2')" alt="ProgramPhoto" class="photo">
         <div class="button-overlay">
-            <button class="photo-button" onclick="expandPhoto('photo2')">Training Programs</button>
+          <form method="get" asp-controller="TrainingProgram" asp-action="All">   <button class="photo-button" >Training Programs</button></form>
         </div>
     </div>
 </div>
+
+
 
 @section Scripts {
     <script>

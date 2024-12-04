@@ -11,14 +11,14 @@
 
 <form method="get">
 	<div class="container">
-		<div class="search-filter-sort row align-items-center" style="width:40vw;text-align:center">
-			<div class="form-group col-md-3" >
-				<label asp-for="Search" ></label>
-				<input asp-for="Search"  class="form-control" placeholder="Type here....">
+		<div class="search-filter-sort row align-items-center" style="width:100%;text-align:center;justify-content:center">
+			<div class="form-group col-md-3">
+				<label asp-for="Search"></label>
+				<input asp-for="Search" class="form-control" placeholder="Type here....">
 			</div>
 			<div class="col-md-2" style="width:200px">
 				<label asp-for="Category"></label>
-				<select asp-for="Category" class="form-control" >
+				<select asp-for="Category" class="form-control">
 					<option value="">All</option>
 					@foreach (var category in Model.Categories)
 					{
@@ -26,9 +26,9 @@
 					}
 				</select>
 			</div>
-			<div class="col-md-2" >
+			<div class="col-md-2">
 				<label asp-for="Sorting"></label>
-				<select asp-for="Sorting" class="form-control" >
+				<select asp-for="Sorting" class="form-control">
 					<option value="0">Newest</option>
 					<option value="1">Oldest</option>
 					<option value="2">Rating (Ascending)</option>
@@ -48,68 +48,71 @@
 {
 	<h2 class="text-center">No programs found!</h2>
 }
-<section class="program-section" style="width:55vw; display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;">
+<section class="program-section" style="display:flex;flex-direction:row;padding:1em;gap:3em;flex-wrap:wrap;padding:1em 6em;">
 	@foreach (var Model in Model.TrainingPrograms)
 	{
 		<div class="program-card" style="   justify-content: space-between;">
 			<div style=" display: flex;flex-direction: column; align-items: center;">
-			<img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image"/>
-			<h3 class="category-title">@Model.CategoryName</h3>
-			<span class="trainer-name">@Model.TrainerUserName</span>
-			<div class="trainer-rating">
-				<span class="rating">
-					@for (int i = 0; i < 5; i++)
-					{
-						if (Model.Ratings.Count != 0)
+				<img src="@Model.ImageUrl" alt="@Model.CategoryName Image" class="program-image" />
+				<h3 class="category-title">@Model.CategoryName</h3>
+				<span class="trainer-name">@Model.TrainerUserName</span>
+				<div class="trainer-rating">
+					<span class="rating">
+						@for (int i = 0; i < 5; i++)
 						{
-							if (i < Model.Ratings.Average(r => r.Value))
+							if (Model.Ratings.Count != 0)
 							{
-								<span class="star filled">&#9733;</span>
+								if (i < Model.Ratings.Average(r => r.Value))
+								{
+									<span class="star filled">&#9733;</span>
+								}
+								else
+								{
+									<span class="star">&#9734;</span>
+								}
 							}
 							else
 							{
 								<span class="star">&#9734;</span>
 							}
 						}
-						else
-						{
-							<span class="star">&#9734;</span>
-						}
+					</span>
+					@if (Model.Ratings.Count != 0)
+					{
+						<span>(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
+						<span id="total-ratings-@Model.Id">(@Model.Ratings.Count Ratings)</span>
 					}
-				</span>
-				@if (Model.Ratings.Count != 0)
-				{
-					<span>(@Model.Ratings.Average(r => r.Value).ToString("F2"))</span>
-					<span id="total-ratings-@Model.Id">(@Model.Ratings.Count Ratings)</span>
-				}
-				else
-				{
-					<span>(0.00)</span>
-					<span>(0 Ratings)</span>
-				}
+					else
+					{
+						<span>(0.00)</span>
+						<span>(0 Ratings)</span>
+					}
 				</div>
 			</div>
 			<div style="display:flex;flex-direction:column;align-items:center;width:150px;gap:0.5em;">
-				<a style="width:100%;"  asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
-			@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
-			{
-				if (Model.UserProgram != null && Model.UserProgram.ProgramId == Model.Id && Model.UserProgram.UserId == User.Id())
+				<a style="width:100%;" asp-controller="TrainingProgram" asp-action="Details" asp-route-id="@Model.Id" name="details" class="btn btn-dark" style="color:white;width:150px;">Open</a>
+				@if (User?.Identity?.IsAuthenticated == true)
 				{
-						<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
-							<button type="submit" class="btn btn-primary" style="width:100%;">Liked</button>
-					</form>
+					@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
+					{
+						if (Model.UserProgram != null && Model.UserProgram.ProgramId == Model.Id && Model.UserProgram.UserId == User.Id())
+						{
+							<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+								<button type="submit" class="btn btn-primary" style="width:100%;">Liked</button>
+							</form>
+						}
+						else
+						{
+							<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
+								<button type="submit" class="btn btn-success" style="width:100%;">Like</button>
+							</form>
+						}
+					}
 				}
-				else
-				{
-						<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
-							<button type="submit" class="btn btn-success" style="width:100%;">Like</button>
-					</form>
-				}
-			}
-				</div>
+			</div>
 		</div>
 	}
-	 
+
 	<div style="width:100%;">
 		@if (Model.TotalTrainingProgramsCount > Model.TrainingProgramPerPage)
 		{
@@ -145,7 +148,7 @@
 						<li class="page-item">
 
 							<a class="btn btn-@(Model.CurrentPage != (i+1)  ? "light" : "dark")"
-						   asp-controller="TrainingProgram"
+							   asp-controller="TrainingProgram"
 							   asp-action="All"
 							   asp-route-currentPage="@(i+1)"
 							   asp-route-searchTerm="@Model.Search"
@@ -158,7 +161,7 @@
 						<li class="page-item">
 
 							<a class="btn btn-dark"
-						   asp-controller="TrainingProgram"
+							   asp-controller="TrainingProgram"
 							   asp-action="All"
 							   asp-route-currentPage="@(Model.CurrentPage + 1)"
 							   asp-route-searchTerm="@Model.Search"

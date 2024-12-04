@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/1+AWACW43QmCzLIkM6SqfHA2JTJRYWVmhiwkcDhCkA=",
+  "Hash": "9O5fApj7Ynrze5t/0OfRypQuHj9t2ZviJerixILF2oQ=",
   "Source": "PeakFit.Web",
   "BasePath": "_content/PeakFit.Web",
   "Mode": "Default",
@@ -1328,6 +1328,25 @@
       "OriginalItemSpec": "wwwroot\\css\\eventDetails.css"
     },
     {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\homePage.css",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "css/homePage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\homePage.css"
+    },
+    {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programAdd.css",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
@@ -1423,25 +1442,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\rooftop-yoga.jpg",
-      "SourceId": "PeakFit.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
-      "BasePath": "_content/PeakFit.Web",
-      "RelativePath": "images/rooftop-yoga.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\rooftop-yoga.jpg"
-    },
-    {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
       "SourceId": "PeakFit.Web",
       "SourceType": "Discovered",
@@ -1459,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\weight-loss-exercise-plan.jpg"
+    },
+    {
+      "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\yoga.jpg",
+      "SourceId": "PeakFit.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\",
+      "BasePath": "_content/PeakFit.Web",
+      "RelativePath": "images/yoga.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\yoga.jpg"
     },
     {
       "Identity": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
