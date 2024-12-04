@@ -19,7 +19,7 @@ namespace PeakFit.Core.Services
             {
                 using (var scope = serviceProvider.CreateScope())
                 {
-                    var myService = scope.ServiceProvider.GetRequiredService<IDeleteEventWithExpiredDate>();
+                    var myService = scope.ServiceProvider.GetRequiredService<IDeleteEventWithExpiredDateService>();
                     await myService.DeleteExpiredEventsAsync();
                 }
 

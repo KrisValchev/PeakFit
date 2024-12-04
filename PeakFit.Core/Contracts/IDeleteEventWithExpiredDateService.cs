@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Core.Contracts
 {
-    public interface IDeleteEventWithExpiredDate
+    public interface IDeleteEventWithExpiredDateService
     {
         public Task DeleteExpiredEventsAsync();
     }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace PeakFit.Core.Services
 {
-    public class DeleteEventWithExpiredDate(IRepository repository) : IDeleteEventWithExpiredDate
+    public class DeleteEventWithExpiredDateService(IRepository repository) : IDeleteEventWithExpiredDateService
     {
         //This method deletes events with expired dates
         public async Task DeleteExpiredEventsAsync()
