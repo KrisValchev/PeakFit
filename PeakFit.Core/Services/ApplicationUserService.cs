@@ -64,7 +64,7 @@ namespace PeakFit.Core.Services
 					FirstName = e.FirstName,
 					LastName = e.LastName,
 					IsTrainer = e.PhoneNumber != null,
-					PhoneNumber=e.PhoneNumber
+					PhoneNumber = e.PhoneNumber
 				})
 				.ToListAsync();
 
@@ -156,7 +156,13 @@ namespace PeakFit.Core.Services
 						};
 						await repository.RemoveAsync(userProgramToRemove);
 					}
-
+					var commentsToRemove = await repository.AllReadOnly<Comment>()
+				.Where(p => p.UserId == userId)
+				.ToListAsync();
+					foreach (var comment in commentsToRemove)
+					{
+						await repository.DeleteAsync<Comment>(comment.Id);
+					}
 					var ratings = await repository.AllReadOnly<Rating>()
 							.Where(r => r.UserId == userId)
 							.ToListAsync();
@@ -173,7 +179,7 @@ namespace PeakFit.Core.Services
 
 
 		}
-		
+
 		public async Task DemoteUserAsync(string id)
 		{
 			var user = repository.All<ApplicationUser>().FirstOrDefault(u => u.Id == id);
@@ -287,18 +293,18 @@ namespace PeakFit.Core.Services
 			return false;
 		}
 
-		public async Task PromoteFromUserToAdminAsync(string id,string phoneNumber)
+		public async Task PromoteFromUserToAdminAsync(string id, string phoneNumber)
 		{
 			var user = repository.All<ApplicationUser>().FirstOrDefault(u => u.Id == id);
 
 			if (user != null)
 			{
-				user.PhoneNumber=phoneNumber;
+				user.PhoneNumber = phoneNumber;
 				await userManager.AddToRoleAsync(user, AdminRole);
 				await userManager.AddToRoleAsync(user, TrainerRole);
-				if(await userManager.IsInRoleAsync(user, UserRole))
+				if (await userManager.IsInRoleAsync(user, UserRole))
 				{
-				await userManager.RemoveFromRoleAsync(user, UserRole);
+					await userManager.RemoveFromRoleAsync(user, UserRole);
 				}
 				await repository.SaveChangesAsync();
 			}
@@ -310,7 +316,7 @@ namespace PeakFit.Core.Services
 			if (user != null)
 			{
 				await userManager.AddToRoleAsync(user, AdminRole);
-				
+
 			}
 		}
 		public async Task<UsersDetailsServiceModel> UserDetailsAsync(string id)

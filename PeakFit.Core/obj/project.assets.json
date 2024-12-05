@@ -3374,7 +3374,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kvalc\\.nuget\\packages\\": {}
+    "C:\\Users\\kvalc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3385,8 +3386,12 @@
       "packagesPath": "C:\\Users\\kvalc\\.nuget\\packages\\",
       "outputPath": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\kvalc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -10,7 +10,6 @@ using PeakFit.Core.Services;
 using PeakFit.Infrastructure.Common;
 using PeakFit.Infrastructure.Data.Models;
 using PeakFit.Web.Data;
-using PeakFit.Web.Data.Migrations;
 using static PeakFit.Core.Constants.RoleConstants;
 using static PeakFit.Infrastructure.Constraints.EventDataConstraints;
 

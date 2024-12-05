@@ -165,7 +165,7 @@ namespace PeakFit.Web.Controllers
 				return BadRequest();
 			}
 
-			if (program.UserProgram != null && program.UserProgram.ProgramId == id && program.UserProgram.UserId == currentUser.Id)
+			if (program.UserProgram != null && program.UserProgram.Any(up=>up.ProgramId==id && up.UserId==currentUser.Id))
 			{
 				return RedirectToAction(nameof(LikedPrograms));
 			}

@@ -95,7 +95,7 @@
 				{
 					@if (await trainerService.IsInTrainerRoleAsync(User.Id()) == false)
 					{
-						if (Model.UserProgram != null && Model.UserProgram.ProgramId == Model.Id && Model.UserProgram.UserId == User.Id())
+						if (Model.UserProgram != null && Model.UserProgram.Any(up=>up.ProgramId==Model.Id && up.UserId==User.Id()))
 						{
 							<form style="width:100%;" method="post" asp-controller="TrainingProgram" asp-action="AddToLikedPrograms" asp-route-id="@Model.Id">
 								<button type="submit" class="btn btn-primary" style="width:100%;">Liked</button>
