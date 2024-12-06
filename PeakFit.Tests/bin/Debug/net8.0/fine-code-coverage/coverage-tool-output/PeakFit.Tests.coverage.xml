@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9345" branch-rate="0.7095999999999999" version="1.9" timestamp="1733510537" lines-covered="3242" lines-valid="3469" branches-covered="110" branches-valid="155">
+<coverage line-rate="0.9351999999999999" branch-rate="0.7132999999999999" version="1.9" timestamp="1733513257" lines-covered="3281" lines-valid="3508" branches-covered="112" branches-valid="157">
   <sources>
     <source>D:\PeakFit\PeakFit\</source>
     <source>C:\</source>
@@ -1215,36 +1215,36 @@
           <methods>
             <method name=".ctor" signature="(PeakFit.Infrastructure.Common.IRepository)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="3" branch="False" />
+                <line number="13" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="13" hits="3" branch="False" />
+            <line number="13" hits="5" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Core.Services.DeleteEventWithExpiredDateService/&lt;DeleteExpiredEventsAsync&gt;d__2" filename="PeakFit.Core\Services\DeleteEventWithExpiredDateService.cs" line-rate="1" branch-rate="1" complexity="6">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="6">
               <lines>
-                <line number="17" hits="3" branch="False" />
-                <line number="18" hits="3" branch="False" />
-                <line number="19" hits="3" branch="False" />
-                <line number="20" hits="3" branch="False" />
-                <line number="22" hits="3" branch="True" condition-coverage="100% (2/2)">
+                <line number="17" hits="4" branch="False" />
+                <line number="18" hits="4" branch="False" />
+                <line number="19" hits="4" branch="False" />
+                <line number="20" hits="4" branch="False" />
+                <line number="22" hits="4" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="293" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="23" hits="3" branch="False" />
-                <line number="24" hits="15" branch="True" condition-coverage="100% (2/2)">
+                <line number="23" hits="4" branch="False" />
+                <line number="24" hits="24" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="483" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="25" hits="3" branch="False" />
-                <line number="26" hits="3" branch="False" />
-                <line number="27" hits="15" branch="True" condition-coverage="100% (2/2)">
+                <line number="25" hits="6" branch="False" />
+                <line number="26" hits="6" branch="False" />
+                <line number="27" hits="24" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
                     <condition number="428" type="jump" coverage="100%" />
                   </conditions>
@@ -1252,32 +1252,32 @@
                 <line number="28" hits="3" branch="False" />
                 <line number="29" hits="3" branch="False" />
                 <line number="30" hits="3" branch="False" />
-                <line number="31" hits="3" branch="False" />
-                <line number="32" hits="3" branch="False" />
-                <line number="33" hits="3" branch="False" />
-                <line number="34" hits="3" branch="False" />
+                <line number="31" hits="6" branch="False" />
+                <line number="32" hits="4" branch="False" />
+                <line number="33" hits="4" branch="False" />
+                <line number="34" hits="4" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="17" hits="3" branch="False" />
-            <line number="18" hits="3" branch="False" />
-            <line number="19" hits="3" branch="False" />
-            <line number="20" hits="3" branch="False" />
-            <line number="22" hits="3" branch="True" condition-coverage="100% (2/2)">
+            <line number="17" hits="4" branch="False" />
+            <line number="18" hits="4" branch="False" />
+            <line number="19" hits="4" branch="False" />
+            <line number="20" hits="4" branch="False" />
+            <line number="22" hits="4" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="293" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="23" hits="3" branch="False" />
-            <line number="24" hits="15" branch="True" condition-coverage="100% (2/2)">
+            <line number="23" hits="4" branch="False" />
+            <line number="24" hits="24" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="483" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="25" hits="3" branch="False" />
-            <line number="26" hits="3" branch="False" />
-            <line number="27" hits="15" branch="True" condition-coverage="100% (2/2)">
+            <line number="25" hits="6" branch="False" />
+            <line number="26" hits="6" branch="False" />
+            <line number="27" hits="24" branch="True" condition-coverage="100% (2/2)">
               <conditions>
                 <condition number="428" type="jump" coverage="100%" />
               </conditions>
@@ -1285,10 +1285,10 @@
             <line number="28" hits="3" branch="False" />
             <line number="29" hits="3" branch="False" />
             <line number="30" hits="3" branch="False" />
-            <line number="31" hits="3" branch="False" />
-            <line number="32" hits="3" branch="False" />
-            <line number="33" hits="3" branch="False" />
-            <line number="34" hits="3" branch="False" />
+            <line number="31" hits="6" branch="False" />
+            <line number="32" hits="4" branch="False" />
+            <line number="33" hits="4" branch="False" />
+            <line number="34" hits="4" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Core.Services.EventService" filename="PeakFit.Core\Services\EventService.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -4011,49 +4011,49 @@
             </method>
             <method name="get_Events" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="34" hits="166" branch="False" />
+                <line number="34" hits="172" branch="False" />
               </lines>
             </method>
             <method name="get_Categories" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="35" hits="164" branch="False" />
+                <line number="35" hits="168" branch="False" />
               </lines>
             </method>
             <method name="get_Comments" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="36" hits="169" branch="False" />
+                <line number="36" hits="173" branch="False" />
               </lines>
             </method>
             <method name="get_ProgramExercises" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="165" branch="False" />
+                <line number="37" hits="169" branch="False" />
               </lines>
             </method>
             <method name="get_Exercises" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="38" hits="164" branch="False" />
+                <line number="38" hits="168" branch="False" />
               </lines>
             </method>
             <method name="get_TrainingPrograms" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="39" hits="167" branch="False" />
+                <line number="39" hits="171" branch="False" />
               </lines>
             </method>
             <method name="get_Ratings" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="40" hits="167" branch="False" />
+                <line number="40" hits="171" branch="False" />
               </lines>
             </method>
             <method name="get_UsersPrograms" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="41" hits="166" branch="False" />
+                <line number="41" hits="170" branch="False" />
               </lines>
             </method>
             <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;PeakFit.Web.Data.ApplicationDbContext&gt;)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="82" branch="False" />
-                <line number="14" hits="82" branch="False" />
-                <line number="16" hits="82" branch="False" />
+                <line number="13" hits="84" branch="False" />
+                <line number="14" hits="84" branch="False" />
+                <line number="16" hits="84" branch="False" />
               </lines>
             </method>
           </methods>
@@ -4070,17 +4070,17 @@
             <line number="30" hits="2" branch="False" />
             <line number="31" hits="2" branch="False" />
             <line number="33" hits="2" branch="False" />
-            <line number="34" hits="166" branch="False" />
-            <line number="35" hits="164" branch="False" />
-            <line number="36" hits="169" branch="False" />
-            <line number="37" hits="165" branch="False" />
-            <line number="38" hits="164" branch="False" />
-            <line number="39" hits="167" branch="False" />
-            <line number="40" hits="167" branch="False" />
-            <line number="41" hits="166" branch="False" />
-            <line number="13" hits="82" branch="False" />
-            <line number="14" hits="82" branch="False" />
-            <line number="16" hits="82" branch="False" />
+            <line number="34" hits="172" branch="False" />
+            <line number="35" hits="168" branch="False" />
+            <line number="36" hits="173" branch="False" />
+            <line number="37" hits="169" branch="False" />
+            <line number="38" hits="168" branch="False" />
+            <line number="39" hits="171" branch="False" />
+            <line number="40" hits="171" branch="False" />
+            <line number="41" hits="170" branch="False" />
+            <line number="13" hits="84" branch="False" />
+            <line number="14" hits="84" branch="False" />
+            <line number="16" hits="84" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Infrastructure.Data.SeedDb.CategoryConfiguration" filename="PeakFit.Infrastructure\Data\SeedDb\CategoryConfiguration.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -5629,27 +5629,27 @@
           <methods>
             <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="266" branch="False" />
+                <line number="12" hits="269" branch="False" />
               </lines>
             </method>
             <method name="get_Title" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="244" branch="False" />
+                <line number="16" hits="250" branch="False" />
               </lines>
             </method>
             <method name="get_ImageUrl" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="18" hits="242" branch="False" />
+                <line number="18" hits="248" branch="False" />
               </lines>
             </method>
             <method name="get_Description" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="22" hits="242" branch="False" />
+                <line number="22" hits="248" branch="False" />
               </lines>
             </method>
             <method name="get_StartDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="25" hits="122" branch="False" />
+                <line number="25" hits="125" branch="False" />
               </lines>
             </method>
             <method name="get_StartHour" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -5659,36 +5659,36 @@
             </method>
             <method name="get_UserId" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="31" hits="240" branch="False" />
+                <line number="31" hits="246" branch="False" />
               </lines>
             </method>
             <method name="get_User" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="33" hits="120" branch="False" />
+                <line number="33" hits="123" branch="False" />
               </lines>
             </method>
             <method name="get_Comments" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="34" hits="123" branch="False" />
+                <line number="34" hits="129" branch="False" />
               </lines>
             </method>
             <method name="get_IsDeleted" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="37" hits="135" branch="False" />
+                <line number="37" hits="138" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="12" hits="266" branch="False" />
-            <line number="16" hits="244" branch="False" />
-            <line number="18" hits="242" branch="False" />
-            <line number="22" hits="242" branch="False" />
-            <line number="25" hits="122" branch="False" />
+            <line number="12" hits="269" branch="False" />
+            <line number="16" hits="250" branch="False" />
+            <line number="18" hits="248" branch="False" />
+            <line number="22" hits="248" branch="False" />
+            <line number="25" hits="125" branch="False" />
             <line number="28" hits="122" branch="False" />
-            <line number="31" hits="240" branch="False" />
-            <line number="33" hits="120" branch="False" />
-            <line number="34" hits="123" branch="False" />
-            <line number="37" hits="135" branch="False" />
+            <line number="31" hits="246" branch="False" />
+            <line number="33" hits="123" branch="False" />
+            <line number="34" hits="129" branch="False" />
+            <line number="37" hits="138" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Infrastructure.Data.Models.Exercise" filename="PeakFit.Infrastructure\Data\Models\Exercise.cs" line-rate="1" branch-rate="1" complexity="5">
@@ -5917,16 +5917,16 @@
           <methods>
             <method name="DbSet" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="19" hits="163" branch="False" />
-                <line number="20" hits="163" branch="False" />
-                <line number="21" hits="163" branch="False" />
+                <line number="19" hits="164" branch="False" />
+                <line number="20" hits="164" branch="False" />
+                <line number="21" hits="164" branch="False" />
               </lines>
             </method>
             <method name="All" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="29" hits="35" branch="False" />
-                <line number="30" hits="35" branch="False" />
-                <line number="31" hits="35" branch="False" />
+                <line number="29" hits="36" branch="False" />
+                <line number="30" hits="36" branch="False" />
+                <line number="31" hits="36" branch="False" />
               </lines>
             </method>
             <method name="AllReadOnly" signature="()" line-rate="1" branch-rate="1" complexity="1">
@@ -5938,27 +5938,27 @@
             </method>
             <method name=".ctor" signature="(PeakFit.Web.Data.ApplicationDbContext)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="14" hits="82" branch="False" />
-                <line number="15" hits="82" branch="False" />
-                <line number="16" hits="82" branch="False" />
-                <line number="17" hits="82" branch="False" />
+                <line number="14" hits="84" branch="False" />
+                <line number="15" hits="84" branch="False" />
+                <line number="16" hits="84" branch="False" />
+                <line number="17" hits="84" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="19" hits="163" branch="False" />
-            <line number="20" hits="163" branch="False" />
-            <line number="21" hits="163" branch="False" />
-            <line number="29" hits="35" branch="False" />
-            <line number="30" hits="35" branch="False" />
-            <line number="31" hits="35" branch="False" />
+            <line number="19" hits="164" branch="False" />
+            <line number="20" hits="164" branch="False" />
+            <line number="21" hits="164" branch="False" />
+            <line number="29" hits="36" branch="False" />
+            <line number="30" hits="36" branch="False" />
+            <line number="31" hits="36" branch="False" />
             <line number="34" hits="73" branch="False" />
             <line number="35" hits="73" branch="False" />
             <line number="36" hits="73" branch="False" />
-            <line number="14" hits="82" branch="False" />
-            <line number="15" hits="82" branch="False" />
-            <line number="16" hits="82" branch="False" />
-            <line number="17" hits="82" branch="False" />
+            <line number="14" hits="84" branch="False" />
+            <line number="15" hits="84" branch="False" />
+            <line number="16" hits="84" branch="False" />
+            <line number="17" hits="84" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Infrastructure.Common.Repository/&lt;AddAsync&gt;d__3`1" filename="PeakFit.Infrastructure\Common\Repository.cs" line-rate="1" branch-rate="1" complexity="1">
@@ -6045,21 +6045,21 @@
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="53" hits="31" branch="False" />
-                <line number="54" hits="31" branch="False" />
-                <line number="55" hits="31" branch="False" />
+                <line number="53" hits="32" branch="False" />
+                <line number="54" hits="32" branch="False" />
+                <line number="55" hits="32" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="53" hits="31" branch="False" />
-            <line number="54" hits="31" branch="False" />
-            <line number="55" hits="31" branch="False" />
+            <line number="53" hits="32" branch="False" />
+            <line number="54" hits="32" branch="False" />
+            <line number="55" hits="32" branch="False" />
           </lines>
         </class>
       </classes>
     </package>
-    <package name="PeakFit.Tests" line-rate="0.9803000000000001" branch-rate="0.6785" complexity="125">
+    <package name="PeakFit.Tests" line-rate="0.9806999999999999" branch-rate="0.7" complexity="130">
       <classes>
         <class name="AutoGeneratedProgram" filename="Users\kvalc\.nuget\packages\microsoft.net.test.sdk\17.8.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
@@ -9173,6 +9173,132 @@
             <line number="66" hits="1" branch="False" />
             <line number="67" hits="1" branch="False" />
             <line number="68" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="PeakFit.Tests.ExpiredEventCleanUpServiceUnitTests/&lt;&gt;c" filename="PeakFit.Tests\ExpiredEventCleanUpServiceUnitTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="&lt;SetUp&gt;b__4_0" signature="(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="3" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="40" hits="3" branch="False" />
+          </lines>
+        </class>
+        <class name="PeakFit.Tests.ExpiredEventCleanUpServiceUnitTests/&lt;ExecuteAsync_WhenCalled_ShouldDeleteExpiredEvents&gt;d__6" filename="PeakFit.Tests\ExpiredEventCleanUpServiceUnitTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="67" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="77" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="81" hits="1" branch="False" />
+                <line number="82" hits="1" branch="False" />
+                <line number="85" hits="1" branch="False" />
+                <line number="88" hits="1" branch="False" />
+                <line number="89" hits="1" branch="False" />
+                <line number="90" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="67" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="77" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="81" hits="1" branch="False" />
+            <line number="82" hits="1" branch="False" />
+            <line number="85" hits="1" branch="False" />
+            <line number="88" hits="1" branch="False" />
+            <line number="89" hits="1" branch="False" />
+            <line number="90" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="PeakFit.Tests.ExpiredEventCleanUpServiceUnitTests/&lt;SetUp&gt;d__4" filename="PeakFit.Tests\ExpiredEventCleanUpServiceUnitTests.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="46" hits="1" branch="False" />
+                <line number="47" hits="1" branch="False" />
+                <line number="48" hits="1" branch="False" />
+                <line number="50" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="46" hits="1" branch="False" />
+            <line number="47" hits="1" branch="False" />
+            <line number="48" hits="1" branch="False" />
+            <line number="50" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="PeakFit.Tests.ExpiredEventCleanUpServiceUnitTests/&lt;TearDown&gt;d__5" filename="PeakFit.Tests\ExpiredEventCleanUpServiceUnitTests.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="53" hits="1" branch="False" />
+                <line number="54" hits="1" branch="False" />
+                <line number="55" hits="1" branch="False" />
+                <line number="57" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="298" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="58" hits="1" branch="False" />
+                <line number="59" hits="1" branch="False" />
+                <line number="60" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="53" hits="1" branch="False" />
+            <line number="54" hits="1" branch="False" />
+            <line number="55" hits="1" branch="False" />
+            <line number="57" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="298" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="58" hits="1" branch="False" />
+            <line number="59" hits="1" branch="False" />
+            <line number="60" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
           </lines>
         </class>
         <class name="PeakFit.Tests.RatingServiceUnitTests/&lt;AddRatingAsync_ShouldAddRating&gt;d__16" filename="PeakFit.Tests\RatingServiceUnitTests.cs" line-rate="1" branch-rate="1" complexity="1">
