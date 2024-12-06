@@ -86,7 +86,7 @@ namespace PeakFit.Core.Services
 		public async Task<bool> ExistsAsync(int id)
 		{
 			return await repository.AllReadOnly<Comment>()
-			   .AnyAsync(c => c.Id == id);
+			   .AnyAsync(c => c.Id == id && c.IsDeleted==false);
 
 		}
 	}

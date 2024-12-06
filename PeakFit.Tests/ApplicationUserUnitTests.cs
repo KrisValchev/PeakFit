@@ -19,7 +19,8 @@ using PeakFit.Core.Enumerations;
 
 namespace PeakFit.Tests
 {
-	internal class ApplicationUserUnitTests
+	[TestFixture]
+	public class ApplicationUserUnitTests
 	{
 		private ApplicationDbContext dbContext;
 
