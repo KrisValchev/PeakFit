@@ -601,4 +601,7 @@ D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\Microsoft.Extensions.FileProvide
 D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
 D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\PeakFit\PeakFit\PeakFit.Web\bin\Debug\net8.0\PeakFit.Web.staticwebassets.endpoints.json
+D:\PeakFit\PeakFit\PeakFit.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\PeakFit\PeakFit\PeakFit.Web\obj\Debug\net8.0\staticwebassets\msbuild.PeakFit.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\PeakFit\PeakFit\PeakFit.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

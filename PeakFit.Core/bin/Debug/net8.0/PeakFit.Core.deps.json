@@ -749,7 +749,10 @@
           "Microsoft.Extensions.Configuration.UserSecrets": "6.0.1"
         },
         "runtime": {
-          "PeakFit.Infrastructure.dll": {}
+          "PeakFit.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
