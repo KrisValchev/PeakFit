@@ -41,6 +41,7 @@ namespace PeakFit.Tests
 		private ApplicationUser User2;
 		private ApplicationUser Trainer;
 		private ApplicationUser Trainer2;
+		private ApplicationUser Trainer3;
 		private ApplicationUser Admin;
 
 		private IdentityRole AdminRole;
@@ -112,6 +113,18 @@ namespace PeakFit.Tests
 				FirstName = "Trainer2",
 				LastName = "Trainer2",
 				PhoneNumber = "08888098888",
+				Gender = "Female",
+			};
+			Trainer3 = new ApplicationUser
+			{
+				Id = Guid.NewGuid().ToString(),
+				UserName = "trainer3@gmail.com",
+				NormalizedUserName = "trainer3@gmail.com",
+				Email = "trainer3@gmail.com",
+				NormalizedEmail = "trainer3@gmail.com",
+				FirstName = "Trainer3",
+				LastName = "Trainer3",
+				PhoneNumber = "08848098888",
 				Gender = "Female",
 			};
 			Admin = new ApplicationUser
@@ -268,6 +281,7 @@ namespace PeakFit.Tests
 			};
 
 			var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+				.EnableSensitiveDataLogging()
 			  .UseInMemoryDatabase(databaseName: "ApplicationInMemoryDb" + Guid.NewGuid().ToString())
 			  .Options;
 
@@ -276,6 +290,7 @@ namespace PeakFit.Tests
 			await dbContext.AddAsync(Trainer);
 			await dbContext.AddAsync(User2);
 			await dbContext.AddAsync(Trainer2);
+			await dbContext.AddAsync(Trainer3);
 			await dbContext.AddAsync(Admin);
 			await dbContext.AddAsync(AdminRole);
 			await dbContext.AddAsync(UserRole);
@@ -749,7 +764,84 @@ namespace PeakFit.Tests
 			Assert.That(result.UserName, Is.EqualTo(User.UserName));
 
 		}
-	
+		[Test]
+		public async Task DemoteUserAsync_ShouldDemoteUserFromAdmin()
+		{
+			var userId = Admin.Id;
+			userManagerMock
+				.Setup(m => m.FindByIdAsync(userId))
+				.ReturnsAsync(Admin);
+
+			userManagerMock
+				.Setup(m => m.IsInRoleAsync(Admin, RoleConstants.AdminRole))
+				.ReturnsAsync(true);
+
+			userManagerMock
+				.Setup(m => m.RemoveFromRoleAsync(Admin, RoleConstants.AdminRole))
+				.ReturnsAsync(IdentityResult.Success);
+
+			userManagerMock
+				.Setup(m => m.AddToRoleAsync(Admin, RoleConstants.UserRole))
+				.ReturnsAsync(IdentityResult.Success);
+
+			// Act
+			await applicationUserService.DemoteUserAsync(userId);
+
+			// Assert
+			userManagerMock.Verify(m => m.RemoveFromRoleAsync(Admin, RoleConstants.AdminRole), Times.Once);
+			userManagerMock.Verify(m => m.AddToRoleAsync(Admin, RoleConstants.UserRole), Times.Once);
+		}
+		[Test]
+		public async Task DemoteUserAsync_ShouldDemoteUserFromTrainer()
+		{
+			var userId = Trainer3.Id;
+			userManagerMock
+				.Setup(m => m.FindByIdAsync(userId))
+				.ReturnsAsync(Trainer3);
+			userManagerMock
+				.Setup(m => m.IsInRoleAsync(Trainer3, RoleConstants.TrainerRole))
+				.ReturnsAsync(true);
+			userManagerMock
+				.Setup(m => m.RemoveFromRoleAsync(Trainer3, RoleConstants.TrainerRole))
+				.ReturnsAsync(IdentityResult.Success);
+			userManagerMock
+				.Setup(m => m.AddToRoleAsync(Trainer3, RoleConstants.UserRole))
+				.ReturnsAsync(IdentityResult.Success);
+			// Act
+			await applicationUserService.DemoteUserAsync(userId);
+			// Assert
+			userManagerMock.Verify(m => m.RemoveFromRoleAsync(Trainer3, RoleConstants.TrainerRole), Times.Once);
+			userManagerMock.Verify(m => m.AddToRoleAsync(Trainer3, RoleConstants.UserRole), Times.Once);
+		}
+		[Test]
+		public async Task DemoteUserAsync_ShouldDemoteUserFromTrainerAndDeleteStats()
+		{
+			var userId = Trainer.Id;
+			userManagerMock
+				.Setup(m => m.FindByIdAsync(userId))
+				.ReturnsAsync(Trainer3);
+			userManagerMock
+				.Setup(m => m.IsInRoleAsync(Trainer, RoleConstants.TrainerRole))
+				.ReturnsAsync(true);
+			userManagerMock
+				.Setup(m => m.RemoveFromRoleAsync(Trainer, RoleConstants.TrainerRole))
+				.ReturnsAsync(IdentityResult.Success);
+			userManagerMock
+				.Setup(m => m.AddToRoleAsync(Trainer, RoleConstants.UserRole))
+				.ReturnsAsync(IdentityResult.Success);
+			// Act
+			await applicationUserService.DemoteUserAsync(userId);
+			// Assert
+			userManagerMock.Verify(m => m.RemoveFromRoleAsync(Trainer, RoleConstants.TrainerRole), Times.Once);
+			userManagerMock.Verify(m => m.AddToRoleAsync(Trainer, RoleConstants.UserRole), Times.Once);
+			Assert.That(dbContext.Ratings.Count(), Is.EqualTo(0));
+			Assert.That(dbContext.Comments.Count(), Is.EqualTo(1));
+			Assert.That(dbContext.Events.Count(), Is.EqualTo(1));
+			Assert.That(dbContext.TrainingPrograms.Count(), Is.EqualTo(1));
+			Assert.That(dbContext.ProgramExercises.Count(), Is.EqualTo(1));
+			Assert.That(dbContext.UsersPrograms.Count(), Is.EqualTo(1));
+
+		}
 
 	}
 }

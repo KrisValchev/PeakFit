@@ -10,6 +10,7 @@ using PeakFit.Infrastructure.Data.Models;
 using static PeakFit.Core.Constants.RoleConstants;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration.UserSecrets;
+using PeakFit.Web.Data.Migrations;
 
 namespace PeakFit.Core.Services
 {
@@ -225,18 +226,13 @@ namespace PeakFit.Core.Services
 					{
 						await repository.DeleteAsync<ProgramExercise>(programExercise.Id);
 					}
-					var usersPrograms = await repository.AllReadOnly<UserProgram>()
-			.Where(p => p.ProgramId == item.Id)
-			.ToListAsync();
+					var usersPrograms = await repository.All<UserProgram>()
+					.Where(p => p.ProgramId == item.Id)
+					.ToListAsync();
 
 					foreach (var userProgram in usersPrograms)
 					{
-						UserProgram userProgramToRemove = new UserProgram()
-						{
-							ProgramId = userProgram.ProgramId,
-							UserId = userProgram.UserId
-						};
-						await repository.RemoveAsync(userProgramToRemove);
+						await repository.RemoveAsync(userProgram);
 					}
 
 					var ratings = await repository.AllReadOnly<Rating>()

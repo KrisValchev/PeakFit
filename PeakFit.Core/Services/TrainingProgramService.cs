@@ -306,7 +306,7 @@ namespace PeakFit.Core.Services
 			  {
 				  Id = p.ProgramId,
 				  TrainerId = p.Program.UserId,
-				  TrainerUserName = $"{p.User.FirstName} {p.User.LastName}",
+				  TrainerUserName = $"{p.Program.User.FirstName} {p.Program.User.LastName}",
 				  ImageUrl = p.Program.ImageUrl,
 				  CategoryId = p.Program.CategoryId,
 				  CategoryName = p.Program.Category.CategoryName,
