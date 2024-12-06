@@ -490,25 +490,6 @@ namespace PeakFit.Tests
 			Assert.That(dbContext.Users.Count(), Is.EqualTo(4));
 			Assert.IsTrue(await applicationUserService.ExistsAsync(userId) == false);
 		}
-		//TODO: Fix the test
-		//[Test]
-		//public async Task DeleteAsync_ShouldDeleteUserAndLikedPrograms()
-		//{
-		//	// Arrange
-		//	var userId = User.Id;
-
-		//	// Act
-		//	await applicationUserService.DeleteAsync(userId);
-
-		//	var user = await dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
-
-		//	// Assert
-		//	Assert.IsNull(user);
-		//	Assert.That(dbContext.Users.Count(), Is.EqualTo(4));
-		//	Assert.IsTrue(await applicationUserService.ExistsAsync(userId) == false);
-		//	Assert.That(dbContext.UsersPrograms.Count(), Is.EqualTo(0));
-
-		//}
 
 		[Test]
 		public async Task DeleteAsync_ShouldDeleteTrainerAndTrainingPrograms()

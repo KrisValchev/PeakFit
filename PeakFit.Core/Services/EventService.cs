@@ -176,7 +176,7 @@ namespace PeakFit.Core.Services
 		//DeleteAsync method is used to delete a event from the database. It takes a eventId as a parameter and sets the IsDeleted property of the event to true.
 		public async Task DeleteAsync(int id)
 		{
-			var commentsToRemove = await repository.AllReadOnly<Comment>()
+			var commentsToRemove = await repository.All<Comment>()
 			   .Where(c => c.EventId == id)
 			   .ToListAsync();
 

@@ -258,7 +258,8 @@ namespace PeakFit.Core.Services
 					ImageUrl = tp.ImageUrl,
 					CategoryId = tp.CategoryId,
 					CategoryName = tp.Category.CategoryName,
-					Ratings = tp.Ratings
+					Ratings = tp.Ratings,
+					ExerciseCount = tp.Exercises.Count(),
 				}).ToListAsync();
 			int trainingProgramsCount = await programs.CountAsync();
 
@@ -304,12 +305,13 @@ namespace PeakFit.Core.Services
 			  .Select(p => new TrainingProgramServiceModel()
 			  {
 				  Id = p.ProgramId,
-				  TrainerId = p.UserId,
+				  TrainerId = p.Program.UserId,
 				  TrainerUserName = $"{p.User.FirstName} {p.User.LastName}",
 				  ImageUrl = p.Program.ImageUrl,
 				  CategoryId = p.Program.CategoryId,
 				  CategoryName = p.Program.Category.CategoryName,
 				  Ratings = p.Program.Ratings,
+				  ExerciseCount= p.Program.Exercises.Count()
 
 			  }).ToListAsync();
 			int likedProgramsCount = await programs.CountAsync();
