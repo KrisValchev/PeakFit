@@ -24,6 +24,10 @@ namespace PeakFit.Core.Services
                 foreach (var _event in expiredEvents)
                 {
                     _event.IsDeleted = true;
+                    foreach (var comment in _event.Comments)
+                    {
+                        comment.IsDeleted = true;
+                    }
                 }
                 await repository.SaveChangesAsync(); // Save changes to delete from the database
             }
