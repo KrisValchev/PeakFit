@@ -36,7 +36,7 @@ Trainer
 Admin
 - Oversee all user roles, events, and programs via the admin page.
 
-❗ User can become Trainer by filling in a field with a his phone number 
+❗ User can become Trainer by filling in a field with his phone number 
 
 🧑‍💻 Technologies Used
 
