@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeakFit.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9d58ec5d98b78e1951959ab43c51ad9e6cd7d72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13a09f7628599966268279eab3b925a42b9a393a")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeakFit.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeakFit.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
