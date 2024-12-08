@@ -297,7 +297,7 @@ namespace PeakFit.Core.Services
 			int trainingProgramsPerPage = 1)
 		{
 			var programs = repository.AllReadOnly<UserProgram>()
-			  .Where(r => r.UserId == currentUser.Id);
+			  .Where(r => r.UserId == currentUser.Id && r.Program.IsDeleted==false);
 
 			var likedPrograms = await programs
 				.Skip((currentPage - 1) * trainingProgramsPerPage)
