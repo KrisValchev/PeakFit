@@ -42,15 +42,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
@@ -62,8 +58,7 @@
               "RelativeToolTip": "PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-08T13:54:17.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T13:54:17.568Z"
             },
             {
               "$type": "Document",
@@ -75,8 +70,7 @@
               "RelativeToolTip": "PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAswHQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T13:18:59.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T13:18:59.048Z"
             },
             {
               "$type": "Document",
@@ -98,7 +92,7 @@
               "RelativeDocumentMoniker": "PeakFit.Core\\Services\\TrainingProgramService.cs",
               "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
               "RelativeToolTip": "PeakFit.Core\\Services\\TrainingProgramService.cs",
-              "ViewState": "AgIAACABAAAAAAAAAAAiwCoBAAA3AAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T18:14:20.179Z",
               "EditorCaption": ""
@@ -137,8 +131,7 @@
               "RelativeToolTip": "PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADYAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-05T18:33:58.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T18:33:58.946Z"
             },
             {
               "$type": "Document",

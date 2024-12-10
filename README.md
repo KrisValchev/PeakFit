@@ -50,7 +50,7 @@ Admin
 
 - CSS, HTML, JavaScript
 
-🛡️ You can test my app with these three accounts:
+🛡️ You can test my app with these four accounts:
 
 - email: user@gmail.com, password:User1234
 
