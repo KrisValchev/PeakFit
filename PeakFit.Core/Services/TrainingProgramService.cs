@@ -67,7 +67,6 @@ namespace PeakFit.Core.Services
 		}
 		//AllTrainingProgramsAsync method is used to display all training programs
 		public async Task<TrainingProgramQueryServiceModel> AllTrainingProgramsAsync(
-			string? search = null,
 			TrainingProgramSorting sorting = TrainingProgramSorting.Newest,
 			int currentPage = 1,
 			int trainingProgramsPerPage = 1,
@@ -79,12 +78,6 @@ namespace PeakFit.Core.Services
 			{
 				programs = programs
 				   .Where(p => p.Category.CategoryName == category);
-			}
-			if (search != null)
-			{
-				string searchToLower = search.ToLower();
-				programs = programs
-					.Where(p => (p.Category.CategoryName.ToLower().Contains(searchToLower)));
 			}
 
 			programs = sorting switch

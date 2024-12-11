@@ -9,7 +9,6 @@ namespace PeakFit.Core.Contracts
     public interface ITrainingProgramService
     {
         Task<TrainingProgramQueryServiceModel> AllTrainingProgramsAsync(
-            string? search = null,
             TrainingProgramSorting sorting = TrainingProgramSorting.Newest,
             int currentPage = 1,
             int trainingProgramsPerPage = 1,

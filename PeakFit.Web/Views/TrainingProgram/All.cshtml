@@ -12,10 +12,7 @@
 <form method="get">
 	<div class="container">
 		<div class="search-filter-sort row align-items-center" style="width:100%;text-align:center;justify-content:center">
-			<div class="form-group col-md-3">
-				<label asp-for="Search"></label>
-				<input asp-for="Search" class="form-control" placeholder="Type here....">
-			</div>
+
 			<div class="col-md-2" style="width:200px">
 				<label asp-for="Category"></label>
 				<select asp-for="Category" class="form-control">
@@ -48,7 +45,7 @@
 {
 	<h2 class="text-center">No programs found!</h2>
 }
-<section class="program-section" style="display:flex;flex-direction:row;gap:3em;flex-wrap:wrap;padding:1em;">
+<section class="program-section" style="width:80vw;display:flex;flex-direction:row;gap:3em;flex-wrap:wrap;padding:1em 7em;">
 	@foreach (var Model in Model.TrainingPrograms)
 	{
 		<div class="program-card" style="justify-content: space-around;">

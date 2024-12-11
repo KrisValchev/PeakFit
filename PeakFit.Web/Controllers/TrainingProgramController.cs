@@ -18,7 +18,6 @@ namespace PeakFit.Web.Controllers
         public async Task<IActionResult> All([FromQuery] AllTrainingProgramQueryModel model)
         {
 			var program = await programService.AllTrainingProgramsAsync(
-				model.Search,
 				model.Sorting,
 				model.CurrentPage,
 				model.TrainingProgramPerPage,

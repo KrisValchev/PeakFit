@@ -161,6 +161,10 @@ namespace PeakFit.Web.Areas.Identity.Pages.Account
 				{
 					user.ProfilePicture = "https://p7.hiclipart.com/preview/355/848/997/computer-icons-user-profile-google-account-photos-icon-account.jpg";
 				}
+				else
+				{
+					user.ProfilePicture=Input.ProfilePicture;
+				}
 
 				//---
 				await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
