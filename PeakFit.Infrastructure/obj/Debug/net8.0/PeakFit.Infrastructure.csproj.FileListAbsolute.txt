@@ -28,3 +28,18 @@ D:\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\refint\PeakFit.Infras
 D:\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.pdb
 D:\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.genruntimeconfig.cache
 D:\PeakFit\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\ref\PeakFit.Infrastructure.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.deps.json
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.runtimeconfig.json
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\bin\Debug\net8.0\PeakFit.Infrastructure.pdb
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.csproj.AssemblyReference.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.AssemblyInfoInputs.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.AssemblyInfo.cs
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.csproj.CoreCompileInputs.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.sourcelink.json
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\refint\PeakFit.Infrastructure.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.pdb
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\PeakFit.Infrastructure.genruntimeconfig.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Infrastructure\obj\Debug\net8.0\ref\PeakFit.Infrastructure.dll

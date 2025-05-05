@@ -2268,7 +2268,7 @@
         },
         "runtime": {
           "PeakFit.Core.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2281,7 +2281,7 @@
         },
         "runtime": {
           "PeakFit.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

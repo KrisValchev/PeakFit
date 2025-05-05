@@ -1,311 +1,311 @@
 {
   "Files": [
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PeakFit.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\PeakFit.Web.jq4rwjxdyb.bundle.scp.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\adminPanel.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\adminPanel.css",
       "PackagePath": "staticwebassets\\css\\adminPanel.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentAdd.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentAdd.css",
       "PackagePath": "staticwebassets\\css\\commentAdd.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentPost.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\commentPost.css",
       "PackagePath": "staticwebassets\\css\\commentPost.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\editEventForm.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\editEventForm.css",
       "PackagePath": "staticwebassets\\css\\editEventForm.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\error404.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\error404.css",
       "PackagePath": "staticwebassets\\css\\error404.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventCard.css",
       "PackagePath": "staticwebassets\\css\\eventCard.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventDetails.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\eventDetails.css",
       "PackagePath": "staticwebassets\\css\\eventDetails.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\homePage.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\homePage.css",
       "PackagePath": "staticwebassets\\css\\homePage.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programAdd.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programAdd.css",
       "PackagePath": "staticwebassets\\css\\programAdd.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programDetails.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\programDetails.css",
       "PackagePath": "staticwebassets\\css\\programDetails.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\css\\trainingProgramCard.css",
       "PackagePath": "staticwebassets\\css\\trainingProgramCard.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\images\\weight-loss-exercise-plan.jpg",
       "PackagePath": "staticwebassets\\images\\weight-loss-exercise-plan.jpg"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\images\\yoga.jpg",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\images\\yoga.jpg",
       "PackagePath": "staticwebassets\\images\\yoga.jpg"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\js\\addTrainingProgram.js",
       "PackagePath": "staticwebassets\\js\\addTrainingProgram.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\editTrainingProgram.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\js\\editTrainingProgram.js",
       "PackagePath": "staticwebassets\\js\\editTrainingProgram.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\ratingProgram.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\js\\ratingProgram.js",
       "PackagePath": "staticwebassets\\js\\ratingProgram.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

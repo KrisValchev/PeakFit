@@ -30,3 +30,19 @@ D:\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.dll
 D:\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\refint\PeakFit.Core.dll
 D:\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.pdb
 D:\PeakFit\PeakFit\PeakFit.Core\obj\Debug\net8.0\ref\PeakFit.Core.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.deps.json
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Core.pdb
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Infrastructure.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\bin\Debug\net8.0\PeakFit.Infrastructure.pdb
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.csproj.AssemblyReference.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.AssemblyInfoInputs.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.AssemblyInfo.cs
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.csproj.CoreCompileInputs.cache
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.sourcelink.json
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit..22AA1925.Up2Date
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\refint\PeakFit.Core.dll
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\PeakFit.Core.pdb
+D:\SoftUni Final Project\PeakFit\PeakFit.Core\obj\Debug\net8.0\ref\PeakFit.Core.dll

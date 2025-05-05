@@ -1,37 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\PeakFit\\PeakFit\\",
+  "WorkspaceRootPath": "D:\\SoftUni Final Project\\PeakFit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|d:\\peakfit\\peakfit\\peakfit.core\\services\\trainingprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\softuni final project\\peakfit\\peakfit.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\softuni final project\\peakfit\\peakfit.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|d:\\softuni final project\\peakfit\\peakfit.core\\services\\trainingprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|solutionrelative:peakfit.core\\services\\trainingprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\trainingprogram\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\softuni final project\\peakfit\\peakfit.web\\views\\trainingprogram\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainingprogram\\all.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\peakfit\\peakfit\\peakfit.web\\views\\trainingprogram\\mine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|d:\\softuni final project\\peakfit\\peakfit.web\\views\\trainingprogram\\mine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{165BC14A-87C1-4FDC-990F-1983F2EB66CC}|PeakFit.Web\\PeakFit.Web.csproj|solutionrelative:peakfit.web\\views\\trainingprogram\\mine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|d:\\peakfit\\peakfit\\peakfit.infrastructure\\data\\seeddb\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|d:\\softuni final project\\peakfit\\peakfit.infrastructure\\data\\seeddb\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|solutionrelative:peakfit.infrastructure\\data\\seeddb\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|d:\\peakfit\\peakfit\\peakfit.tests\\applicationuserunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|d:\\softuni final project\\peakfit\\peakfit.tests\\applicationuserunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|solutionrelative:peakfit.tests\\applicationuserunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|d:\\peakfit\\peakfit\\peakfit.core\\models\\programexercisemodels\\programexerciseaddmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|d:\\softuni final project\\peakfit\\peakfit.core\\models\\programexercisemodels\\programexerciseaddmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B2266D78-9F32-439D-B5F6-84A1A5A7CB6F}|PeakFit.Core\\PeakFit.Core.csproj|solutionrelative:peakfit.core\\models\\programexercisemodels\\programexerciseaddmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|d:\\peakfit\\peakfit\\peakfit.infrastructure\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|d:\\softuni final project\\peakfit\\peakfit.infrastructure\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D27F139-E96C-462E-9808-C17E312825CD}|PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj|solutionrelative:peakfit.infrastructure\\common\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|d:\\peakfit\\peakfit\\peakfit.tests\\adminserviceunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|d:\\softuni final project\\peakfit\\peakfit.tests\\adminserviceunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{885FC8FC-66B3-471E-B7C9-36F35DE60D27}|PeakFit.Tests\\PeakFit.Tests.csproj|solutionrelative:peakfit.tests\\adminserviceunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,19 +50,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "PeakFit.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T16:16:40.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Program.cs",
+              "RelativeDocumentMoniker": "PeakFit.Web\\Program.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Program.cs",
+              "RelativeToolTip": "PeakFit.Web\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T16:15:30.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Mine.cshtml",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
               "RelativeToolTip": "PeakFit.Web\\Views\\TrainingProgram\\Mine.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -62,11 +128,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "SeedData.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
               "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
               "RelativeToolTip": "PeakFit.Infrastructure\\Data\\SeedDb\\SeedData.cs",
               "ViewState": "AgIAAIUAAAAAAAAAAAAswHQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Common\\Repository.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\Common\\Repository.cs",
               "RelativeDocumentMoniker": "PeakFit.Infrastructure\\Common\\Repository.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\Common\\Repository.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\Common\\Repository.cs",
               "RelativeToolTip": "PeakFit.Infrastructure\\Common\\Repository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAYwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -86,24 +152,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TrainingProgramService.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Services\\TrainingProgramService.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\Services\\TrainingProgramService.cs",
               "RelativeToolTip": "PeakFit.Core\\Services\\TrainingProgramService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T18:14:20.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ProgramExerciseAddModel.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
               "RelativeDocumentMoniker": "PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
               "RelativeToolTip": "PeakFit.Core\\Models\\ProgramExerciseModels\\ProgramExerciseAddModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -111,11 +177,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AdminServiceUnitTests.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Tests\\AdminServiceUnitTests.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Tests\\AdminServiceUnitTests.cs",
               "RelativeDocumentMoniker": "PeakFit.Tests\\AdminServiceUnitTests.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Tests\\AdminServiceUnitTests.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Tests\\AdminServiceUnitTests.cs",
               "RelativeToolTip": "PeakFit.Tests\\AdminServiceUnitTests.cs",
               "ViewState": "AgIAAL8AAAAAAAAAAAAQwLMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -123,11 +189,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "All.cshtml",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "RelativeDocumentMoniker": "PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "RelativeToolTip": "PeakFit.Web\\Views\\TrainingProgram\\All.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADYAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -135,11 +201,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ApplicationUserUnitTests.cs",
-              "DocumentMoniker": "D:\\PeakFit\\PeakFit\\PeakFit.Tests\\ApplicationUserUnitTests.cs",
+              "DocumentMoniker": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Tests\\ApplicationUserUnitTests.cs",
               "RelativeDocumentMoniker": "PeakFit.Tests\\ApplicationUserUnitTests.cs",
-              "ToolTip": "D:\\PeakFit\\PeakFit\\PeakFit.Tests\\ApplicationUserUnitTests.cs",
+              "ToolTip": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Tests\\ApplicationUserUnitTests.cs",
               "RelativeToolTip": "PeakFit.Tests\\ApplicationUserUnitTests.cs",
               "ViewState": "AgIAAC4DAAAAAAAAAAAmwKIAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

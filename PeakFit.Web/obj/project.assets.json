@@ -8870,11 +8870,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\PeakFit.Web.csproj",
+      "projectUniqueName": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\PeakFit.Web.csproj",
       "projectName": "PeakFit.Web",
-      "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\PeakFit.Web.csproj",
+      "projectPath": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\PeakFit.Web.csproj",
       "packagesPath": "C:\\Users\\kvalc\\.nuget\\packages\\",
-      "outputPath": "D:\\PeakFit\\PeakFit\\PeakFit.Web\\obj\\",
+      "outputPath": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8895,11 +8895,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj": {
-              "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj"
+            "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj": {
+              "projectPath": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Core\\PeakFit.Core.csproj"
             },
-            "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
-              "projectPath": "D:\\PeakFit\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj"
+            "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj": {
+              "projectPath": "D:\\SoftUni Final Project\\PeakFit\\PeakFit.Infrastructure\\PeakFit.Infrastructure.csproj"
             }
           }
         }
@@ -8913,7 +8913,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -8967,7 +8968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
